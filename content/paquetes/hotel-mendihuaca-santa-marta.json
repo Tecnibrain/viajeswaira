@@ -7,8 +7,15 @@
   "category": "Naturaleza",
   "operator": "On Vacation",
   "description": "Frente al mar Caribe y rodeado de naturaleza, a pocos kilómetros del Parque Tayrona. Piscinas amplias, zonas de descanso y actividades para toda la familia con esencia ecoturística.",
-  "image": "/img/santa-marta.svg",
-  "gallery": [],
+  "image": "/img/onvacation/paquetes/hotel-mendihuaca-santa-marta/1.webp",
+  "gallery": [
+    "/img/onvacation/paquetes/hotel-mendihuaca-santa-marta/1.webp",
+    "/img/onvacation/paquetes/hotel-mendihuaca-santa-marta/2.webp",
+    "/img/onvacation/paquetes/hotel-mendihuaca-santa-marta/3.webp",
+    "/img/onvacation/paquetes/hotel-mendihuaca-santa-marta/4.webp",
+    "/img/onvacation/paquetes/hotel-mendihuaca-santa-marta/5.webp",
+    "/img/onvacation/paquetes/hotel-mendihuaca-santa-marta/6.webp"
+  ],
   "includes": [
     "Alojamiento en el Hotel Mendihuaca",
     "Alimentación según el plan elegido",

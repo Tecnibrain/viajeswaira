@@ -7,8 +7,15 @@
   "category": "Playa",
   "operator": "On Vacation",
   "description": "Hotel frente al mar en Playa Caracol, Punta Chame, con playa privada, dos piscinas al aire libre, jacuzzis y spa de servicio completo. Tranquilidad a una hora de la ciudad.",
-  "image": "/img/panama-3.svg",
-  "gallery": [],
+  "image": "/img/onvacation/paquetes/radisson-riviera-panama/4.webp",
+  "gallery": [
+    "/img/onvacation/paquetes/radisson-riviera-panama/4.webp",
+    "/img/onvacation/paquetes/radisson-riviera-panama/1.webp",
+    "/img/onvacation/paquetes/radisson-riviera-panama/2.webp",
+    "/img/onvacation/paquetes/radisson-riviera-panama/3.webp",
+    "/img/onvacation/paquetes/radisson-riviera-panama/5.webp",
+    "/img/onvacation/paquetes/radisson-riviera-panama/6.webp"
+  ],
   "includes": [
     "Alojamiento en Radisson Riviera Panamá",
     "Alimentación según el plan elegido"

@@ -7,8 +7,15 @@
   "category": "Playa",
   "operator": "On Vacation",
   "description": "En pleno centro de San Andrés y a pasos de la playa Spratt Bight. Habitaciones modernas con aire acondicionado y TV, y el rooftop La Marea para celebrar con cocteles y la mejor vista de la isla.",
-  "image": "/img/san-andres-3.svg",
-  "gallery": [],
+  "image": "/img/onvacation/paquetes/hotel-caribbean-san-andres/3.webp",
+  "gallery": [
+    "/img/onvacation/paquetes/hotel-caribbean-san-andres/3.webp",
+    "/img/onvacation/paquetes/hotel-caribbean-san-andres/1.webp",
+    "/img/onvacation/paquetes/hotel-caribbean-san-andres/2.webp",
+    "/img/onvacation/paquetes/hotel-caribbean-san-andres/4.webp",
+    "/img/onvacation/paquetes/hotel-caribbean-san-andres/5.webp",
+    "/img/onvacation/paquetes/hotel-caribbean-san-andres/6.webp"
+  ],
   "includes": [
     "Alojamiento en el Hotel Caribbean",
     "Alimentación según el plan elegido"

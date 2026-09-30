@@ -7,8 +7,15 @@
   "category": "Luna de miel",
   "operator": "On Vacation",
   "description": "Refugio exclusivo de solo cinco habitaciones de lujo, con piscina infinita que se funde con el horizonte, gastronomía a la carta y detalles como vino espumoso de bienvenida. Ideal para parejas que buscan privacidad.",
-  "image": "/img/san-andres.svg",
-  "gallery": [],
+  "image": "/img/onvacation/paquetes/hotel-acantilado-de-la-tierra-san-andres/5.webp",
+  "gallery": [
+    "/img/onvacation/paquetes/hotel-acantilado-de-la-tierra-san-andres/5.webp",
+    "/img/onvacation/paquetes/hotel-acantilado-de-la-tierra-san-andres/1.webp",
+    "/img/onvacation/paquetes/hotel-acantilado-de-la-tierra-san-andres/2.webp",
+    "/img/onvacation/paquetes/hotel-acantilado-de-la-tierra-san-andres/3.webp",
+    "/img/onvacation/paquetes/hotel-acantilado-de-la-tierra-san-andres/4.webp",
+    "/img/onvacation/paquetes/hotel-acantilado-de-la-tierra-san-andres/6.webp"
+  ],
   "includes": [
     "Alojamiento en el Hotel Acantilado de la Tierra",
     "Alimentación a la carta según el plan elegido",

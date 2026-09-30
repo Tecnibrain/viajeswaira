@@ -7,8 +7,15 @@
   "category": "Ciudad",
   "operator": "On Vacation",
   "description": "En el centro de Ciudad de Panamá, sobre la Calle 52, con piscina, spa, terraza y room service 24 horas. Ideal para combinar compras, gastronomía y recorridos por la ciudad.",
-  "image": "/img/panama.svg",
-  "gallery": [],
+  "image": "/img/onvacation/paquetes/hotel-gran-evenia-panama/3.webp",
+  "gallery": [
+    "/img/onvacation/paquetes/hotel-gran-evenia-panama/3.webp",
+    "/img/onvacation/paquetes/hotel-gran-evenia-panama/1.webp",
+    "/img/onvacation/paquetes/hotel-gran-evenia-panama/2.webp",
+    "/img/onvacation/paquetes/hotel-gran-evenia-panama/4.webp",
+    "/img/onvacation/paquetes/hotel-gran-evenia-panama/5.webp",
+    "/img/onvacation/paquetes/hotel-gran-evenia-panama/6.webp"
+  ],
   "includes": [
     "Alojamiento en el Hotel Gran Evenia",
     "Alimentación según el plan elegido"

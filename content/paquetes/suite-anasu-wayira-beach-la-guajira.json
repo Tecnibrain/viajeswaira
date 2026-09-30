@@ -7,8 +7,15 @@
   "category": "Luna de miel",
   "operator": "On Vacation",
   "description": "Experiencia premium en La Guajira: suite con piscina privada con cascada, atención personalizada, check-in preferencial y sesión de spa, inspirada en la esencia de la cultura wayuu.",
-  "image": "/img/guajira-3.svg",
-  "gallery": [],
+  "image": "/img/onvacation/paquetes/suite-anasu-wayira-beach-la-guajira/4.webp",
+  "gallery": [
+    "/img/onvacation/paquetes/suite-anasu-wayira-beach-la-guajira/4.webp",
+    "/img/onvacation/paquetes/suite-anasu-wayira-beach-la-guajira/1.webp",
+    "/img/onvacation/paquetes/suite-anasu-wayira-beach-la-guajira/2.webp",
+    "/img/onvacation/paquetes/suite-anasu-wayira-beach-la-guajira/3.webp",
+    "/img/onvacation/paquetes/suite-anasu-wayira-beach-la-guajira/5.webp",
+    "/img/onvacation/paquetes/suite-anasu-wayira-beach-la-guajira/6.webp"
+  ],
   "includes": [
     "Alojamiento en la Suite Anasü",
     "Servicios exclusivos Anasü según condiciones del plan",

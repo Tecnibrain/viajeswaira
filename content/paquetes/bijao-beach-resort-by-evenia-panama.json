@@ -7,8 +7,15 @@
   "category": "Todo incluido",
   "operator": "On Vacation",
   "description": "Resort todo incluido en la Riviera Pacífica de Panamá, sobre la playa de Santa Clara. Cuatro piscinas, cuatro restaurantes, kids club, spa y tenis para toda la familia.",
-  "image": "/img/panama.svg",
-  "gallery": [],
+  "image": "/img/onvacation/paquetes/bijao-beach-resort-by-evenia-panama/6.webp",
+  "gallery": [
+    "/img/onvacation/paquetes/bijao-beach-resort-by-evenia-panama/6.webp",
+    "/img/onvacation/paquetes/bijao-beach-resort-by-evenia-panama/1.webp",
+    "/img/onvacation/paquetes/bijao-beach-resort-by-evenia-panama/2.webp",
+    "/img/onvacation/paquetes/bijao-beach-resort-by-evenia-panama/3.webp",
+    "/img/onvacation/paquetes/bijao-beach-resort-by-evenia-panama/4.webp",
+    "/img/onvacation/paquetes/bijao-beach-resort-by-evenia-panama/5.webp"
+  ],
   "includes": [
     "Alojamiento en Bijao Beach Resort",
     "Plan todo incluido según condiciones del hotel"

@@ -7,8 +7,15 @@
   "category": "Todo incluido",
   "operator": "On Vacation",
   "description": "Resort todo incluido en Playa Blanca, en el Arco Seco del Pacífico panameño, con una de las piscinas de agua salada más grandes de Centroamérica, toboganes gigantes, beach club y ocho restaurantes.",
-  "image": "/img/panama-2.svg",
-  "gallery": [],
+  "image": "/img/onvacation/paquetes/playa-blanca-hotel-resort-todo-incluido-panama/4.webp",
+  "gallery": [
+    "/img/onvacation/paquetes/playa-blanca-hotel-resort-todo-incluido-panama/4.webp",
+    "/img/onvacation/paquetes/playa-blanca-hotel-resort-todo-incluido-panama/1.webp",
+    "/img/onvacation/paquetes/playa-blanca-hotel-resort-todo-incluido-panama/2.webp",
+    "/img/onvacation/paquetes/playa-blanca-hotel-resort-todo-incluido-panama/3.webp",
+    "/img/onvacation/paquetes/playa-blanca-hotel-resort-todo-incluido-panama/5.webp",
+    "/img/onvacation/paquetes/playa-blanca-hotel-resort-todo-incluido-panama/6.webp"
+  ],
   "includes": [
     "Alojamiento en Playa Blanca Hotel & Resort",
     "Plan todo incluido según condiciones del hotel"

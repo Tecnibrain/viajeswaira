@@ -7,8 +7,15 @@
   "category": "Naturaleza",
   "operator": "On Vacation",
   "description": "Hotel eco-chic frente al embalse con la Piedra del Peñol de fondo. Habitaciones amplias, piscinas y jacuzzis con vista panorámica y gastronomía local e internacional.",
-  "image": "/img/guatape.svg",
-  "gallery": [],
+  "image": "/img/onvacation/paquetes/hotel-los-recuerdos-guatape/1.webp",
+  "gallery": [
+    "/img/onvacation/paquetes/hotel-los-recuerdos-guatape/1.webp",
+    "/img/onvacation/paquetes/hotel-los-recuerdos-guatape/2.webp",
+    "/img/onvacation/paquetes/hotel-los-recuerdos-guatape/3.webp",
+    "/img/onvacation/paquetes/hotel-los-recuerdos-guatape/4.webp",
+    "/img/onvacation/paquetes/hotel-los-recuerdos-guatape/5.webp",
+    "/img/onvacation/paquetes/hotel-los-recuerdos-guatape/6.webp"
+  ],
   "includes": [
     "Alojamiento en el Hotel Los Recuerdos",
     "Alimentación según el plan elegido",

@@ -5,11 +5,12 @@
   "country": "México",
   "region": "internacional",
   "description": "Playas turquesa del Caribe mexicano, la Quinta Avenida de Playa del Carmen, ruinas mayas y cenotes. Elige entre la zona hotelera de Cancún, la Riviera Maya o el centro de Playa del Carmen.",
-  "image": "/img/cancun.svg",
+  "image": "/img/onvacation/paquetes/hotel-dos-playas-cancun/2.webp",
   "gallery": [
-    "/img/cancun.svg",
-    "/img/cancun-2.svg",
-    "/img/cancun-3.svg"
+    "/img/onvacation/paquetes/hotel-dos-playas-cancun/2.webp",
+    "/img/onvacation/paquetes/hotel-grand-riviera-sunset-princess-cancun/1.webp",
+    "/img/onvacation/destinos/cancun/2.webp",
+    "/img/onvacation/paquetes/hotel-hm-playa-del-carmen-cancun/2.webp"
   ],
   "highlights": [
     "Zona hotelera de Cancún",

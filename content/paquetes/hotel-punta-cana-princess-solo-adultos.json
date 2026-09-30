@@ -7,8 +7,15 @@
   "category": "Solo adultos",
   "operator": "On Vacation",
   "description": "Resort exclusivo para adultos en las playas de Bávaro, con cinco restaurantes de comida internacional y ambiente relajado. Ideal para parejas.",
-  "image": "/img/punta-cana-2.svg",
-  "gallery": [],
+  "image": "/img/onvacation/paquetes/hotel-punta-cana-princess-solo-adultos/1.webp",
+  "gallery": [
+    "/img/onvacation/paquetes/hotel-punta-cana-princess-solo-adultos/1.webp",
+    "/img/onvacation/paquetes/hotel-punta-cana-princess-solo-adultos/2.webp",
+    "/img/onvacation/paquetes/hotel-punta-cana-princess-solo-adultos/3.webp",
+    "/img/onvacation/paquetes/hotel-punta-cana-princess-solo-adultos/4.webp",
+    "/img/onvacation/paquetes/hotel-punta-cana-princess-solo-adultos/5.webp",
+    "/img/onvacation/paquetes/hotel-punta-cana-princess-solo-adultos/6.webp"
+  ],
   "includes": [
     "Alojamiento en el Hotel Punta Cana Princess",
     "Alimentación según el plan elegido"

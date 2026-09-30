@@ -7,8 +7,15 @@
   "category": "Playa",
   "operator": "On Vacation",
   "description": "En la zona hotelera de Cancún, sobre el Boulevard Kukulcán, a unos 30 minutos del aeropuerto. Piscina, spa, cancha de tenis y actividades para niños y adultos.",
-  "image": "/img/cancun.svg",
-  "gallery": [],
+  "image": "/img/onvacation/paquetes/hotel-dos-playas-cancun/2.webp",
+  "gallery": [
+    "/img/onvacation/paquetes/hotel-dos-playas-cancun/2.webp",
+    "/img/onvacation/paquetes/hotel-dos-playas-cancun/1.webp",
+    "/img/onvacation/paquetes/hotel-dos-playas-cancun/3.webp",
+    "/img/onvacation/paquetes/hotel-dos-playas-cancun/4.webp",
+    "/img/onvacation/paquetes/hotel-dos-playas-cancun/5.webp",
+    "/img/onvacation/paquetes/hotel-dos-playas-cancun/6.webp"
+  ],
   "includes": [
     "Alojamiento en el Hotel Dos Playas",
     "Alimentación según el plan elegido"

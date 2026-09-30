@@ -7,8 +7,15 @@
   "category": "Familiar",
   "operator": "On Vacation",
   "description": "Resort familiar a pocos minutos del centro de Girardot con tres piscinas, simulador de surf, canchas deportivas, discoteca y zona de juegos para niños. Diversión y descanso con clima cálido.",
-  "image": "/img/girardot.svg",
-  "gallery": [],
+  "image": "/img/onvacation/paquetes/hotel-girardot-resort/5.webp",
+  "gallery": [
+    "/img/onvacation/paquetes/hotel-girardot-resort/5.webp",
+    "/img/onvacation/paquetes/hotel-girardot-resort/1.webp",
+    "/img/onvacation/paquetes/hotel-girardot-resort/2.webp",
+    "/img/onvacation/paquetes/hotel-girardot-resort/3.webp",
+    "/img/onvacation/paquetes/hotel-girardot-resort/4.webp",
+    "/img/onvacation/paquetes/hotel-girardot-resort/6.webp"
+  ],
   "includes": [
     "Alojamiento en el Hotel Girardot Resort",
     "Alimentación según el plan elegido",

@@ -7,8 +7,15 @@
   "category": "Playa",
   "operator": "On Vacation",
   "description": "En la zona de San Luis (Sound Bay), con acceso directo a una playa tranquila de aguas cristalinas. Piscina panorámica y mirador con vista al mar, ideal para viajar en familia o con amigos.",
-  "image": "/img/san-andres.svg",
-  "gallery": [],
+  "image": "/img/onvacation/paquetes/hotel-san-luis-san-andres/3.webp",
+  "gallery": [
+    "/img/onvacation/paquetes/hotel-san-luis-san-andres/3.webp",
+    "/img/onvacation/paquetes/hotel-san-luis-san-andres/1.webp",
+    "/img/onvacation/paquetes/hotel-san-luis-san-andres/2.webp",
+    "/img/onvacation/paquetes/hotel-san-luis-san-andres/4.webp",
+    "/img/onvacation/paquetes/hotel-san-luis-san-andres/5.webp",
+    "/img/onvacation/paquetes/hotel-san-luis-san-andres/6.webp"
+  ],
   "includes": [
     "Alojamiento en el Hotel San Luis",
     "Alimentación según el plan elegido",

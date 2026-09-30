@@ -7,8 +7,15 @@
   "category": "Naturaleza",
   "operator": "On Vacation",
   "description": "Hotel rodeado de bosque tropical a las afueras de Ciudad de Panamá, con senderos, mariposario, ranario, golf y un centro de rescate de perezosos. Naturaleza a minutos de la ciudad.",
-  "image": "/img/panama.svg",
-  "gallery": [],
+  "image": "/img/onvacation/paquetes/summit-rainforest-panama/4.webp",
+  "gallery": [
+    "/img/onvacation/paquetes/summit-rainforest-panama/4.webp",
+    "/img/onvacation/paquetes/summit-rainforest-panama/1.webp",
+    "/img/onvacation/paquetes/summit-rainforest-panama/2.webp",
+    "/img/onvacation/paquetes/summit-rainforest-panama/3.webp",
+    "/img/onvacation/paquetes/summit-rainforest-panama/5.webp",
+    "/img/onvacation/paquetes/summit-rainforest-panama/6.webp"
+  ],
   "includes": [
     "Alojamiento en Summit Rainforest",
     "Alimentación según el plan elegido"

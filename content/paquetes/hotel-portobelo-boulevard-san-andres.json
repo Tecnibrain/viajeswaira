@@ -7,8 +7,15 @@
   "category": "Playa",
   "operator": "On Vacation",
   "description": "En primera línea de playa y en el centro de la isla, para vivir el mar de los siete colores desde que sales del hotel.",
-  "image": "/img/san-andres-2.svg",
-  "gallery": [],
+  "image": "/img/onvacation/paquetes/hotel-portobelo-boulevard-san-andres/1.webp",
+  "gallery": [
+    "/img/onvacation/paquetes/hotel-portobelo-boulevard-san-andres/1.webp",
+    "/img/onvacation/paquetes/hotel-portobelo-boulevard-san-andres/2.webp",
+    "/img/onvacation/paquetes/hotel-portobelo-boulevard-san-andres/3.webp",
+    "/img/onvacation/paquetes/hotel-portobelo-boulevard-san-andres/4.webp",
+    "/img/onvacation/paquetes/hotel-portobelo-boulevard-san-andres/5.webp",
+    "/img/onvacation/paquetes/hotel-portobelo-boulevard-san-andres/6.webp"
+  ],
   "includes": [
     "Alojamiento en el Hotel Portobelo Boulevard",
     "Alimentación según el plan elegido"

@@ -7,8 +7,15 @@
   "category": "Playa",
   "operator": "On Vacation",
   "description": "Hotel céntrico a pocos minutos del aeropuerto, con piscina al aire libre, gimnasio y Wi-Fi gratuito. Cómodo y bien ubicado para recorrer la isla.",
-  "image": "/img/san-andres-2.svg",
-  "gallery": [],
+  "image": "/img/onvacation/paquetes/hotel-portobelo-plaza-de-las-americas-san-andres/3.webp",
+  "gallery": [
+    "/img/onvacation/paquetes/hotel-portobelo-plaza-de-las-americas-san-andres/3.webp",
+    "/img/onvacation/paquetes/hotel-portobelo-plaza-de-las-americas-san-andres/1.webp",
+    "/img/onvacation/paquetes/hotel-portobelo-plaza-de-las-americas-san-andres/2.webp",
+    "/img/onvacation/paquetes/hotel-portobelo-plaza-de-las-americas-san-andres/4.webp",
+    "/img/onvacation/paquetes/hotel-portobelo-plaza-de-las-americas-san-andres/5.webp",
+    "/img/onvacation/paquetes/hotel-portobelo-plaza-de-las-americas-san-andres/6.webp"
+  ],
   "includes": [
     "Alojamiento en el Hotel Portobelo Plaza de las Américas",
     "Alimentación según el plan elegido",

@@ -7,8 +7,15 @@
   "category": "Naturaleza",
   "operator": "On Vacation",
   "description": "Eco-resort a orillas del río Amazonas, a 17 km de Leticia y solo accesible en lancha. Habitaciones inspiradas en las comunidades indígenas, piscina infinita con vista al río, spa y muelle privado.",
-  "image": "/img/amazonas.svg",
-  "gallery": [],
+  "image": "/img/onvacation/paquetes/hotel-amazon-amazonas/5.webp",
+  "gallery": [
+    "/img/onvacation/paquetes/hotel-amazon-amazonas/5.webp",
+    "/img/onvacation/paquetes/hotel-amazon-amazonas/1.webp",
+    "/img/onvacation/paquetes/hotel-amazon-amazonas/2.webp",
+    "/img/onvacation/paquetes/hotel-amazon-amazonas/3.webp",
+    "/img/onvacation/paquetes/hotel-amazon-amazonas/4.webp",
+    "/img/onvacation/paquetes/hotel-amazon-amazonas/6.webp"
+  ],
   "includes": [
     "Alojamiento en el Hotel Amazon",
     "Alimentación según el plan elegido",

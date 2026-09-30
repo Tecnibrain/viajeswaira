@@ -7,8 +7,15 @@
   "category": "Ciudad",
   "operator": "On Vacation",
   "description": "Hotel 5 estrellas en El Poblado (Tribute Portfolio by Marriott) con diseño contemporáneo y vistas al Valle de Aburrá. Piscina climatizada, gimnasio y gastronomía inspirada en la región.",
-  "image": "/img/medellin.svg",
-  "gallery": [],
+  "image": "/img/onvacation/paquetes/hotel-loma-medellin/5.webp",
+  "gallery": [
+    "/img/onvacation/paquetes/hotel-loma-medellin/5.webp",
+    "/img/onvacation/paquetes/hotel-loma-medellin/1.webp",
+    "/img/onvacation/paquetes/hotel-loma-medellin/2.webp",
+    "/img/onvacation/paquetes/hotel-loma-medellin/3.webp",
+    "/img/onvacation/paquetes/hotel-loma-medellin/4.webp",
+    "/img/onvacation/paquetes/hotel-loma-medellin/6.webp"
+  ],
   "includes": [
     "Alojamiento en el Hotel Loma Medellín",
     "Alimentación según el plan elegido"

@@ -7,8 +7,15 @@
   "category": "Todo incluido",
   "operator": "On Vacation",
   "description": "Resort 5 estrellas todo incluido en la famosa Playa Bávaro, a unos 35 minutos del aeropuerto de Punta Cana. Varios restaurantes, piscinas, club de niños, canchas de tenis y senderos entre manglares.",
-  "image": "/img/punta-cana.svg",
-  "gallery": [],
+  "image": "/img/onvacation/paquetes/hotel-grand-bavaro-princess-punta-cana/2.webp",
+  "gallery": [
+    "/img/onvacation/paquetes/hotel-grand-bavaro-princess-punta-cana/2.webp",
+    "/img/onvacation/paquetes/hotel-grand-bavaro-princess-punta-cana/1.webp",
+    "/img/onvacation/paquetes/hotel-grand-bavaro-princess-punta-cana/3.webp",
+    "/img/onvacation/paquetes/hotel-grand-bavaro-princess-punta-cana/4.webp",
+    "/img/onvacation/paquetes/hotel-grand-bavaro-princess-punta-cana/5.webp",
+    "/img/onvacation/paquetes/hotel-grand-bavaro-princess-punta-cana/6.webp"
+  ],
   "includes": [
     "Alojamiento en el Hotel Grand Bávaro Princess",
     "Plan todo incluido según condiciones del hotel",

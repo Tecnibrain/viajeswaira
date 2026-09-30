@@ -7,8 +7,15 @@
   "category": "Playa",
   "operator": "On Vacation",
   "description": "Hotel pequeño y acogedor sobre la Avenida Colombia, a minutos del aeropuerto, con habitaciones con aire acondicionado y minibar. Buena relación precio–comodidad.",
-  "image": "/img/san-andres.svg",
-  "gallery": [],
+  "image": "/img/onvacation/paquetes/hotel-portobelo-beach-san-andres/2.webp",
+  "gallery": [
+    "/img/onvacation/paquetes/hotel-portobelo-beach-san-andres/2.webp",
+    "/img/onvacation/paquetes/hotel-portobelo-beach-san-andres/1.webp",
+    "/img/onvacation/paquetes/hotel-portobelo-beach-san-andres/3.webp",
+    "/img/onvacation/paquetes/hotel-portobelo-beach-san-andres/4.webp",
+    "/img/onvacation/paquetes/hotel-portobelo-beach-san-andres/5.webp",
+    "/img/onvacation/paquetes/hotel-portobelo-beach-san-andres/6.webp"
+  ],
   "includes": [
     "Alojamiento en el Hotel Portobelo Beach",
     "Alimentación según el plan elegido"

@@ -5,11 +5,13 @@
   "country": "Colombia",
   "region": "nacional",
   "description": "El mar de los siete colores te espera: playas de arena blanca, cayos, arrecifes y el ambiente raizal del Caribe colombiano. Elige entre hoteles en el centro de la isla, frente al mar o con plan todo incluido.",
-  "image": "/img/san-andres.svg",
+  "image": "/img/onvacation/paquetes/hotel-grand-sirenis-san-andres/5.webp",
   "gallery": [
-    "/img/san-andres.svg",
-    "/img/san-andres-2.svg",
-    "/img/san-andres-3.svg"
+    "/img/onvacation/paquetes/hotel-grand-sirenis-san-andres/5.webp",
+    "/img/onvacation/paquetes/hotel-portobelo-beach-san-andres/2.webp",
+    "/img/onvacation/paquetes/hotel-blue-cove-san-andres/5.webp",
+    "/img/onvacation/paquetes/hotel-portobelo-convention-center-san-andres/3.webp",
+    "/img/onvacation/paquetes/hotel-san-luis-san-andres/3.webp"
   ],
   "highlights": [
     "Johnny Cay",

@@ -7,8 +7,15 @@
   "category": "Luna de miel",
   "operator": "On Vacation",
   "description": "La suite más exclusiva del Hotel Wayira Beach: cama king, piscina privada, sauna y zona de café, con detalles artesanales wayuu y vista al Caribe guajiro. Perfecta para escapadas románticas.",
-  "image": "/img/guajira-2.svg",
-  "gallery": [],
+  "image": "/img/onvacation/paquetes/suite-presidencial-wayira-la-guajira/1.webp",
+  "gallery": [
+    "/img/onvacation/paquetes/suite-presidencial-wayira-la-guajira/1.webp",
+    "/img/onvacation/paquetes/suite-presidencial-wayira-la-guajira/2.webp",
+    "/img/onvacation/paquetes/suite-presidencial-wayira-la-guajira/3.webp",
+    "/img/onvacation/paquetes/suite-presidencial-wayira-la-guajira/4.webp",
+    "/img/onvacation/paquetes/suite-presidencial-wayira-la-guajira/5.webp",
+    "/img/onvacation/paquetes/suite-presidencial-wayira-la-guajira/6.webp"
+  ],
   "includes": [
     "Alojamiento en la Suite Presidencial Wayira",
     "Vino blanco de bienvenida y porción de frutas",

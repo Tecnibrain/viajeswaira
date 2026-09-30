@@ -7,8 +7,15 @@
   "category": "Playa",
   "operator": "On Vacation",
   "description": "Resort frente al mar inspirado en la cultura wayuu, uno de los lugares más especiales del Caribe colombiano. Piscina, restaurantes y paisajes únicos entre el desierto y el mar, a 30 minutos del aeropuerto de Riohacha.",
-  "image": "/img/guajira.svg",
-  "gallery": [],
+  "image": "/img/onvacation/paquetes/hotel-wayira-beach-la-guajira/1.webp",
+  "gallery": [
+    "/img/onvacation/paquetes/hotel-wayira-beach-la-guajira/1.webp",
+    "/img/onvacation/paquetes/hotel-wayira-beach-la-guajira/2.webp",
+    "/img/onvacation/paquetes/hotel-wayira-beach-la-guajira/3.webp",
+    "/img/onvacation/paquetes/hotel-wayira-beach-la-guajira/4.webp",
+    "/img/onvacation/paquetes/hotel-wayira-beach-la-guajira/5.webp",
+    "/img/onvacation/paquetes/hotel-wayira-beach-la-guajira/6.webp"
+  ],
   "includes": [
     "Alojamiento en el Hotel Wayira Beach",
     "Alimentación según el plan elegido",

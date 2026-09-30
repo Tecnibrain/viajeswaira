@@ -7,8 +7,15 @@
   "category": "Playa",
   "operator": "On Vacation",
   "description": "Hotel en el corazón de la isla, cerca de playas, comercio y los principales atractivos. Dos restaurantes, bar Sunset y piscina, en un ambiente ideal para familias y parejas.",
-  "image": "/img/san-andres-2.svg",
-  "gallery": [],
+  "image": "/img/onvacation/paquetes/hotel-tower-san-andres/2.webp",
+  "gallery": [
+    "/img/onvacation/paquetes/hotel-tower-san-andres/2.webp",
+    "/img/onvacation/paquetes/hotel-tower-san-andres/1.webp",
+    "/img/onvacation/paquetes/hotel-tower-san-andres/3.webp",
+    "/img/onvacation/paquetes/hotel-tower-san-andres/4.webp",
+    "/img/onvacation/paquetes/hotel-tower-san-andres/5.webp",
+    "/img/onvacation/paquetes/hotel-tower-san-andres/6.webp"
+  ],
   "includes": [
     "Alojamiento en el Hotel Tower",
     "Alimentación según el plan elegido",

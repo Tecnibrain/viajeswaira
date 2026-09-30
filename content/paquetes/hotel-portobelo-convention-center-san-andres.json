@@ -7,8 +7,15 @@
   "category": "Playa",
   "operator": "On Vacation",
   "description": "Alojamiento práctico y a buen precio cerca del aeropuerto y del centro, con restaurante y bar. Pensado para quienes quieren aprovechar la isla al máximo.",
-  "image": "/img/san-andres-3.svg",
-  "gallery": [],
+  "image": "/img/onvacation/paquetes/hotel-portobelo-convention-center-san-andres/1.webp",
+  "gallery": [
+    "/img/onvacation/paquetes/hotel-portobelo-convention-center-san-andres/1.webp",
+    "/img/onvacation/paquetes/hotel-portobelo-convention-center-san-andres/2.webp",
+    "/img/onvacation/paquetes/hotel-portobelo-convention-center-san-andres/3.webp",
+    "/img/onvacation/paquetes/hotel-portobelo-convention-center-san-andres/4.webp",
+    "/img/onvacation/paquetes/hotel-portobelo-convention-center-san-andres/5.webp",
+    "/img/onvacation/paquetes/hotel-portobelo-convention-center-san-andres/6.webp"
+  ],
   "includes": [
     "Alojamiento en el Hotel Portobelo Convention Center",
     "Alimentación según el plan elegido"

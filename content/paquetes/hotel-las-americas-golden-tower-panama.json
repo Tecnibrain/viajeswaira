@@ -7,8 +7,15 @@
   "category": "Ciudad",
   "operator": "On Vacation",
   "description": "En Avenida Balboa y Calle 53, en pleno centro financiero y comercial de Ciudad de Panamá, cerca de la Cinta Costera y el Casco Antiguo. Piscina, dos restaurantes y bar.",
-  "image": "/img/panama-3.svg",
-  "gallery": [],
+  "image": "/img/onvacation/paquetes/hotel-las-americas-golden-tower-panama/2.webp",
+  "gallery": [
+    "/img/onvacation/paquetes/hotel-las-americas-golden-tower-panama/2.webp",
+    "/img/onvacation/paquetes/hotel-las-americas-golden-tower-panama/1.webp",
+    "/img/onvacation/paquetes/hotel-las-americas-golden-tower-panama/3.webp",
+    "/img/onvacation/paquetes/hotel-las-americas-golden-tower-panama/4.webp",
+    "/img/onvacation/paquetes/hotel-las-americas-golden-tower-panama/5.webp",
+    "/img/onvacation/paquetes/hotel-las-americas-golden-tower-panama/6.webp"
+  ],
   "includes": [
     "Alojamiento en el Hotel Las Américas Golden Tower",
     "Alimentación según el plan elegido"

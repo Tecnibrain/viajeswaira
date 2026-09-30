@@ -7,8 +7,15 @@
   "category": "Playa",
   "operator": "On Vacation",
   "description": "Hotel moderno frente al mar entre Tolú y Coveñas, con acceso directo a la playa, piscina, hidromasajes y club de playa. Ideal para desconectarse en el Golfo de Morrosquillo.",
-  "image": "/img/covenas.svg",
-  "gallery": [],
+  "image": "/img/onvacation/paquetes/hotel-ciela-beach-club-covenas/3.webp",
+  "gallery": [
+    "/img/onvacation/paquetes/hotel-ciela-beach-club-covenas/3.webp",
+    "/img/onvacation/paquetes/hotel-ciela-beach-club-covenas/1.webp",
+    "/img/onvacation/paquetes/hotel-ciela-beach-club-covenas/2.webp",
+    "/img/onvacation/paquetes/hotel-ciela-beach-club-covenas/4.webp",
+    "/img/onvacation/paquetes/hotel-ciela-beach-club-covenas/5.webp",
+    "/img/onvacation/paquetes/hotel-ciela-beach-club-covenas/6.webp"
+  ],
   "includes": [
     "Alojamiento en el Hotel Ciela & Beach Club",
     "Alimentación según el plan elegido",

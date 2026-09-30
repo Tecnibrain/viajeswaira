@@ -7,8 +7,15 @@
   "category": "Ciudad",
   "operator": "On Vacation",
   "description": "En la Calle El Conde, en plena Ciudad Colonial de Santo Domingo, Patrimonio de la Humanidad. Perfecto para recorrer a pie la historia, la gastronomía y la vida nocturna de la capital.",
-  "image": "/img/santo-domingo-2.svg",
-  "gallery": [],
+  "image": "/img/onvacation/paquetes/hotel-novus-plaza-hodelpa-santo-domingo/5.webp",
+  "gallery": [
+    "/img/onvacation/paquetes/hotel-novus-plaza-hodelpa-santo-domingo/5.webp",
+    "/img/onvacation/paquetes/hotel-novus-plaza-hodelpa-santo-domingo/1.webp",
+    "/img/onvacation/paquetes/hotel-novus-plaza-hodelpa-santo-domingo/2.webp",
+    "/img/onvacation/paquetes/hotel-novus-plaza-hodelpa-santo-domingo/3.webp",
+    "/img/onvacation/paquetes/hotel-novus-plaza-hodelpa-santo-domingo/4.webp",
+    "/img/onvacation/paquetes/hotel-novus-plaza-hodelpa-santo-domingo/6.webp"
+  ],
   "includes": [
     "Alojamiento en el Hotel Novus Plaza Hodelpa",
     "Alimentación según el plan elegido"
