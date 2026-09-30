@@ -35,7 +35,7 @@ export const SITE = {
   lang: 'es',
   currency: 'COP',
 
-  email: PLACEHOLDER,
+  email: 'wairaviajes@gmail.com',
   phone: PLACEHOLDER,
   address: PLACEHOLDER,
   city: PLACEHOLDER,
