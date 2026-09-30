@@ -1,0 +1,57 @@
+{
+  "order": 20,
+  "title": "Hotel Girardot Resort",
+  "destinationId": "girardot",
+  "duration": "",
+  "price": 0,
+  "category": "Familiar",
+  "operator": "On Vacation",
+  "description": "Resort familiar a pocos minutos del centro de Girardot con tres piscinas, simulador de surf, canchas deportivas, discoteca y zona de juegos para niños. Diversión y descanso con clima cálido.",
+  "image": "/img/girardot.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en el Hotel Girardot Resort",
+    "Alimentación según el plan elegido",
+    "Acceso a piscinas, canchas y zonas recreativas"
+  ],
+  "excludes": [
+    "Transporte hasta Girardot (según plan)"
+  ],
+  "services": [
+    "2 piscinas para adultos",
+    "Piscina para niños",
+    "Simulador de surf",
+    "Bar Sunset y Tiki bar",
+    "Discoteca",
+    "Sauna",
+    "Canchas de tenis, baloncesto y microfútbol",
+    "Zona de juegos infantil",
+    "Parqueadero"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "Km 1 vía Ricaurte, Girardot"
+    },
+    {
+      "label": "Check-in / Check-out",
+      "value": "Check-in 3:00 p. m. · Check-out 1:00 p. m."
+    },
+    {
+      "label": "Alimentación",
+      "value": "Desayuno, almuerzo y cena tipo buffet asistido de un solo servicio, según el plan"
+    },
+    {
+      "label": "Habitaciones",
+      "value": "104"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

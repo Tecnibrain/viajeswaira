@@ -1,0 +1,49 @@
+{
+  "order": 6,
+  "title": "Hotel Toné",
+  "destinationId": "san-andres",
+  "duration": "",
+  "price": 0,
+  "category": "Playa",
+  "operator": "On Vacation",
+  "description": "A pasos de la playa y del centro de San Andrés, con piscina, restaurante y bar. Una base práctica y cómoda para recorrer la isla.",
+  "image": "/img/san-andres-3.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en el Hotel Toné",
+    "Alimentación según el plan elegido",
+    "Acceso a piscina"
+  ],
+  "excludes": [
+    "Tarjeta de turismo de ingreso a San Andrés",
+    "Tours y actividades en la isla"
+  ],
+  "services": [
+    "Restaurante",
+    "Bar",
+    "Piscina",
+    "Ascensor"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "Cra. 6 # 1-100, a 5 minutos del aeropuerto"
+    },
+    {
+      "label": "Alimentación",
+      "value": "Desayuno, almuerzo y cena tipo buffet de un solo servicio, según el plan"
+    },
+    {
+      "label": "Habitaciones",
+      "value": "193"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

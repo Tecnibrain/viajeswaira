@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--#head title="Paquetes turísticos" path="/paquetes" description="Paquetes turísticos con vuelos, hotel, traslados y actividades: playa, naturaleza, ciudad y Europa. Cotiza y reserva con Viajes Waira."-->
+    <!--#head title="Paquetes turísticos" path="/paquetes" description="Planes y hoteles On Vacation en San Andrés, Santa Marta, La Guajira, Amazonas, Punta Cana, Cancún, Panamá y Europa. Cotiza tu plan con Viajes Waira."-->
   </head>
   <body>
     <!--#header-->
@@ -11,12 +11,13 @@
       <section class="page-hero">
         <div class="container">
           <p class="breadcrumb"><a href="/">Inicio</a> / Paquetes</p>
-          <h1>Paquetes turísticos</h1>
-          <p>Planes completos listos para reservar o personalizar. Precios por persona.</p>
+          <h1>Paquetes y hoteles</h1>
+          <p>Elige tu destino y tu hotel. Te enviamos la tarifa según tus fechas y número de viajeros.</p>
         </div>
       </section>
       <section class="section">
         <div class="container">
+          <div class="search"><label class="hp" for="dest-filter">Destino</label><select id="dest-filter" style="width:min(480px,100%)"><option value="">Todos los destinos</option></select></div>
           <div class="filters" role="group" aria-label="Filtrar paquetes" id="filters"></div>
           <div class="grid grid-3" id="list"></div>
         </div>

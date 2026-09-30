@@ -19,13 +19,13 @@ selDest.innerHTML = '<option value="">Selecciona un destino</option>' +
 function fillPackages(destId, selected) {
   const list = paquetes.filter((p) => !destId || destId === 'otro' || p.destinationId === destId);
   selPkg.innerHTML = '<option value="">Sin paquete / a la medida</option>' +
-    list.map((p) => `<option value="${p.id}" ${p.id === selected ? 'selected' : ''}>${esc(p.title)} · ${esc(p.duration)}</option>`).join('');
+    list.map((p) => `<option value="${p.id}" ${p.id === selected ? 'selected' : ''}>${esc(p.title)}${p.duration ? ` · ${esc(p.duration)}` : ''}</option>`).join('');
 }
 
 function updateEstimate() {
   const p = getPaquete(selPkg.value);
   const n = Number(form.viajeros.value) || 0;
-  if (p && n > 0) {
+  if (p && p.price > 0 && n > 0) {
     estimate.hidden = false;
     estimate.textContent = `Valor de referencia: ${formatPrice(p.price)} x ${n} viajero(s) = ${formatPrice(p.price * n)}. El precio real se confirma con tu asesor.`;
   } else estimate.hidden = true;
@@ -66,7 +66,7 @@ form.addEventListener('submit', (e) => {
     `Teléfono: ${f.telefono}`,
     `Viajeros: ${f.viajeros}`,
     `Destino: ${d ? `${d.name} (${d.country})` : 'Otro / a la medida'}`,
-    `Paquete: ${p ? `${p.title} (${p.duration})` : 'A la medida'}`,
+    `Paquete: ${p ? `${p.title}${p.duration ? ` (${p.duration})` : ''}` : 'A la medida'}`,
     `Fecha estimada: ${f.fecha}`,
     `Comentarios: ${f.comentarios || '-'}`,
   ].join('\n');

@@ -1,0 +1,42 @@
+{
+  "order": 3,
+  "name": "La Guajira",
+  "city": "Riohacha",
+  "country": "Colombia",
+  "region": "nacional",
+  "description": "Donde el desierto se encuentra con el mar Caribe. Vive la cultura wayuu, atardeceres inolvidables y paisajes únicos, hospedándote en un resort frente al mar a 30 minutos de Riohacha.",
+  "image": "/img/guajira.svg",
+  "gallery": [
+    "/img/guajira.svg",
+    "/img/guajira-2.svg",
+    "/img/guajira-3.svg"
+  ],
+  "highlights": [
+    "Cultura wayuu",
+    "Playas del Caribe guajiro",
+    "Atardeceres",
+    "Artesanías wayuu"
+  ],
+  "facts": [
+    {
+      "label": "Aeropuerto",
+      "value": "Almirante Padilla (Riohacha), a unos 30 minutos del hotel"
+    },
+    {
+      "label": "Moneda",
+      "value": "Peso colombiano (COP)"
+    },
+    {
+      "label": "Mejor época",
+      "value": "Diciembre a mayo, temporada seca"
+    },
+    {
+      "label": "Clima",
+      "value": "Cálido y seco"
+    }
+  ],
+  "priceFrom": 0,
+  "duration": "",
+  "published": true,
+  "demo": false
+}

@@ -1,0 +1,49 @@
+{
+  "order": 38,
+  "title": "Hotel Las Américas Golden Tower",
+  "destinationId": "panama",
+  "duration": "",
+  "price": 0,
+  "category": "Ciudad",
+  "operator": "On Vacation",
+  "description": "En Avenida Balboa y Calle 53, en pleno centro financiero y comercial de Ciudad de Panamá, cerca de la Cinta Costera y el Casco Antiguo. Piscina, dos restaurantes y bar.",
+  "image": "/img/panama-3.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en el Hotel Las Américas Golden Tower",
+    "Alimentación según el plan elegido"
+  ],
+  "excludes": [
+    "Spa",
+    "Tours por la ciudad y el Canal"
+  ],
+  "services": [
+    "Piscina",
+    "2 restaurantes",
+    "Bar",
+    "Recepción 24 horas",
+    "Spa (costo adicional)"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "Av. Balboa y Calle 53, Marbella"
+    },
+    {
+      "label": "Check-in / Check-out",
+      "value": "Check-in 3:00 p. m. · Check-out 12:00 m."
+    },
+    {
+      "label": "Habitaciones",
+      "value": "285"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

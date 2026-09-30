@@ -180,6 +180,11 @@ const imgPath = (v) => {
   const s = str(v, 300);
   return /^\/img\/[a-z0-9/_.-]+\.(webp|jpe?g|png|svg)$/i.test(s) ? s : '';
 };
+const pairList = (v) =>
+  (Array.isArray(v) ? v : [])
+    .map((f) => ({ label: str(f?.label, 60), value: str(f?.value, 400) }))
+    .filter((f) => f.label && f.value)
+    .slice(0, 30);
 const imgList = (v) => (Array.isArray(v) ? v.map(imgPath).filter(Boolean).slice(0, 30) : []);
 
 const SCHEMAS = {
@@ -198,6 +203,9 @@ const SCHEMAS = {
       .map((s) => ({ title: str(s?.title, 120), text: str(s?.text, 1500) }))
       .filter((s) => s.title || s.text)
       .slice(0, 60),
+    services: strList(d.services, 120),
+    facts: pairList(d.facts),
+    operator: str(d.operator, 80),
     featured: bool(d.featured),
     published: d.published === undefined ? true : bool(d.published),
     demo: bool(d.demo),
@@ -212,6 +220,7 @@ const SCHEMAS = {
     image: imgPath(d.image),
     gallery: imgList(d.gallery),
     highlights: strList(d.highlights, 120),
+    facts: pairList(d.facts),
     priceFrom: int(d.priceFrom),
     duration: str(d.duration, 60),
     published: d.published === undefined ? true : bool(d.published),

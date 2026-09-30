@@ -141,6 +141,40 @@ const SCENES = {
   'punta-cana': (p) => sky(p, 620, 260, 90) + clouds() + sea(500) + sand(p, 640) + palm(200, 780, 1, p.near) + palm(980, 790, 1.1, p.near) + LANDMARKS.hammock(p),
   madrid: (p) => sky(p, 950, 200) + clouds() + skyline(p, 620, 3) + LANDMARKS.dome(p) + `<rect y="600" width="1200" height="200" fill="${p.near}"/>`,
   paris: (p) => sky(p, 280, 220) + clouds() + skyline(p, 660, 11) + LANDMARKS.eiffel(p) + `<rect y="640" width="1200" height="160" fill="${p.near}"/><path d="M0 700 h1200" stroke="${p.sea[0]}" stroke-width="30" opacity=".6"/>`,
+  amazonas: (p) =>
+    sky(p, 900, 200) + clouds() +
+    `<path d="M0 420 Q150 300 300 400 T600 380 T900 400 T1200 360 V800 H0Z" fill="${p.far}"/>` +
+    `<path d="M0 520 Q200 430 400 500 T800 480 T1200 470 V800 H0Z" fill="${p.near}"/>` +
+    `<path d="M0 640 C300 600 500 700 700 640 S1100 600 1200 650 V800 H0Z" fill="${p.sea[1]}" opacity=".85"/>` +
+    `<g fill="${p.sil}"><path d="M560 640 q60 -18 120 0 l-10 14 h-100z"/><rect x="598" y="618" width="4" height="22"/></g>` +
+    palm(80, 800, 0.9, p.near) + palm(1120, 800, 0.8, p.near),
+  guajira: (p) =>
+    sky(p, 950, 230) + clouds() + sea(470) +
+    `<path d="M0 560 Q250 470 520 540 T1200 520 V800 H0Z" fill="${p.sand}"/>` +
+    `<path d="M0 650 Q300 590 640 640 T1200 620 V800 H0Z" fill="${p.sand}" opacity=".75"/>` +
+    `<g fill="${p.sil}"><path d="M300 610 v-50 h6 v50z M303 560 l-40 50 h80z" opacity=".8"/><circle cx="820" cy="600" r="6"/><path d="M790 640 q30 -40 60 0z"/></g>`,
+  covenas: (p) =>
+    sky(p, 300, 220) + clouds() + sea(480) +
+    `<g fill="${p.sil}"><rect x="640" y="520" width="480" height="10"/>${[660, 740, 820, 900, 980, 1060].map((x) => `<rect x="${x}" y="530" width="8" height="60"/>`).join('')}<path d="M1060 520 v-40 h60 v40z"/></g>` +
+    sand(p, 680) + palm(160, 800, 0.95, p.near),
+  girardot: (p) =>
+    sky(p, 950, 220) + clouds() + mountains(p, 470) +
+    `<rect y="540" width="1200" height="260" fill="${p.near}"/>` +
+    `<rect x="160" y="600" width="620" height="120" rx="60" fill="${p.sea[0]}"/><rect x="190" y="620" width="560" height="80" rx="40" fill="${p.sea[1]}" opacity=".5"/>` +
+    palm(90, 800, 0.9, p.sil) + palm(960, 790, 1, p.sil),
+  guatape: (p) =>
+    sky(p, 300, 200) + clouds() +
+    `<path d="M0 520 Q300 460 600 510 T1200 490 V800 H0Z" fill="${p.far}"/>` +
+    `<path d="M0 560 H1200 V800 H0Z" fill="${p.sea[0]}"/>` +
+    `<path d="M520 560 C520 330 560 230 640 230 C720 230 760 330 760 560Z" fill="${p.sil}"/>` +
+    `<path d="M600 250 L570 540" stroke="${p.win}" stroke-width="4" opacity=".6" stroke-dasharray="10 8"/>` +
+    `<path d="M0 620 Q200 590 400 630 T800 610 T1200 630 V800 H0Z" fill="${p.near}"/>`,
+  'santo-domingo': (p) => sky(p, 950, 220) + clouds() + sea(560) + LANDMARKS.colonial(p) + palm(1100, 780, 0.8, p.near),
+  panama: (p) =>
+    sky(p, 250, 200) + clouds() + sea(560) + skyline(p, 560, 5) +
+    `<g stroke="${p.sil}" stroke-width="4" fill="none"><path d="M0 640 H1200"/><path d="M200 640 L300 590 L400 640 M800 640 L900 590 L1000 640"/></g>` +
+    sand(p, 720),
+  europa: (p) => sky(p, 950, 200) + clouds() + skyline(p, 640, 9) + LANDMARKS.dome(p) + `<rect y="620" width="1200" height="180" fill="${p.near}"/>`,
   hero: (p) => sky(p, 860, 300, 110) + clouds() + mountains(p, 480) + sea(540) + sand(p, 690) + palm(150, 800, 1.1, p.near) + palm(1080, 800, 0.9, p.near) +
     `<g fill="#ffffff" transform="translate(760 160) rotate(-8)"><path d="M0 0 L120 -8 L140 -2 L120 6Z"/><path d="M60 -3 L30 -40 L45 -40 L85 -4Z"/><path d="M62 2 L36 36 L50 36 L86 3Z"/></g>`,
 };
@@ -153,6 +187,8 @@ const svg = (body, title) =>
 const NAMES = {
   cartagena: 'Cartagena', 'san-andres': 'San Andrés', 'santa-marta': 'Santa Marta', medellin: 'Medellín',
   cancun: 'Cancún', 'punta-cana': 'Punta Cana', madrid: 'Madrid', paris: 'París', hero: 'Viajes Waira',
+  amazonas: 'Amazonas', guajira: 'La Guajira', covenas: 'Coveñas', girardot: 'Girardot', guatape: 'Guatapé',
+  'santo-domingo': 'Santo Domingo', panama: 'Panamá', europa: 'Europa',
 };
 
 let count = 0;

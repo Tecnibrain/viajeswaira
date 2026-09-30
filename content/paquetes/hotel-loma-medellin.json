@@ -1,0 +1,54 @@
+{
+  "order": 22,
+  "title": "Hotel Loma Medellín",
+  "destinationId": "medellin",
+  "duration": "",
+  "price": 0,
+  "category": "Ciudad",
+  "operator": "On Vacation",
+  "description": "Hotel 5 estrellas en El Poblado (Tribute Portfolio by Marriott) con diseño contemporáneo y vistas al Valle de Aburrá. Piscina climatizada, gimnasio y gastronomía inspirada en la región.",
+  "image": "/img/medellin.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en el Hotel Loma Medellín",
+    "Alimentación según el plan elegido"
+  ],
+  "excludes": [
+    "Tours por la ciudad",
+    "Consumos en bar y room service"
+  ],
+  "services": [
+    "Piscina climatizada",
+    "Gimnasio",
+    "Sauna",
+    "Restaurante",
+    "Bar",
+    "Room service",
+    "Coworking",
+    "Wi-Fi gratuito",
+    "Parqueadero",
+    "Lavandería"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "El Poblado, Medellín"
+    },
+    {
+      "label": "Check-in / Check-out",
+      "value": "Check-in 3:00 p. m. · Check-out 12:00 m."
+    },
+    {
+      "label": "Categoría",
+      "value": "5 estrellas"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

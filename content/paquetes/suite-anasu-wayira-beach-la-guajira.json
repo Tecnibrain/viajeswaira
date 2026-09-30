@@ -1,0 +1,46 @@
+{
+  "order": 17,
+  "title": "Suite Anasü – Wayira Beach",
+  "destinationId": "la-guajira",
+  "duration": "",
+  "price": 0,
+  "category": "Luna de miel",
+  "operator": "On Vacation",
+  "description": "Experiencia premium en La Guajira: suite con piscina privada con cascada, atención personalizada, check-in preferencial y sesión de spa, inspirada en la esencia de la cultura wayuu.",
+  "image": "/img/guajira-3.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en la Suite Anasü",
+    "Servicios exclusivos Anasü según condiciones del plan",
+    "Sesión de spa"
+  ],
+  "excludes": [
+    "Tours y actividades"
+  ],
+  "services": [
+    "Piscina privada con cascada",
+    "Check-in preferencial",
+    "Desayuno en la habitación (con reserva)",
+    "Almuerzo y cena a la carta en zona VIP",
+    "Sesión de spa",
+    "Check-out express"
+  ],
+  "facts": [
+    {
+      "label": "Check-in",
+      "value": "3:00 p. m. (preferencial)"
+    },
+    {
+      "label": "Ideal para",
+      "value": "Parejas que buscan privacidad"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

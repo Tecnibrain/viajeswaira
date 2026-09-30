@@ -1,0 +1,50 @@
+{
+  "order": 10,
+  "title": "Hotel Portobelo Beach",
+  "destinationId": "san-andres",
+  "duration": "",
+  "price": 0,
+  "category": "Playa",
+  "operator": "On Vacation",
+  "description": "Hotel pequeño y acogedor sobre la Avenida Colombia, a minutos del aeropuerto, con habitaciones con aire acondicionado y minibar. Buena relación precio–comodidad.",
+  "image": "/img/san-andres.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en el Hotel Portobelo Beach",
+    "Alimentación según el plan elegido"
+  ],
+  "excludes": [
+    "Tarjeta de turismo de ingreso a San Andrés",
+    "Tours y actividades en la isla"
+  ],
+  "services": [
+    "Restaurante",
+    "Recepción"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "Av. Colombia # 5A-69, a 3 minutos del aeropuerto"
+    },
+    {
+      "label": "Check-in / Check-out",
+      "value": "Check-in 4:00 p. m. · Check-out 12:00 m."
+    },
+    {
+      "label": "Alimentación",
+      "value": "Desayuno buffet; almuerzo y cena según el plan"
+    },
+    {
+      "label": "Habitaciones",
+      "value": "9"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

@@ -1,0 +1,50 @@
+{
+  "order": 26,
+  "title": "Hotel Grand Bávaro Princess",
+  "destinationId": "punta-cana",
+  "duration": "",
+  "price": 0,
+  "category": "Todo incluido",
+  "operator": "On Vacation",
+  "description": "Resort 5 estrellas todo incluido en la famosa Playa Bávaro, a unos 35 minutos del aeropuerto de Punta Cana. Varios restaurantes, piscinas, club de niños, canchas de tenis y senderos entre manglares.",
+  "image": "/img/punta-cana.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en el Hotel Grand Bávaro Princess",
+    "Plan todo incluido según condiciones del hotel",
+    "Deportes acuáticos no motorizados"
+  ],
+  "excludes": [
+    "Restaurantes con costo adicional (ej. cocina asiática)",
+    "Excursiones como Isla Saona"
+  ],
+  "services": [
+    "Todo incluido",
+    "Varios restaurantes",
+    "Piscinas y bar húmedo",
+    "Sport bar",
+    "Club de niños",
+    "Gimnasio",
+    "3 canchas de tenis",
+    "Deportes acuáticos no motorizados",
+    "Senderos entre manglares"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "Playa Bávaro, Punta Cana"
+    },
+    {
+      "label": "Restaurantes",
+      "value": "Buffet y temáticos incluidos; algunos con costo adicional"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": true,
+  "published": true,
+  "demo": false
+}

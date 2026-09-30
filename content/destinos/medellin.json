@@ -1,23 +1,38 @@
 {
-  "order": 4,
+  "order": 8,
   "name": "Medellín",
   "city": "Medellín",
   "country": "Colombia",
   "region": "nacional",
+  "description": "La ciudad de la eterna primavera: innovación, cultura paisa, gastronomía y vistas al Valle de Aburrá. Hospédate en El Poblado, cerca de la mejor oferta de restaurantes y vida nocturna.",
   "image": "/img/medellin.svg",
   "gallery": [
     "/img/medellin.svg",
     "/img/medellin-2.svg",
     "/img/medellin-3.svg"
   ],
-  "description": "La ciudad de la eterna primavera: innovación, metrocable, Comuna 13, gastronomía y escapadas a Guatapé.",
   "highlights": [
+    "El Poblado",
     "Comuna 13",
     "Metrocable",
-    "Guatapé y El Peñol",
-    "Pueblito Paisa"
+    "Gastronomía paisa"
   ],
-  "priceFrom": 950000,
-  "duration": "4 días / 3 noches",
+  "facts": [
+    {
+      "label": "Aeropuerto",
+      "value": "José María Córdova (Rionegro)"
+    },
+    {
+      "label": "Clima",
+      "value": "Templado todo el año"
+    },
+    {
+      "label": "Moneda",
+      "value": "Peso colombiano (COP)"
+    }
+  ],
+  "priceFrom": 0,
+  "duration": "",
+  "published": true,
   "demo": false
 }

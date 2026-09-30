@@ -1,0 +1,38 @@
+{
+  "order": 7,
+  "name": "Guatapé",
+  "city": "Guatapé (Antioquia)",
+  "country": "Colombia",
+  "region": "nacional",
+  "description": "El embalse, la Piedra del Peñol y un pueblo lleno de color. Descansa frente al agua con vistas panorámicas y disfruta de paseos en lancha y aire puro.",
+  "image": "/img/guatape.svg",
+  "gallery": [
+    "/img/guatape.svg",
+    "/img/guatape-2.svg",
+    "/img/guatape-3.svg"
+  ],
+  "highlights": [
+    "Piedra del Peñol",
+    "Embalse de Guatapé",
+    "Zócalos de colores",
+    "Paseos en lancha"
+  ],
+  "facts": [
+    {
+      "label": "Cómo llegar",
+      "value": "Desde Medellín por la autopista Medellín–Bogotá, vía Marinilla – El Peñol"
+    },
+    {
+      "label": "Mejor época",
+      "value": "Todo el año; más seco de diciembre a marzo y de junio a septiembre"
+    },
+    {
+      "label": "Moneda",
+      "value": "Peso colombiano (COP)"
+    }
+  ],
+  "priceFrom": 0,
+  "duration": "",
+  "published": true,
+  "demo": false
+}

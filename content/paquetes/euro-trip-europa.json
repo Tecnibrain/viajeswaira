@@ -1,0 +1,31 @@
+{
+  "order": 41,
+  "title": "Euro Trip",
+  "destinationId": "europa",
+  "duration": "",
+  "price": 0,
+  "category": "Europa",
+  "operator": "On Vacation",
+  "description": "Plan para descubrir Europa, conocer nuevas culturas y crear recuerdos únicos. Escríbenos para enviarte el recorrido, las fechas y el precio vigente.",
+  "image": "/img/europa-2.svg",
+  "gallery": [],
+  "includes": [
+    "Itinerario y servicios según la salida elegida (te los enviamos al cotizar)"
+  ],
+  "excludes": [],
+  "services": [],
+  "facts": [
+    {
+      "label": "Tipo de plan",
+      "value": "Circuito por varias ciudades de Europa"
+    },
+    {
+      "label": "Salidas",
+      "value": "Consulta fechas disponibles"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

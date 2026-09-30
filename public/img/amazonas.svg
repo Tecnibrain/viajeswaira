@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" role="img"><title>Amazonas (ilustración)</title>
+<defs>
+<linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5ec8e5"/><stop offset="1" stop-color="#bfe9f3"/></linearGradient>
+<linearGradient id="w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1aa6b7"/><stop offset="1" stop-color="#0e7c86"/></linearGradient>
+</defs>
+<rect width="1200" height="800" fill="url(#s)"/>
+<circle cx="900" cy="200" r="70" fill="#fff4c2" opacity=".95"/>
+<g fill="#ffffff" opacity="0.8">
+<ellipse cx="220" cy="150" rx="90" ry="26"/><ellipse cx="270" cy="132" rx="60" ry="30"/>
+<ellipse cx="880" cy="110" rx="110" ry="24"/><ellipse cx="940" cy="94" rx="60" ry="26"/>
+</g><path d="M0 420 Q150 300 300 400 T600 380 T900 400 T1200 360 V800 H0Z" fill="#7fb7a4"/><path d="M0 520 Q200 430 400 500 T800 480 T1200 470 V800 H0Z" fill="#2f6f5e"/><path d="M0 640 C300 600 500 700 700 640 S1100 600 1200 650 V800 H0Z" fill="#0e7c86" opacity=".85"/><g fill="#1d4d5a"><path d="M560 640 q60 -18 120 0 l-10 14 h-100z"/><rect x="598" y="618" width="4" height="22"/></g>
+<g transform="translate(80 800) scale(0.9)" fill="#2f6f5e">
+<path d="M0 0 C10 -120 30 -220 60 -300 L72 -296 C46 -214 28 -120 18 0Z"/>
+<path d="M66 -300 C10 -330 -60 -320 -110 -280 C-50 -300 10 -300 60 -290Z"/>
+<path d="M66 -300 C120 -340 190 -330 230 -290 C170 -310 110 -305 70 -292Z"/>
+<path d="M66 -300 C40 -360 -10 -390 -60 -380 C-10 -370 30 -340 62 -296Z"/>
+<path d="M66 -300 C110 -370 170 -380 210 -360 C160 -355 110 -330 72 -294Z"/>
+<path d="M66 -300 C60 -250 20 -200 -20 -180 C20 -220 45 -260 60 -296Z"/>
+</g>
+<g transform="translate(1120 800) scale(0.8)" fill="#2f6f5e">
+<path d="M0 0 C10 -120 30 -220 60 -300 L72 -296 C46 -214 28 -120 18 0Z"/>
+<path d="M66 -300 C10 -330 -60 -320 -110 -280 C-50 -300 10 -300 60 -290Z"/>
+<path d="M66 -300 C120 -340 190 -330 230 -290 C170 -310 110 -305 70 -292Z"/>
+<path d="M66 -300 C40 -360 -10 -390 -60 -380 C-10 -370 30 -340 62 -296Z"/>
+<path d="M66 -300 C110 -370 170 -380 210 -360 C160 -355 110 -330 72 -294Z"/>
+<path d="M66 -300 C60 -250 20 -200 -20 -180 C20 -220 45 -260 60 -296Z"/>
+</g></svg>

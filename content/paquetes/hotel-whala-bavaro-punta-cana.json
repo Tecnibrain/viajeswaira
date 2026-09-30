@@ -1,0 +1,52 @@
+{
+  "order": 29,
+  "title": "Hotel Whala Bávaro",
+  "destinationId": "punta-cana",
+  "duration": "",
+  "price": 0,
+  "category": "Playa",
+  "operator": "On Vacation",
+  "description": "En Los Corales, Bávaro, cerca de la playa y de El Cortecito. Tres piscinas, restaurante buffet y a la carta, spa y actividades para niños y adultos.",
+  "image": "/img/punta-cana.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en el Hotel Whala Bávaro",
+    "Alimentación según el plan elegido"
+  ],
+  "excludes": [
+    "Minimarket y tienda (costo adicional)",
+    "Excursiones"
+  ],
+  "services": [
+    "3 piscinas",
+    "2 restaurantes (buffet y a la carta)",
+    "2 bares",
+    "Spa",
+    "Gimnasio",
+    "Atención médica",
+    "Actividades para niños y adultos",
+    "Wi-Fi gratis"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "Los Corales, El Cortecito, Bávaro"
+    },
+    {
+      "label": "Alimentación",
+      "value": "Buffet asistido, según el plan"
+    },
+    {
+      "label": "Habitaciones",
+      "value": "212"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

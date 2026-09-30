@@ -1,0 +1,47 @@
+{
+  "order": 14,
+  "title": "Hotel AC Marriott Santa Marta",
+  "destinationId": "santa-marta",
+  "duration": "",
+  "price": 0,
+  "category": "Ciudad",
+  "operator": "On Vacation",
+  "description": "Hotel moderno frente a la bahía, en el centro histórico de Santa Marta y con vista a la Marina Internacional. Piscina, gimnasio y bar a pasos del Parque de los Novios.",
+  "image": "/img/santa-marta-3.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en el Hotel AC Marriott Santa Marta",
+    "Alimentación según el plan elegido"
+  ],
+  "excludes": [
+    "Tours y actividades"
+  ],
+  "services": [
+    "Piscina",
+    "Bar",
+    "Gimnasio",
+    "Recepción"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "Calle 23 # 1C-37, centro histórico de Santa Marta"
+    },
+    {
+      "label": "Check-in / Check-out",
+      "value": "Check-in 3:00 p. m. · Check-out 12:00 m."
+    },
+    {
+      "label": "Habitaciones",
+      "value": "112"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

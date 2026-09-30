@@ -1,0 +1,49 @@
+{
+  "order": 16,
+  "title": "Suite Presidencial Wayira",
+  "destinationId": "la-guajira",
+  "duration": "",
+  "price": 0,
+  "category": "Luna de miel",
+  "operator": "On Vacation",
+  "description": "La suite más exclusiva del Hotel Wayira Beach: cama king, piscina privada, sauna y zona de café, con detalles artesanales wayuu y vista al Caribe guajiro. Perfecta para escapadas románticas.",
+  "image": "/img/guajira-2.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en la Suite Presidencial Wayira",
+    "Vino blanco de bienvenida y porción de frutas",
+    "Masaje de 30 minutos en el spa",
+    "Platos a la carta y cocteles en el restaurante Isashii (según condiciones)"
+  ],
+  "excludes": [
+    "Tours y actividades"
+  ],
+  "services": [
+    "Piscina privada",
+    "Sauna",
+    "Cama king",
+    "Vino de bienvenida",
+    "Masaje de 30 minutos en spa",
+    "Platos a la carta en Isashii",
+    "Cocteles diarios en Isashii",
+    "Área de café"
+  ],
+  "facts": [
+    {
+      "label": "Check-in / Check-out",
+      "value": "Check-in 3:00 p. m. · Check-out 1:00 p. m."
+    },
+    {
+      "label": "Ideal para",
+      "value": "Parejas y ocasiones especiales"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

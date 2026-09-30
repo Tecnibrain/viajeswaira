@@ -1,0 +1,50 @@
+{
+  "order": 28,
+  "title": "Hotel HM Alma de Bayahíbe (solo adultos)",
+  "destinationId": "punta-cana",
+  "duration": "",
+  "price": 0,
+  "category": "Solo adultos",
+  "operator": "On Vacation",
+  "description": "Hotel todo incluido solo para adultos frente al mar Caribe, en el encantador pueblo pesquero de Bayahíbe. Cuatro piscinas, cuatro restaurantes y atardeceres inolvidables.",
+  "image": "/img/punta-cana-3.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en el Hotel HM Alma de Bayahíbe",
+    "Plan todo incluido según condiciones del hotel"
+  ],
+  "excludes": [
+    "Excursiones a Isla Saona o Catalina"
+  ],
+  "services": [
+    "Todo incluido",
+    "Solo adultos (+18)",
+    "4 piscinas",
+    "4 restaurantes",
+    "3 bares",
+    "Gimnasio",
+    "Wi-Fi gratis"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "Bayahíbe, a 1 hora del aeropuerto de Punta Cana"
+    },
+    {
+      "label": "Público",
+      "value": "Solo adultos (+18)"
+    },
+    {
+      "label": "Habitaciones",
+      "value": "292"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

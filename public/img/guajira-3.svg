@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" role="img"><title>La Guajira (ilustración)</title>
+<defs>
+<linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b3a67"/><stop offset="1" stop-color="#b56576"/></linearGradient>
+<linearGradient id="w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3d5a80"/><stop offset="1" stop-color="#293241"/></linearGradient>
+</defs>
+<rect width="1200" height="800" fill="url(#s)"/>
+<circle cx="950" cy="230" r="70" fill="#fbe7c6" opacity=".95"/>
+<g fill="#ffffff" opacity="0.8">
+<ellipse cx="220" cy="150" rx="90" ry="26"/><ellipse cx="270" cy="132" rx="60" ry="30"/>
+<ellipse cx="880" cy="110" rx="110" ry="24"/><ellipse cx="940" cy="94" rx="60" ry="26"/>
+</g>
+<rect y="470" width="1200" height="330" fill="url(#w)"/>
+<g stroke="#fff" stroke-opacity=".35" stroke-width="3" fill="none" stroke-linecap="round">
+<path d="M80 510h120M420 540h160M820 505h140M260 590h180M700 620h200"/>
+</g><path d="M0 560 Q250 470 520 540 T1200 520 V800 H0Z" fill="#c9a27e"/><path d="M0 650 Q300 590 640 640 T1200 620 V800 H0Z" fill="#c9a27e" opacity=".75"/><g fill="#1b1d33"><path d="M300 610 v-50 h6 v50z M303 560 l-40 50 h80z" opacity=".8"/><circle cx="820" cy="600" r="6"/><path d="M790 640 q30 -40 60 0z"/></g></svg>

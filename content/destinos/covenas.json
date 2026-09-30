@@ -1,0 +1,42 @@
+{
+  "order": 5,
+  "name": "Coveñas",
+  "city": "Coveñas (Sucre)",
+  "country": "Colombia",
+  "region": "nacional",
+  "description": "Playas de aguas tranquilas y poco profundas en el Golfo de Morrosquillo, manglares y gastronomía del Caribe. Un destino perfecto para descansar en familia frente al mar.",
+  "image": "/img/covenas.svg",
+  "gallery": [
+    "/img/covenas.svg",
+    "/img/covenas-2.svg",
+    "/img/covenas-3.svg"
+  ],
+  "highlights": [
+    "Golfo de Morrosquillo",
+    "Playa Primera Ensenada",
+    "Ciénaga de la Caimanera",
+    "Paseos en lancha"
+  ],
+  "facts": [
+    {
+      "label": "Cómo llegar",
+      "value": "Vuelo a Montería y luego unas 2 horas por tierra hasta el hotel"
+    },
+    {
+      "label": "Mejor época",
+      "value": "Diciembre a abril"
+    },
+    {
+      "label": "Qué llevar",
+      "value": "Ropa fresca, traje de baño, bloqueador, gafas de sol y repelente"
+    },
+    {
+      "label": "Moneda",
+      "value": "Peso colombiano (COP)"
+    }
+  ],
+  "priceFrom": 0,
+  "duration": "",
+  "published": true,
+  "demo": false
+}

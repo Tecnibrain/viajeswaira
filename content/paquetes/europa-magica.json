@@ -1,0 +1,31 @@
+{
+  "order": 40,
+  "title": "Europa Mágica",
+  "destinationId": "europa",
+  "duration": "",
+  "price": 0,
+  "category": "Europa",
+  "operator": "On Vacation",
+  "description": "Circuito por Europa diseñado para viajar desde Colombia y recorrer varios destinos fascinantes. Pídenos el itinerario, las fechas de salida y la tarifa vigente.",
+  "image": "/img/europa.svg",
+  "gallery": [],
+  "includes": [
+    "Itinerario y servicios según la salida elegida (te los enviamos al cotizar)"
+  ],
+  "excludes": [],
+  "services": [],
+  "facts": [
+    {
+      "label": "Tipo de plan",
+      "value": "Circuito por varias ciudades de Europa"
+    },
+    {
+      "label": "Salidas",
+      "value": "Consulta fechas disponibles"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

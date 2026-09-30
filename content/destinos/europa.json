@@ -1,0 +1,37 @@
+{
+  "order": 13,
+  "name": "Europa",
+  "city": "Varias ciudades",
+  "country": "Europa",
+  "region": "internacional",
+  "description": "Recorre el viejo continente con planes pensados para viajar desde Colombia: culturas, sabores, arquitectura y experiencias que se quedan para siempre.",
+  "image": "/img/europa.svg",
+  "gallery": [
+    "/img/europa.svg",
+    "/img/europa-2.svg",
+    "/img/europa-3.svg"
+  ],
+  "highlights": [
+    "Circuitos por varias ciudades",
+    "Cultura e historia",
+    "Gastronomía europea"
+  ],
+  "facts": [
+    {
+      "label": "Planes",
+      "value": "Europa Mágica y Euro Trip"
+    },
+    {
+      "label": "Documentos",
+      "value": "Pasaporte vigente; verifica requisitos del espacio Schengen"
+    },
+    {
+      "label": "Recomendación",
+      "value": "#ViajaLigero: maleta práctica para recorrer varias ciudades"
+    }
+  ],
+  "priceFrom": 0,
+  "duration": "",
+  "published": true,
+  "demo": false
+}

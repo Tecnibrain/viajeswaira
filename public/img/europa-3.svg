@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" role="img"><title>Europa (ilustración)</title>
+<defs>
+<linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b3a67"/><stop offset="1" stop-color="#b56576"/></linearGradient>
+<linearGradient id="w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3d5a80"/><stop offset="1" stop-color="#293241"/></linearGradient>
+</defs>
+<rect width="1200" height="800" fill="url(#s)"/>
+<circle cx="950" cy="200" r="70" fill="#fbe7c6" opacity=".95"/>
+<g fill="#ffffff" opacity="0.8">
+<ellipse cx="220" cy="150" rx="90" ry="26"/><ellipse cx="270" cy="132" rx="60" ry="30"/>
+<ellipse cx="880" cy="110" rx="110" ry="24"/><ellipse cx="940" cy="94" rx="60" ry="26"/>
+</g><g fill="#1b1d33"><rect x="0" y="554" width="50" height="86"/><rect x="56" y="447" width="57" height="193"/><rect x="119" y="470" width="84" height="170"/><rect x="209" y="453" width="61" height="187"/><rect x="276" y="526" width="98" height="114"/><rect x="380" y="539" width="65" height="101"/><rect x="451" y="402" width="82" height="238"/><rect x="539" y="455" width="49" height="185"/><rect x="594" y="458" width="106" height="182"/><rect x="706" y="521" width="53" height="119"/><rect x="765" y="464" width="50" height="176"/><rect x="821" y="537" width="77" height="103"/><rect x="904" y="470" width="44" height="170"/><rect x="954" y="443" width="71" height="197"/><rect x="1031" y="396" width="78" height="244"/><rect x="1115" y="479" width="55" height="161"/><rect x="1176" y="472" width="82" height="168"/></g><g fill="#ffd37a" opacity=".7"><rect x="10" y="570" width="8" height="10"/><rect x="66" y="463" width="8" height="10"/><rect x="66" y="547" width="8" height="10"/><rect x="129" y="514" width="8" height="10"/><rect x="129" y="598" width="8" height="10"/><rect x="219" y="469" width="8" height="10"/><rect x="219" y="553" width="8" height="10"/><rect x="286" y="570" width="8" height="10"/><rect x="390" y="583" width="8" height="10"/><rect x="461" y="446" width="8" height="10"/><rect x="461" y="530" width="8" height="10"/><rect x="461" y="614" width="8" height="10"/><rect x="549" y="499" width="8" height="10"/><rect x="549" y="583" width="8" height="10"/><rect x="604" y="474" width="8" height="10"/><rect x="604" y="558" width="8" height="10"/><rect x="716" y="593" width="8" height="10"/><rect x="775" y="480" width="8" height="10"/><rect x="775" y="564" width="8" height="10"/><rect x="831" y="553" width="8" height="10"/><rect x="914" y="542" width="8" height="10"/><rect x="964" y="459" width="8" height="10"/><rect x="964" y="543" width="8" height="10"/><rect x="1041" y="412" width="8" height="10"/><rect x="1041" y="496" width="8" height="10"/><rect x="1041" y="580" width="8" height="10"/><rect x="1125" y="523" width="8" height="10"/><rect x="1125" y="607" width="8" height="10"/><rect x="1186" y="516" width="8" height="10"/><rect x="1186" y="600" width="8" height="10"/></g>
+<g fill="#1b1d33">
+<rect x="420" y="380" width="360" height="220"/>
+<path d="M500 380 q100 -170 200 0z"/><rect x="592" y="195" width="16" height="30"/>
+<rect x="380" y="360" width="440" height="24"/>
+</g>
+<g fill="#ffd37a" opacity=".75">
+<rect x="450" y="420" width="30" height="50" rx="15"/><rect x="520" y="420" width="30" height="50" rx="15"/>
+<rect x="650" y="420" width="30" height="50" rx="15"/><rect x="720" y="420" width="30" height="50" rx="15"/>
+<rect x="585" y="470" width="30" height="130" rx="15"/>
+</g><rect y="620" width="1200" height="180" fill="#2c2f4f"/></svg>

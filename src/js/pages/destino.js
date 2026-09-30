@@ -28,9 +28,10 @@ if (!d) {
     <div class="container detail-layout">
       <div>
         <div class="block"><h2>Sobre el destino</h2><p>${esc(d.description)}</p></div>
-        <div class="block"><h2>Imperdibles</h2><ul class="tags">${d.highlights.map((h) => `<li>${esc(h)}</li>`).join('')}</ul></div>
+        ${d.highlights.length ? `<div class="block"><h2>Imperdibles</h2><ul class="tags">${d.highlights.map((h) => `<li>${esc(h)}</li>`).join('')}</ul></div>` : ''}
+        ${d.facts.length ? `<div class="block"><h2>Datos para tu viaje</h2><dl class="facts-list">${d.facts.map((f) => `<div><dt>${esc(f.label)}</dt><dd>${esc(f.value)}</dd></div>`).join('')}</dl></div>` : ''}
         <div class="block"><h2>Galería</h2><div class="gallery">${d.gallery.map((g, i) => `<img src="${g}" alt="${esc(d.name)} ${i + 1}" width="600" height="400" loading="lazy" decoding="async" style="border-radius:10px;aspect-ratio:3/2;object-fit:cover" />`).join('')}</div></div>
-        <div class="block"><h2>Paquetes a ${esc(d.name)}</h2>
+        <div class="block"><h2>Planes y hoteles en ${esc(d.name)}</h2>
           ${pkgs.length ? `<div class="grid grid-3">${pkgs.map(paqueteCard).join('')}</div>` : '<p class="muted">Pronto tendremos paquetes para este destino. Pide una cotización a la medida.</p>'}
         </div>
       </div>
@@ -38,13 +39,14 @@ if (!d) {
         ${priceTag(d.priceFrom, d)}
         <ul class="facts">
           <li><span>País</span><span>${esc(d.country)}</span></li>
-          <li><span>Ciudad</span><span>${esc(d.city)}</span></li>
-          <li><span>Duración sugerida</span><span>${esc(d.duration)}</span></li>
+          ${d.city ? `<li><span>Ciudad</span><span>${esc(d.city)}</span></li>` : ''}
+          ${d.duration ? `<li><span>Duración sugerida</span><span>${esc(d.duration)}</span></li>` : ''}
+          ${pkgs.length ? `<li><span>Hoteles / planes</span><span>${pkgs.length}</span></li>` : ''}
           <li><span>Tipo</span><span>${d.region === 'nacional' ? 'Nacional' : 'Internacional'}</span></li>
         </ul>
         <a class="btn btn-accent" href="/reservas?destino=${d.id}">Planear viaje a ${esc(d.name)}</a>
         <a class="btn btn-wa" href="#" data-wa data-wa-msg="${esc(msg)}">Consultar por WhatsApp</a>
-        <p class="small muted" style="margin-top:12px">Precio de referencia por persona. Sujeto a fechas y disponibilidad.</p>
+        <p class="small muted" style="margin-top:12px">${d.priceFrom ? 'Precio de referencia por persona. ' : ''}Sujeto a fechas y disponibilidad.</p>
       </aside>
     </div>
   </section>

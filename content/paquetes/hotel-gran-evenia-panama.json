@@ -1,0 +1,47 @@
+{
+  "order": 36,
+  "title": "Hotel Gran Evenia Panamá",
+  "destinationId": "panama",
+  "duration": "",
+  "price": 0,
+  "category": "Ciudad",
+  "operator": "On Vacation",
+  "description": "En el centro de Ciudad de Panamá, sobre la Calle 52, con piscina, spa, terraza y room service 24 horas. Ideal para combinar compras, gastronomía y recorridos por la ciudad.",
+  "image": "/img/panama.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en el Hotel Gran Evenia",
+    "Alimentación según el plan elegido"
+  ],
+  "excludes": [
+    "Tours por la ciudad y el Canal"
+  ],
+  "services": [
+    "Piscina",
+    "Spa",
+    "Terraza",
+    "Restaurante",
+    "Bar",
+    "Room service 24 h",
+    "Centro de fitness",
+    "Wi-Fi"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "Calle 52, Ciudad de Panamá"
+    },
+    {
+      "label": "Check-in / Check-out",
+      "value": "Check-in 3:00 p. m. · Check-out 12:00 m."
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

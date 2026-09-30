@@ -1,23 +1,42 @@
 {
-  "order": 6,
+  "order": 10,
   "name": "Punta Cana",
-  "city": "Punta Cana",
+  "city": "Punta Cana / Bayahíbe",
   "country": "República Dominicana",
   "region": "internacional",
+  "description": "Arena blanca, aguas cálidas y resorts todo incluido frente al mar en Bávaro y Bayahíbe. Perfecto para descansar en pareja, en familia o con amigos.",
   "image": "/img/punta-cana.svg",
   "gallery": [
     "/img/punta-cana.svg",
     "/img/punta-cana-2.svg",
     "/img/punta-cana-3.svg"
   ],
-  "description": "Palmeras, arena blanca y aguas cálidas. Ideal para lunas de miel y descanso en plan todo incluido.",
   "highlights": [
     "Playa Bávaro",
+    "Bayahíbe",
     "Isla Saona",
-    "Hoyo Azul",
     "Resorts todo incluido"
   ],
-  "priceFrom": 4200000,
-  "duration": "6 días / 5 noches",
+  "facts": [
+    {
+      "label": "Aeropuerto",
+      "value": "Internacional de Punta Cana (algunos planes llegan por Santo Domingo)"
+    },
+    {
+      "label": "Moneda",
+      "value": "Peso dominicano"
+    },
+    {
+      "label": "Clima",
+      "value": "32 °C de día, 26 °C de noche"
+    },
+    {
+      "label": "Documentos",
+      "value": "Pasaporte vigente; verifica si requieres visa"
+    }
+  ],
+  "priceFrom": 0,
+  "duration": "",
+  "published": true,
   "demo": false
 }

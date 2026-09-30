@@ -1,0 +1,51 @@
+{
+  "order": 8,
+  "title": "Hotel Portobelo Plaza de las Américas",
+  "destinationId": "san-andres",
+  "duration": "",
+  "price": 0,
+  "category": "Playa",
+  "operator": "On Vacation",
+  "description": "Hotel céntrico a pocos minutos del aeropuerto, con piscina al aire libre, gimnasio y Wi-Fi gratuito. Cómodo y bien ubicado para recorrer la isla.",
+  "image": "/img/san-andres-2.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en el Hotel Portobelo Plaza de las Américas",
+    "Alimentación según el plan elegido",
+    "Acceso a piscina y gimnasio"
+  ],
+  "excludes": [
+    "Tarjeta de turismo de ingreso a San Andrés",
+    "Tours y actividades en la isla"
+  ],
+  "services": [
+    "Piscina al aire libre",
+    "Gimnasio",
+    "Wi-Fi gratuito",
+    "Ascensor",
+    "Sala de reuniones",
+    "Recepción 24 horas"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "A 3 minutos del aeropuerto y 5 del centro"
+    },
+    {
+      "label": "Check-in / Check-out",
+      "value": "Check-in 4:00 p. m. · Check-out 12:00 m."
+    },
+    {
+      "label": "Habitaciones",
+      "value": "142"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

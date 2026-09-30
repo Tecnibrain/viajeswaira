@@ -1,0 +1,56 @@
+{
+  "order": 19,
+  "title": "Hotel Ciela & Beach Club",
+  "destinationId": "covenas",
+  "duration": "",
+  "price": 0,
+  "category": "Playa",
+  "operator": "On Vacation",
+  "description": "Hotel moderno frente al mar entre Tolú y Coveñas, con acceso directo a la playa, piscina, hidromasajes y club de playa. Ideal para desconectarse en el Golfo de Morrosquillo.",
+  "image": "/img/covenas.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en el Hotel Ciela & Beach Club",
+    "Alimentación según el plan elegido",
+    "Acceso a piscina y club de playa"
+  ],
+  "excludes": [
+    "Traslados desde Montería (según plan)",
+    "Tours y actividades"
+  ],
+  "services": [
+    "Acceso directo a la playa",
+    "Piscina",
+    "Hidromasajes",
+    "Restaurante",
+    "Bar",
+    "Recepción 24 horas",
+    "Parqueadero"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "Entre Tolú y Coveñas, a 1 hora de Sincelejo"
+    },
+    {
+      "label": "Check-in / Check-out",
+      "value": "Check-in 3:00 p. m. · Check-out 12:00 m."
+    },
+    {
+      "label": "Alimentación",
+      "value": "Buffet asistido de un solo servicio, según el plan"
+    },
+    {
+      "label": "Habitaciones",
+      "value": "99"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

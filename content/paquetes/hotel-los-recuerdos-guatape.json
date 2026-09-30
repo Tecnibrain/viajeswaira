@@ -1,0 +1,50 @@
+{
+  "order": 21,
+  "title": "Hotel Los Recuerdos",
+  "destinationId": "guatape",
+  "duration": "",
+  "price": 0,
+  "category": "Naturaleza",
+  "operator": "On Vacation",
+  "description": "Hotel eco-chic frente al embalse con la Piedra del Peñol de fondo. Habitaciones amplias, piscinas y jacuzzis con vista panorámica y gastronomía local e internacional.",
+  "image": "/img/guatape.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en el Hotel Los Recuerdos",
+    "Alimentación según el plan elegido",
+    "Acceso a piscinas y jacuzzis"
+  ],
+  "excludes": [
+    "Paseos en lancha y subida a la Piedra del Peñol",
+    "Transporte desde Medellín (según plan)"
+  ],
+  "services": [
+    "Piscinas",
+    "Jacuzzi",
+    "Restaurante",
+    "Bar",
+    "Discoteca"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "Km 10 vía El Peñol – Guatapé"
+    },
+    {
+      "label": "Check-in / Check-out",
+      "value": "Check-in 3:00 p. m. · Check-out 12:00 m."
+    },
+    {
+      "label": "Alimentación",
+      "value": "Buffet asistido de un solo servicio, según el plan"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

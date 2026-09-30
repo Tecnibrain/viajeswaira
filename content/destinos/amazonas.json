@@ -1,0 +1,48 @@
+{
+  "order": 4,
+  "name": "Amazonas",
+  "city": "Leticia",
+  "country": "Colombia",
+  "region": "nacional",
+  "description": "Selva, río y comunidades indígenas en uno de los lugares más biodiversos del planeta. Vive el Amazonas desde un eco-resort a orillas del río, con piscina infinita y actividades en la naturaleza.",
+  "image": "/img/amazonas.svg",
+  "gallery": [
+    "/img/amazonas.svg",
+    "/img/amazonas-2.svg",
+    "/img/amazonas-3.svg"
+  ],
+  "highlights": [
+    "Río Amazonas",
+    "Delfines rosados",
+    "Kayak por los caños",
+    "Caminatas por la selva",
+    "Comunidades indígenas",
+    "Canopy"
+  ],
+  "facts": [
+    {
+      "label": "Aeropuerto",
+      "value": "Alfredo Vásquez Cobo (Leticia)"
+    },
+    {
+      "label": "Acceso al hotel",
+      "value": "En lancha desde Leticia, 20 a 40 minutos"
+    },
+    {
+      "label": "Temporada de aguas altas",
+      "value": "Diciembre a mayo: ideal para navegar en canoa entre los árboles"
+    },
+    {
+      "label": "Temporada seca",
+      "value": "Junio a noviembre: ideal para caminatas y avistamiento de fauna"
+    },
+    {
+      "label": "Moneda",
+      "value": "Peso colombiano (COP)"
+    }
+  ],
+  "priceFrom": 0,
+  "duration": "",
+  "published": true,
+  "demo": false
+}

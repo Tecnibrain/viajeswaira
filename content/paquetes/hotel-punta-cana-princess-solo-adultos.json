@@ -1,0 +1,51 @@
+{
+  "order": 27,
+  "title": "Hotel Punta Cana Princess (solo adultos)",
+  "destinationId": "punta-cana",
+  "duration": "",
+  "price": 0,
+  "category": "Solo adultos",
+  "operator": "On Vacation",
+  "description": "Resort exclusivo para adultos en las playas de Bávaro, con cinco restaurantes de comida internacional y ambiente relajado. Ideal para parejas.",
+  "image": "/img/punta-cana-2.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en el Hotel Punta Cana Princess",
+    "Alimentación según el plan elegido"
+  ],
+  "excludes": [
+    "Excursiones como Isla Saona"
+  ],
+  "services": [
+    "Solo adultos",
+    "5 restaurantes de comida internacional",
+    "Bar con snacks",
+    "Recepción 24 horas"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "Playas de Bávaro, Punta Cana"
+    },
+    {
+      "label": "Check-in / Check-out",
+      "value": "Check-in 3:00 p. m. · Check-out 12:00 m."
+    },
+    {
+      "label": "Público",
+      "value": "Solo adultos"
+    },
+    {
+      "label": "Habitaciones",
+      "value": "256"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

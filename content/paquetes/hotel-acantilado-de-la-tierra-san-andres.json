@@ -1,0 +1,48 @@
+{
+  "order": 4,
+  "title": "Hotel Acantilado de la Tierra",
+  "destinationId": "san-andres",
+  "duration": "",
+  "price": 0,
+  "category": "Luna de miel",
+  "operator": "On Vacation",
+  "description": "Refugio exclusivo de solo cinco habitaciones de lujo, con piscina infinita que se funde con el horizonte, gastronomía a la carta y detalles como vino espumoso de bienvenida. Ideal para parejas que buscan privacidad.",
+  "image": "/img/san-andres.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en el Hotel Acantilado de la Tierra",
+    "Alimentación a la carta según el plan elegido",
+    "Bienvenida con vino espumoso"
+  ],
+  "excludes": [
+    "Tarjeta de turismo de ingreso a San Andrés",
+    "Tours y actividades en la isla"
+  ],
+  "services": [
+    "Piscina infinita",
+    "Desayuno, almuerzo y cena a la carta",
+    "Vino espumoso de bienvenida",
+    "Cafetera y secador en la habitación",
+    "Batas de baño y duvet",
+    "Acceso al rooftop La Marea",
+    "Recepción 24 horas"
+  ],
+  "facts": [
+    {
+      "label": "Habitaciones",
+      "value": "5 habitaciones de lujo"
+    },
+    {
+      "label": "Ideal para",
+      "value": "Parejas y lunas de miel"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

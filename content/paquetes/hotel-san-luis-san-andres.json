@@ -1,0 +1,55 @@
+{
+  "order": 7,
+  "title": "Hotel San Luis",
+  "destinationId": "san-andres",
+  "duration": "",
+  "price": 0,
+  "category": "Playa",
+  "operator": "On Vacation",
+  "description": "En la zona de San Luis (Sound Bay), con acceso directo a una playa tranquila de aguas cristalinas. Piscina panorámica y mirador con vista al mar, ideal para viajar en familia o con amigos.",
+  "image": "/img/san-andres.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en el Hotel San Luis",
+    "Alimentación según el plan elegido",
+    "Acceso a piscina y playa"
+  ],
+  "excludes": [
+    "Tarjeta de turismo de ingreso a San Andrés",
+    "Tours y actividades en la isla"
+  ],
+  "services": [
+    "2 restaurantes",
+    "Bar",
+    "Piscina panorámica",
+    "Mirador con vista al mar",
+    "Terraza",
+    "Acceso directo a la playa"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "Vía San Luis, Sound Bay"
+    },
+    {
+      "label": "Check-in / Check-out",
+      "value": "Check-in 4:00 p. m. · Check-out 12:00 m."
+    },
+    {
+      "label": "Alimentación",
+      "value": "Tipo buffet, según el plan"
+    },
+    {
+      "label": "Habitaciones",
+      "value": "18"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

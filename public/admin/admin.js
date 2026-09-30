@@ -7,7 +7,7 @@ const app = document.getElementById('app');
 const topbar = document.querySelector('.topbar');
 const toastEl = document.querySelector('.toast');
 
-const CATEGORIES = ['Playa', 'Playa y cultura', 'Naturaleza', 'Aventura', 'Ciudad', 'Luna de miel', 'Familiar', 'Internacional', 'Europa', 'Cruceros'];
+const CATEGORIES = ['Playa', 'Todo incluido', 'Playa y cultura', 'Naturaleza', 'Aventura', 'Ciudad', 'Descanso', 'Luna de miel', 'Familiar', 'Solo adultos', 'Internacional', 'Europa', 'Cruceros'];
 
 const FORMS = {
   paquetes: {
@@ -20,8 +20,9 @@ const FORMS = {
           { name: 'title', label: 'Nombre del paquete', type: 'text', required: true, hint: 'Ej: Cartagena Colonial y Caribe' },
           { name: 'destinationId', label: 'Destino', type: 'destino', required: true, hint: '¿No está? Créalo primero en la pestaña «Destinos».' },
           { name: 'duration', label: 'Duración', type: 'text', hint: 'Ej: 4 días / 3 noches', half: true },
-          { name: 'price', label: 'Precio por persona', type: 'money', hint: 'Escribe solo números.', half: true },
-          { name: 'category', label: 'Categoría', type: 'select', options: CATEGORIES },
+          { name: 'price', label: 'Precio por persona', type: 'money', hint: 'Solo números. Déjalo en 0 para mostrar «Cotiza tu plan».', half: true },
+          { name: 'category', label: 'Categoría', type: 'select', options: CATEGORIES, half: true },
+          { name: 'operator', label: 'Operado por', type: 'text', half: true, hint: 'Opcional. Ej: On Vacation' },
           { name: 'description', label: 'Descripción corta', type: 'textarea', hint: '2 o 3 líneas. Aparece en la tarjeta del paquete.' },
         ],
       },
@@ -39,7 +40,14 @@ const FORMS = {
           { name: 'excludes', label: 'No incluye', type: 'strings', placeholder: 'Ej: Propinas', addLabel: 'Agregar lo que NO incluye' },
         ],
       },
-      { title: 'Itinerario', fields: [{ name: 'itinerary', label: 'Día a día', type: 'days' }] },
+      {
+        title: 'Hotel y datos útiles',
+        fields: [
+          { name: 'services', label: 'Servicios del hotel', type: 'strings', placeholder: 'Ej: Piscina', addLabel: 'Agregar servicio' },
+          { name: 'facts', label: 'Datos útiles', type: 'pairs', keys: ['label', 'value'], placeholders: ['Dato. Ej: Check-in', 'Valor. Ej: 3:00 p. m.'], addLabel: 'Agregar dato', hint: 'Ej: Ubicación, Check-in, Check-out, Alimentación, Habitaciones.' },
+        ],
+      },
+      { title: 'Itinerario (opcional)', fields: [{ name: 'itinerary', label: 'Día a día', type: 'days' }] },
       {
         title: 'Opciones',
         fields: [
@@ -50,7 +58,7 @@ const FORMS = {
         ],
       },
     ],
-    blank: () => ({ title: '', destinationId: '', duration: '', price: 0, category: 'Playa', description: '', image: '', gallery: [], includes: [''], excludes: [''], itinerary: [{ title: '', text: '' }], featured: false, published: true, demo: false, order: 50 }),
+    blank: () => ({ title: '', destinationId: '', duration: '', price: 0, category: 'Playa', operator: '', description: '', image: '', gallery: [], includes: [''], excludes: [''], services: [''], facts: [{ label: '', value: '' }], itinerary: [{ title: '', text: '' }], featured: false, published: true, demo: false, order: 50 }),
   },
   destinos: {
     singular: 'destino',
@@ -64,7 +72,7 @@ const FORMS = {
           { name: 'country', label: 'País', type: 'text', required: true, half: true, hint: 'Ej: Colombia' },
           { name: 'region', label: 'Tipo', type: 'select', options: [{ value: 'nacional', label: 'Nacional' }, { value: 'internacional', label: 'Internacional' }] },
           { name: 'description', label: 'Descripción', type: 'textarea' },
-          { name: 'priceFrom', label: 'Precio desde, por persona', type: 'money', half: true },
+          { name: 'priceFrom', label: 'Precio desde, por persona', type: 'money', half: true, hint: 'Déjalo en 0 para mostrar «Cotiza tu plan».' },
           { name: 'duration', label: 'Duración sugerida', type: 'text', half: true, hint: 'Ej: 4 días / 3 noches' },
         ],
       },
@@ -76,6 +84,7 @@ const FORMS = {
         ],
       },
       { title: 'Imperdibles', fields: [{ name: 'highlights', label: 'Lugares o actividades imperdibles', type: 'strings', placeholder: 'Ej: Ciudad amurallada', addLabel: 'Agregar imperdible' }] },
+      { title: 'Datos para tu viaje', fields: [{ name: 'facts', label: 'Datos del destino', type: 'pairs', keys: ['label', 'value'], placeholders: ['Dato. Ej: Moneda', 'Valor. Ej: Peso colombiano (COP)'], addLabel: 'Agregar dato', hint: 'Ej: Moneda, Idioma, Clima, Aeropuerto, Documentos.' }] },
       {
         title: 'Opciones',
         fields: [
@@ -85,7 +94,7 @@ const FORMS = {
         ],
       },
     ],
-    blank: () => ({ name: '', city: '', country: 'Colombia', region: 'nacional', description: '', image: '', gallery: [], highlights: [''], priceFrom: 0, duration: '', published: true, demo: false, order: 50 }),
+    blank: () => ({ name: '', city: '', country: 'Colombia', region: 'nacional', description: '', image: '', gallery: [], highlights: [''], facts: [{ label: '', value: '' }], priceFrom: 0, duration: '', published: true, demo: false, order: 50 }),
   },
 };
 
@@ -254,7 +263,7 @@ function renderList() {
         <div>
           <h2>${esc(d[cfg.title])}</h2>
           <p>${sub}</p>
-          <p class="price">${state.tab === 'destinos' ? 'Desde ' : ''}$ ${money(price)}</p>
+          <p class="price">${price ? `${state.tab === 'destinos' ? 'Desde ' : ''}$ ${money(price)}` : 'Cotiza tu plan'}${d.operator ? ` · <span style="font-weight:400;color:var(--muted)">${esc(d.operator)}</span>` : ''}</p>
           <div class="chips">
             ${d.published === false ? '<span class="chip chip-hidden">OCULTO</span>' : '<span class="chip">PUBLICADO</span>'}
             ${d.demo ? '<span class="chip chip-demo">DEMO</span>' : ''}
@@ -301,7 +310,8 @@ function openForm(id, { duplicate = false } = {}) {
   if (state.tab === 'sitio' && !item) id = 'contacto';
   const data = Object.assign(cfg.blank(), item ? clone(item.data) : {});
   if (duplicate) data[cfg.title] = `${data[cfg.title]} (copia)`;
-  for (const key of ['includes', 'excludes', 'highlights']) if (key in data && !data[key].length) data[key] = [''];
+  for (const key of ['includes', 'excludes', 'highlights', 'services']) if (key in data && !data[key].length) data[key] = [''];
+  if ('facts' in data && !data.facts.length) data.facts = [{ label: '', value: '' }];
   if ('itinerary' in data && !data.itinerary.length) data.itinerary = [{ title: '', text: '' }];
   if (state.tab === 'sitio' && !data.hours.length) data.hours = [{ days: '', time: '' }];
   state.editing = { id: duplicate ? null : id, data, isNew: state.tab !== 'sitio' && (!item || duplicate) };
@@ -355,6 +365,17 @@ function fieldHtml(f, data) {
           </div>`,
         )
         .join('')}</div><button type="button" class="btn btn-outline btn-small add" data-action="add" data-field="${f.name}">＋ Agregar día</button></div>`;
+    case 'pairs': {
+      const [k1, k2] = f.keys;
+      return `<div class="field"><span class="label">${esc(f.label)}</span><div class="rows">${(v || [])
+        .map(
+          (h, i) => `<div class="row">
+            <input type="text" data-field="${f.name}" data-index="${i}" data-sub="${k1}" value="${esc(h[k1])}" placeholder="${esc(f.placeholders[0])}" style="flex:0 1 38%" />
+            <input type="text" data-field="${f.name}" data-index="${i}" data-sub="${k2}" value="${esc(h[k2])}" placeholder="${esc(f.placeholders[1])}" />
+            <button type="button" class="icon-btn danger" data-action="remove" data-field="${f.name}" data-index="${i}" aria-label="Quitar">✕</button></div>`,
+        )
+        .join('')}</div><button type="button" class="btn btn-outline btn-small add" data-action="add" data-field="${f.name}">＋ ${esc(f.addLabel || 'Agregar')}</button>${hint}</div>`;
+    }
     case 'hours':
       return `<div class="field"><div class="rows">${(v || [])
         .map(
@@ -467,7 +488,8 @@ async function save(form) {
   const cfg = FORMS[state.tab];
   const { data, id } = state.editing;
   // Limpia filas vacías
-  for (const key of ['includes', 'excludes', 'highlights']) if (Array.isArray(data[key])) data[key] = data[key].map((s) => s.trim()).filter(Boolean);
+  for (const key of ['includes', 'excludes', 'highlights', 'services']) if (Array.isArray(data[key])) data[key] = data[key].map((s) => s.trim()).filter(Boolean);
+  if (Array.isArray(data.facts)) data.facts = data.facts.filter((f) => f.label.trim() && f.value.trim());
   if (Array.isArray(data.itinerary)) data.itinerary = data.itinerary.filter((d) => d.title.trim() || d.text.trim());
   if (Array.isArray(data.hours)) data.hours = data.hours.filter((h) => h.days.trim() || h.time.trim());
   if (state.tab === 'sitio') {
@@ -567,7 +589,7 @@ document.addEventListener('click', async (e) => {
     }
     case 'add':
       state.dirty = true;
-      list.push(field === 'itinerary' ? { title: '', text: '' } : field === 'hours' ? { days: '', time: '' } : '');
+      list.push(field === 'itinerary' ? { title: '', text: '' } : field === 'hours' ? { days: '', time: '' } : field === 'facts' ? { label: '', value: '' } : '');
       renderForm();
       setTimeout(() => {
         const inputs = app.querySelectorAll(`[data-field="${field}"][data-index="${list.length - 1}"]`);

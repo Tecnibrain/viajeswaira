@@ -1,0 +1,55 @@
+{
+  "order": 2,
+  "title": "Hotel Blue Cove",
+  "destinationId": "san-andres",
+  "duration": "",
+  "price": 0,
+  "category": "Playa",
+  "operator": "On Vacation",
+  "description": "Resort sobre la Circunvalar de la isla con acceso a una terraza frente al mar donde un tobogán natural desemboca directo en el Caribe. Bar 24 horas, dos restaurantes, río lento, jacuzzis y sauna para disfrutar sin salir del hotel.",
+  "image": "/img/san-andres-2.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en el Hotel Blue Cove",
+    "Alimentación según el plan elegido",
+    "Acceso a piscina, río lento y terraza frente al mar"
+  ],
+  "excludes": [
+    "Tarjeta de turismo de ingreso a San Andrés",
+    "Consumos en gastrobar (costo adicional)",
+    "Tours y actividades en la isla"
+  ],
+  "services": [
+    "2 restaurantes",
+    "Bar Sunset",
+    "Gastrobar",
+    "Río lento",
+    "Piscina",
+    "3 jacuzzis",
+    "Sauna",
+    "Terraza frente al mar",
+    "Minimarket"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "Carretera Circunvalar km 12, a unos 30 minutos del aeropuerto"
+    },
+    {
+      "label": "Alimentación",
+      "value": "Desayuno, almuerzo y cena tipo buffet de un solo servicio, según el plan"
+    },
+    {
+      "label": "Habitaciones",
+      "value": "273"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

@@ -1,23 +1,47 @@
 {
-  "order": 5,
-  "name": "Cancún",
-  "city": "Cancún",
+  "order": 9,
+  "name": "Cancún y Riviera Maya",
+  "city": "Cancún / Playa del Carmen",
   "country": "México",
   "region": "internacional",
+  "description": "Playas turquesa del Caribe mexicano, la Quinta Avenida de Playa del Carmen, ruinas mayas y cenotes. Elige entre la zona hotelera de Cancún, la Riviera Maya o el centro de Playa del Carmen.",
   "image": "/img/cancun.svg",
   "gallery": [
     "/img/cancun.svg",
     "/img/cancun-2.svg",
     "/img/cancun-3.svg"
   ],
-  "description": "Playas turquesa del Caribe mexicano, cenotes, zonas arqueológicas mayas y resorts todo incluido.",
   "highlights": [
-    "Zona hotelera",
-    "Isla Mujeres",
-    "Cenotes",
-    "Chichén Itzá"
+    "Zona hotelera de Cancún",
+    "Quinta Avenida",
+    "Tulum y Cobá",
+    "Cozumel",
+    "Cenotes"
   ],
-  "priceFrom": 3900000,
-  "duration": "6 días / 5 noches",
+  "facts": [
+    {
+      "label": "Aeropuerto",
+      "value": "Internacional de Cancún"
+    },
+    {
+      "label": "Moneda",
+      "value": "Peso mexicano y dólar"
+    },
+    {
+      "label": "Clima",
+      "value": "Tropical: 29 a 34 °C de día"
+    },
+    {
+      "label": "Vuelo",
+      "value": "Aprox. 3 horas desde Bogotá"
+    },
+    {
+      "label": "Documentos",
+      "value": "Pasaporte vigente; verifica los requisitos migratorios de México"
+    }
+  ],
+  "priceFrom": 0,
+  "duration": "",
+  "published": true,
   "demo": false
 }

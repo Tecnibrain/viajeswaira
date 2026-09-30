@@ -1,0 +1,53 @@
+{
+  "order": 25,
+  "title": "Hotel HM Playa del Carmen",
+  "destinationId": "cancun",
+  "duration": "",
+  "price": 0,
+  "category": "Ciudad",
+  "operator": "On Vacation",
+  "description": "A dos cuadras de la Quinta Avenida y a unos 200 metros del mar, en el corazón de Playa del Carmen. Piscina, restaurante con desayuno buffet y bar, perfecto para salir a recorrer.",
+  "image": "/img/cancun-3.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en el Hotel HM Playa del Carmen",
+    "Desayuno buffet"
+  ],
+  "excludes": [
+    "Consumos en el bar (costo adicional)",
+    "Tours a Tulum, Cobá o Cozumel",
+    "Impuestos locales si aplican"
+  ],
+  "services": [
+    "Piscina",
+    "Restaurante con desayuno buffet",
+    "Bar",
+    "Recepción 24 horas"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "A dos cuadras de la Quinta Avenida, a unos 50 minutos del aeropuerto de Cancún"
+    },
+    {
+      "label": "Check-in / Check-out",
+      "value": "Check-in 3:00 p. m. · Check-out 12:00 m."
+    },
+    {
+      "label": "Alimentación",
+      "value": "Desayuno buffet"
+    },
+    {
+      "label": "Habitaciones",
+      "value": "91"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

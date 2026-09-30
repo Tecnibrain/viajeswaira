@@ -1,0 +1,50 @@
+{
+  "order": 37,
+  "title": "Hotel Executive Panamá",
+  "destinationId": "panama",
+  "duration": "",
+  "price": 0,
+  "category": "Ciudad",
+  "operator": "On Vacation",
+  "description": "Hotel céntrico en Ciudad de Panamá con piscina, spa, gimnasio y baño turco. Práctico para viajes de compras o negocios.",
+  "image": "/img/panama-2.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en el Hotel Executive",
+    "Alimentación según el plan elegido"
+  ],
+  "excludes": [
+    "Tours por la ciudad y el Canal"
+  ],
+  "services": [
+    "Piscina",
+    "Spa",
+    "Gimnasio",
+    "Baño turco",
+    "Centro de negocios",
+    "Wi-Fi",
+    "Estacionamiento"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "Ciudad de Panamá"
+    },
+    {
+      "label": "Check-in / Check-out",
+      "value": "Check-in 3:00 p. m. · Check-out 12:00 m."
+    },
+    {
+      "label": "Habitaciones",
+      "value": "149"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

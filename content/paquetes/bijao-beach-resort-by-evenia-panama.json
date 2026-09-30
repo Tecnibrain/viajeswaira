@@ -1,0 +1,53 @@
+{
+  "order": 33,
+  "title": "Bijao Beach Resort by Evenia",
+  "destinationId": "panama",
+  "duration": "",
+  "price": 0,
+  "category": "Todo incluido",
+  "operator": "On Vacation",
+  "description": "Resort todo incluido en la Riviera Pacífica de Panamá, sobre la playa de Santa Clara. Cuatro piscinas, cuatro restaurantes, kids club, spa y tenis para toda la familia.",
+  "image": "/img/panama.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en Bijao Beach Resort",
+    "Plan todo incluido según condiciones del hotel"
+  ],
+  "excludes": [
+    "Servicios de spa",
+    "Tours por Ciudad de Panamá"
+  ],
+  "services": [
+    "Todo incluido",
+    "4 piscinas",
+    "4 restaurantes",
+    "3 bares",
+    "Kids Club y Teens Club",
+    "Spa",
+    "Fitness center",
+    "Pista de tenis",
+    "Wi-Fi"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "Playa de Santa Clara, Antón, Coclé"
+    },
+    {
+      "label": "Check-in / Check-out",
+      "value": "Check-in 3:00 p. m. · Check-out 12:00 m."
+    },
+    {
+      "label": "Habitaciones",
+      "value": "293"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

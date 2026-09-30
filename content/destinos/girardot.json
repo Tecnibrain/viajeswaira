@@ -1,0 +1,42 @@
+{
+  "order": 6,
+  "name": "Girardot",
+  "city": "Girardot (Cundinamarca)",
+  "country": "Colombia",
+  "region": "nacional",
+  "description": "Clima cálido, piscinas y descanso a pocas horas de Bogotá. Ideal para escapadas en familia a un resort con zonas húmedas, deportes y entretenimiento.",
+  "image": "/img/girardot.svg",
+  "gallery": [
+    "/img/girardot.svg",
+    "/img/girardot-2.svg",
+    "/img/girardot-3.svg"
+  ],
+  "highlights": [
+    "Piscinas y zonas húmedas",
+    "Clima cálido",
+    "Escapada de fin de semana",
+    "Plan familiar"
+  ],
+  "facts": [
+    {
+      "label": "Cómo llegar",
+      "value": "Por carretera desde Bogotá"
+    },
+    {
+      "label": "Mejor época",
+      "value": "Diciembre a marzo y julio a agosto"
+    },
+    {
+      "label": "Recomendación",
+      "value": "Se sugiere la vacuna contra la fiebre amarilla (no obligatoria)"
+    },
+    {
+      "label": "Moneda",
+      "value": "Peso colombiano (COP)"
+    }
+  ],
+  "priceFrom": 0,
+  "duration": "",
+  "published": true,
+  "demo": false
+}

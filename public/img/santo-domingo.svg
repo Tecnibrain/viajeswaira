@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" role="img"><title>Santo Domingo (ilustración)</title>
+<defs>
+<linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5ec8e5"/><stop offset="1" stop-color="#bfe9f3"/></linearGradient>
+<linearGradient id="w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1aa6b7"/><stop offset="1" stop-color="#0e7c86"/></linearGradient>
+</defs>
+<rect width="1200" height="800" fill="url(#s)"/>
+<circle cx="950" cy="220" r="70" fill="#fff4c2" opacity=".95"/>
+<g fill="#ffffff" opacity="0.8">
+<ellipse cx="220" cy="150" rx="90" ry="26"/><ellipse cx="270" cy="132" rx="60" ry="30"/>
+<ellipse cx="880" cy="110" rx="110" ry="24"/><ellipse cx="940" cy="94" rx="60" ry="26"/>
+</g>
+<rect y="560" width="1200" height="240" fill="url(#w)"/>
+<g stroke="#fff" stroke-opacity=".35" stroke-width="3" fill="none" stroke-linecap="round">
+<path d="M80 600h120M420 630h160M820 595h140M260 680h180M700 710h200"/>
+</g>
+<g fill="#1d4d5a">
+<rect x="0" y="520" width="1200" height="120"/>
+<path d="M0 520 h1200 v-12 h-1200z" opacity=".6"/>
+<rect x="520" y="300" width="120" height="240"/><path d="M510 300 L580 230 L650 300Z"/>
+<rect x="566" y="190" width="28" height="44"/><circle cx="580" cy="340" r="26" fill="#fdf6d8"/>
+<rect x="200" y="400" width="200" height="140"/><path d="M190 400 h220 l-20 -30 h-180z"/>
+<rect x="780" y="380" width="260" height="160"/><path d="M800 380 q110 -110 220 0z"/>
+</g>
+<g fill="#fdf6d8" opacity=".85">
+<rect x="230" y="430" width="24" height="36" rx="12"/><rect x="290" y="430" width="24" height="36" rx="12"/><rect x="350" y="430" width="24" height="36" rx="12"/>
+<rect x="820" y="420" width="24" height="40" rx="12"/><rect x="890" y="420" width="24" height="40" rx="12"/><rect x="960" y="420" width="24" height="40" rx="12"/>
+</g>
+<g transform="translate(1100 780) scale(0.8)" fill="#2f6f5e">
+<path d="M0 0 C10 -120 30 -220 60 -300 L72 -296 C46 -214 28 -120 18 0Z"/>
+<path d="M66 -300 C10 -330 -60 -320 -110 -280 C-50 -300 10 -300 60 -290Z"/>
+<path d="M66 -300 C120 -340 190 -330 230 -290 C170 -310 110 -305 70 -292Z"/>
+<path d="M66 -300 C40 -360 -10 -390 -60 -380 C-10 -370 30 -340 62 -296Z"/>
+<path d="M66 -300 C110 -370 170 -380 210 -360 C160 -355 110 -330 72 -294Z"/>
+<path d="M66 -300 C60 -250 20 -200 -20 -180 C20 -220 45 -260 60 -296Z"/>
+</g></svg>

@@ -1,0 +1,50 @@
+{
+  "order": 5,
+  "title": "Hotel Tower",
+  "destinationId": "san-andres",
+  "duration": "",
+  "price": 0,
+  "category": "Playa",
+  "operator": "On Vacation",
+  "description": "Hotel en el corazón de la isla, cerca de playas, comercio y los principales atractivos. Dos restaurantes, bar Sunset y piscina, en un ambiente ideal para familias y parejas.",
+  "image": "/img/san-andres-2.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en el Hotel Tower",
+    "Alimentación según el plan elegido",
+    "Acceso a piscina"
+  ],
+  "excludes": [
+    "Tarjeta de turismo de ingreso a San Andrés",
+    "Tours y actividades en la isla"
+  ],
+  "services": [
+    "2 restaurantes",
+    "Bar Sunset",
+    "Piscina",
+    "Ascensor",
+    "Recepción 24 horas"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "Av. Las Américas # 2-69, a 7 minutos del aeropuerto"
+    },
+    {
+      "label": "Alimentación",
+      "value": "Desayuno, almuerzo y cena tipo buffet de un solo servicio, según el plan"
+    },
+    {
+      "label": "Habitaciones",
+      "value": "156"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

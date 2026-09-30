@@ -1,0 +1,42 @@
+{
+  "order": 9,
+  "title": "Hotel Portobelo Convention Center",
+  "destinationId": "san-andres",
+  "duration": "",
+  "price": 0,
+  "category": "Playa",
+  "operator": "On Vacation",
+  "description": "Alojamiento práctico y a buen precio cerca del aeropuerto y del centro, con restaurante y bar. Pensado para quienes quieren aprovechar la isla al máximo.",
+  "image": "/img/san-andres-3.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en el Hotel Portobelo Convention Center",
+    "Alimentación según el plan elegido"
+  ],
+  "excludes": [
+    "Tarjeta de turismo de ingreso a San Andrés",
+    "Tours y actividades en la isla"
+  ],
+  "services": [
+    "Restaurante",
+    "Bar"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "Cra. 6 # 1-39, a 5 minutos del aeropuerto"
+    },
+    {
+      "label": "Habitaciones",
+      "value": "54"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

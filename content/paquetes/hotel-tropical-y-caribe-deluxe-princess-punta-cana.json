@@ -1,0 +1,39 @@
+{
+  "order": 30,
+  "title": "Hotel Tropical y Caribe Deluxe Princess",
+  "destinationId": "punta-cana",
+  "duration": "",
+  "price": 0,
+  "category": "Todo incluido",
+  "operator": "On Vacation",
+  "description": "Complejo todo incluido en Punta Cana con playas de arena blanca y aguas cristalinas, ideal para descansar y explorar la República Dominicana.",
+  "image": "/img/punta-cana-2.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en el Hotel Tropical y Caribe Deluxe Princess",
+    "Plan todo incluido según condiciones del hotel"
+  ],
+  "excludes": [
+    "Excursiones"
+  ],
+  "services": [
+    "Todo incluido",
+    "Restaurantes y bares",
+    "Piscinas",
+    "Acceso a la playa"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "Punta Cana, República Dominicana"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

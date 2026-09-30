@@ -17,6 +17,7 @@ export function toDestinos(files) {
         image,
         gallery: gallery.length ? gallery : [image],
         highlights: (d.highlights || []).filter(Boolean),
+        facts: (d.facts || []).filter((f) => f && f.label && f.value),
         priceFrom: Number(d.priceFrom) || 0,
         demo: d.demo !== false,
       };
@@ -35,7 +36,10 @@ export function toPaquetes(files) {
       gallery: (p.gallery || []).filter(Boolean),
       includes: (p.includes || []).filter(Boolean),
       excludes: (p.excludes || []).filter(Boolean),
-      itinerary: (p.itinerary || []).map((s, i) => ({ day: i + 1, title: s.title || `Día ${i + 1}`, text: s.text || '' })),
+      itinerary: (p.itinerary || []).filter((s) => s.title || s.text).map((s, i) => ({ day: i + 1, title: s.title || `Día ${i + 1}`, text: s.text || '' })),
+      services: (p.services || []).filter(Boolean),
+      facts: (p.facts || []).filter((f) => f && f.label && f.value),
+      operator: p.operator || '',
       featured: Boolean(p.featured),
       demo: p.demo !== false,
     }))

@@ -1,0 +1,54 @@
+{
+  "order": 24,
+  "title": "Hotel Grand Riviera Sunset Princess",
+  "destinationId": "cancun",
+  "duration": "",
+  "price": 0,
+  "category": "Todo incluido",
+  "operator": "On Vacation",
+  "description": "Gran resort frente a una playa de arena blanca en la Riviera Maya, cerca de las principales atracciones. Piscinas para adultos y niños, spa, discoteca y deportes de playa.",
+  "image": "/img/cancun-2.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en el Hotel Grand Riviera Sunset Princess",
+    "Alimentación según el plan elegido",
+    "Acceso a playa, piscinas y zonas deportivas"
+  ],
+  "excludes": [
+    "Tours a Tulum, Chichén Itzá o cenotes",
+    "Servicios de spa",
+    "Impuestos locales si aplican"
+  ],
+  "services": [
+    "Piscina para adultos",
+    "Piscina para niños",
+    "Spa",
+    "Discoteca",
+    "Acceso a la playa",
+    "Voleibol de playa",
+    "Canchas de tenis y baloncesto",
+    "Restaurantes y bares"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "Riviera Maya, entre Cancún y Playa del Carmen"
+    },
+    {
+      "label": "Check-in / Check-out",
+      "value": "Check-in 3:00 p. m. · Check-out 12:00 m."
+    },
+    {
+      "label": "Habitaciones",
+      "value": "672"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

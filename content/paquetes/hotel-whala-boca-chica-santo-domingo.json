@@ -1,0 +1,49 @@
+{
+  "order": 31,
+  "title": "Hotel Whala Boca Chica",
+  "destinationId": "santo-domingo",
+  "duration": "",
+  "price": 0,
+  "category": "Todo incluido",
+  "operator": "On Vacation",
+  "description": "Hotel todo incluido frente a la playa de Boca Chica, de arena blanca y aguas cristalinas, a pocos minutos de Santo Domingo. Dos piscinas grandes, tumbonas en la playa y actividades.",
+  "image": "/img/santo-domingo.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en el Hotel Whala Boca Chica",
+    "Plan todo incluido según condiciones del hotel"
+  ],
+  "excludes": [
+    "Tours por la Ciudad Colonial"
+  ],
+  "services": [
+    "Todo incluido",
+    "2 restaurantes (buffet y a la carta)",
+    "Bar con snacks",
+    "2 piscinas grandes",
+    "Tumbonas y sombrillas en la playa",
+    "Actividades para niños y adultos"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "Calle Abraham Núñez 4, Boca Chica"
+    },
+    {
+      "label": "Check-in / Check-out",
+      "value": "Check-in 3:00 p. m. · Check-out 12:00 m."
+    },
+    {
+      "label": "Habitaciones",
+      "value": "225"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

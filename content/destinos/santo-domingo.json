@@ -1,0 +1,42 @@
+{
+  "order": 11,
+  "name": "Santo Domingo",
+  "city": "Santo Domingo",
+  "country": "República Dominicana",
+  "region": "internacional",
+  "description": "Historia y playa en un solo viaje: la Ciudad Colonial, Patrimonio de la Humanidad, y las aguas cristalinas de Boca Chica a pocos minutos.",
+  "image": "/img/santo-domingo.svg",
+  "gallery": [
+    "/img/santo-domingo.svg",
+    "/img/santo-domingo-2.svg",
+    "/img/santo-domingo-3.svg"
+  ],
+  "highlights": [
+    "Ciudad Colonial (UNESCO)",
+    "Calle El Conde",
+    "Playa de Boca Chica",
+    "Gastronomía dominicana"
+  ],
+  "facts": [
+    {
+      "label": "Aeropuerto",
+      "value": "Internacional Las Américas"
+    },
+    {
+      "label": "Moneda",
+      "value": "Peso dominicano"
+    },
+    {
+      "label": "Vuelo",
+      "value": "Aprox. 2 h 30 min desde Bogotá"
+    },
+    {
+      "label": "Documentos",
+      "value": "Pasaporte vigente; verifica si requieres visa"
+    }
+  ],
+  "priceFrom": 0,
+  "duration": "",
+  "published": true,
+  "demo": false
+}

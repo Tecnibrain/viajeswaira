@@ -1,0 +1,57 @@
+{
+  "order": 18,
+  "title": "Hotel Amazon",
+  "destinationId": "amazonas",
+  "duration": "",
+  "price": 0,
+  "category": "Naturaleza",
+  "operator": "On Vacation",
+  "description": "Eco-resort a orillas del río Amazonas, a 17 km de Leticia y solo accesible en lancha. Habitaciones inspiradas en las comunidades indígenas, piscina infinita con vista al río, spa y muelle privado.",
+  "image": "/img/amazonas.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en el Hotel Amazon",
+    "Alimentación según el plan elegido",
+    "Traslado en lancha según el plan"
+  ],
+  "excludes": [
+    "Actividades como kayak, canopy o visitas a comunidades (según plan)",
+    "Servicios de spa"
+  ],
+  "services": [
+    "Piscina infinita",
+    "Piscina con tobogán",
+    "Spa",
+    "2 restaurantes",
+    "2 bares",
+    "Muelle privado",
+    "Mirador con vista al río",
+    "Minimarket"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "Vereda San José del Río, a 17 km de Leticia"
+    },
+    {
+      "label": "Acceso",
+      "value": "En lancha, 20 a 40 minutos"
+    },
+    {
+      "label": "Habitaciones",
+      "value": "249"
+    },
+    {
+      "label": "Gastronomía",
+      "value": "Cocina amazónica e internacional"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": true,
+  "published": true,
+  "demo": false
+}

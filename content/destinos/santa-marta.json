@@ -1,23 +1,44 @@
 {
-  "order": 3,
+  "order": 2,
   "name": "Santa Marta",
   "city": "Santa Marta",
   "country": "Colombia",
   "region": "nacional",
+  "description": "Playa, Sierra Nevada y Parque Tayrona en un mismo destino. Hospédate cerca de la bahía histórica, en Pozos Colorados o rodeado de naturaleza a pocos minutos del Tayrona.",
   "image": "/img/santa-marta.svg",
   "gallery": [
     "/img/santa-marta.svg",
     "/img/santa-marta-2.svg",
     "/img/santa-marta-3.svg"
   ],
-  "description": "Donde la Sierra Nevada se encuentra con el mar: Parque Tayrona, Minca, Taganga y playas vírgenes.",
   "highlights": [
     "Parque Tayrona",
+    "Bahía de Santa Marta",
+    "Playa Blanca",
+    "Pozos Colorados",
     "Minca",
-    "Taganga",
-    "Rodadero"
+    "Parque de los Novios"
   ],
-  "priceFrom": 1100000,
-  "duration": "4 días / 3 noches",
+  "facts": [
+    {
+      "label": "Aeropuerto",
+      "value": "Simón Bolívar (Santa Marta)"
+    },
+    {
+      "label": "Moneda",
+      "value": "Peso colombiano (COP)"
+    },
+    {
+      "label": "Mejor época",
+      "value": "Diciembre a abril: clima seco y soleado"
+    },
+    {
+      "label": "Clima",
+      "value": "Cálido y tropical"
+    }
+  ],
+  "priceFrom": 0,
+  "duration": "",
+  "published": true,
   "demo": false
 }

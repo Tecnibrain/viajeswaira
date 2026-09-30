@@ -1,0 +1,56 @@
+{
+  "order": 1,
+  "title": "Hotel Grand Sirenis",
+  "destinationId": "san-andres",
+  "duration": "",
+  "price": 0,
+  "category": "Todo incluido",
+  "operator": "On Vacation",
+  "description": "Hotel todo incluido en el centro de San Andrés, frente a la marina, con arquitectura moderna inspirada en la cultura raizal. Restaurante buffet, tres restaurantes temáticos, cuatro bares, club de playa y habitaciones con vista a la ciudad o al mar.",
+  "image": "/img/san-andres.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en el Hotel Grand Sirenis",
+    "Plan todo incluido: alimentación y bebidas según condiciones del hotel",
+    "Acceso a piscinas, club de playa y zonas comunes"
+  ],
+  "excludes": [
+    "Tarjeta de turismo de ingreso a San Andrés",
+    "Tours y actividades en la isla",
+    "Servicios de spa"
+  ],
+  "services": [
+    "Todo incluido 24 horas",
+    "Restaurante buffet y 3 temáticos",
+    "4 bares",
+    "Club de playa",
+    "Piscina para adultos y niños",
+    "Jacuzzi",
+    "Spa y salón de belleza",
+    "Gimnasio",
+    "Wi-Fi gratis",
+    "Estacionamiento"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "Centro de San Andrés, frente al muelle Toninos Marina"
+    },
+    {
+      "label": "Check-in / Check-out",
+      "value": "Check-in 3:00 p. m. · Check-out 12:00 m."
+    },
+    {
+      "label": "Habitaciones",
+      "value": "254, de 30 m²"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": true,
+  "published": true,
+  "demo": false
+}

@@ -1,0 +1,47 @@
+{
+  "order": 11,
+  "title": "Hotel Portobelo Boulevard",
+  "destinationId": "san-andres",
+  "duration": "",
+  "price": 0,
+  "category": "Playa",
+  "operator": "On Vacation",
+  "description": "En primera línea de playa y en el centro de la isla, para vivir el mar de los siete colores desde que sales del hotel.",
+  "image": "/img/san-andres-2.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en el Hotel Portobelo Boulevard",
+    "Alimentación según el plan elegido"
+  ],
+  "excludes": [
+    "Tarjeta de turismo de ingreso a San Andrés",
+    "Tours y actividades en la isla"
+  ],
+  "services": [
+    "Terraza Portobelo",
+    "Restaurante",
+    "Recepción"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "Av. Colombia # 4-111, a 2 minutos del centro"
+    },
+    {
+      "label": "Alimentación",
+      "value": "Buffet asistido de un solo servicio, según el plan"
+    },
+    {
+      "label": "Habitaciones",
+      "value": "10"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

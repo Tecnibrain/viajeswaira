@@ -1,0 +1,43 @@
+{
+  "order": 35,
+  "title": "Radisson Riviera Panamá",
+  "destinationId": "panama",
+  "duration": "",
+  "price": 0,
+  "category": "Playa",
+  "operator": "On Vacation",
+  "description": "Hotel frente al mar en Playa Caracol, Punta Chame, con playa privada, dos piscinas al aire libre, jacuzzis y spa de servicio completo. Tranquilidad a una hora de la ciudad.",
+  "image": "/img/panama-3.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en Radisson Riviera Panamá",
+    "Alimentación según el plan elegido"
+  ],
+  "excludes": [
+    "Servicios de spa",
+    "Tours por Ciudad de Panamá"
+  ],
+  "services": [
+    "Playa privada",
+    "2 piscinas al aire libre",
+    "Jacuzzis",
+    "Spa",
+    "Jardines y terrazas",
+    "Fire pits",
+    "Room service"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "Playa Caracol, Chame, Panamá Oeste"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

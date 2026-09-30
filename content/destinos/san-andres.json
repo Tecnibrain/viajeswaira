@@ -1,23 +1,52 @@
 {
-  "order": 2,
+  "order": 1,
   "name": "San Andrés",
-  "city": "San Andrés",
+  "city": "San Andrés Isla",
   "country": "Colombia",
   "region": "nacional",
+  "description": "El mar de los siete colores te espera: playas de arena blanca, cayos, arrecifes y el ambiente raizal del Caribe colombiano. Elige entre hoteles en el centro de la isla, frente al mar o con plan todo incluido.",
   "image": "/img/san-andres.svg",
   "gallery": [
     "/img/san-andres.svg",
     "/img/san-andres-2.svg",
     "/img/san-andres-3.svg"
   ],
-  "description": "El mar de los siete colores: playas de arena blanca, snorkel, Johnny Cay y el ambiente relajado del Caribe insular.",
   "highlights": [
     "Johnny Cay",
-    "Acuario y Haynes Cay",
     "Hoyo Soplador",
-    "Vuelta a la isla"
+    "Cueva de Morgan",
+    "La Piscinita",
+    "Vuelta a la isla",
+    "Buceo y parasail"
   ],
-  "priceFrom": 1500000,
-  "duration": "5 días / 4 noches",
+  "facts": [
+    {
+      "label": "Aeropuerto",
+      "value": "Gustavo Rojas Pinilla, a pocos minutos del centro"
+    },
+    {
+      "label": "Moneda",
+      "value": "Peso colombiano (COP)"
+    },
+    {
+      "label": "Idioma",
+      "value": "Español y creole"
+    },
+    {
+      "label": "Clima",
+      "value": "Cálido todo el año: 30 °C de día, 26 °C de noche"
+    },
+    {
+      "label": "Documentos",
+      "value": "Documento de identidad y tarjeta de turismo de ingreso a la isla (se paga aparte)"
+    },
+    {
+      "label": "Vuelo",
+      "value": "Aprox. 2 h 10 min desde Bogotá"
+    }
+  ],
+  "priceFrom": 0,
+  "duration": "",
+  "published": true,
   "demo": false
 }

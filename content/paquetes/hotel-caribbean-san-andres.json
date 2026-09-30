@@ -1,0 +1,48 @@
+{
+  "order": 3,
+  "title": "Hotel Caribbean",
+  "destinationId": "san-andres",
+  "duration": "",
+  "price": 0,
+  "category": "Playa",
+  "operator": "On Vacation",
+  "description": "En pleno centro de San Andrés y a pasos de la playa Spratt Bight. Habitaciones modernas con aire acondicionado y TV, y el rooftop La Marea para celebrar con cocteles y la mejor vista de la isla.",
+  "image": "/img/san-andres-3.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en el Hotel Caribbean",
+    "Alimentación según el plan elegido"
+  ],
+  "excludes": [
+    "Tarjeta de turismo de ingreso a San Andrés",
+    "Consumos en el rooftop La Marea (costo adicional)",
+    "Traslados aeropuerto – hotel"
+  ],
+  "services": [
+    "Rooftop La Marea",
+    "Desayuno tipo buffet",
+    "Recepción 24 horas"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "Av. 20 de Julio # 3-1, a 7 minutos del aeropuerto"
+    },
+    {
+      "label": "Alimentación",
+      "value": "Desayuno buffet; almuerzo y cena según el plan en la Terraza Portobelo Beach"
+    },
+    {
+      "label": "Habitaciones",
+      "value": "68"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

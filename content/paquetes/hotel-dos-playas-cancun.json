@@ -1,0 +1,54 @@
+{
+  "order": 23,
+  "title": "Hotel Dos Playas",
+  "destinationId": "cancun",
+  "duration": "",
+  "price": 0,
+  "category": "Playa",
+  "operator": "On Vacation",
+  "description": "En la zona hotelera de Cancún, sobre el Boulevard Kukulcán, a unos 30 minutos del aeropuerto. Piscina, spa, cancha de tenis y actividades para niños y adultos.",
+  "image": "/img/cancun.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en el Hotel Dos Playas",
+    "Alimentación según el plan elegido"
+  ],
+  "excludes": [
+    "Tours a Tulum, Chichén Itzá o cenotes",
+    "Impuestos locales si aplican"
+  ],
+  "services": [
+    "Piscina",
+    "Spa",
+    "Restaurante",
+    "Bar",
+    "Cancha de tenis",
+    "Actividades para niños y adultos"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "Boulevard Kukulcán km 6.5, zona hotelera de Cancún"
+    },
+    {
+      "label": "Check-in / Check-out",
+      "value": "Check-in 3:00 p. m. · Check-out 12:00 m."
+    },
+    {
+      "label": "Alimentación",
+      "value": "Buffet asistido, según el plan"
+    },
+    {
+      "label": "Habitaciones",
+      "value": "196"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

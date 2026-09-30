@@ -1,0 +1,51 @@
+{
+  "order": 39,
+  "title": "Summit Rainforest Panamá",
+  "destinationId": "panama",
+  "duration": "",
+  "price": 0,
+  "category": "Naturaleza",
+  "operator": "On Vacation",
+  "description": "Hotel rodeado de bosque tropical a las afueras de Ciudad de Panamá, con senderos, mariposario, ranario, golf y un centro de rescate de perezosos. Naturaleza a minutos de la ciudad.",
+  "image": "/img/panama.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en Summit Rainforest",
+    "Alimentación según el plan elegido"
+  ],
+  "excludes": [
+    "Tours y golf (costo adicional)"
+  ],
+  "services": [
+    "Senderos",
+    "Mariposario",
+    "Ranario",
+    "Golf",
+    "Centro de rescate de perezosos",
+    "Piscina",
+    "Fitness center",
+    "Zona de juegos para niños"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "Av. Omar Torrijos, a unos 14 km del centro de Ciudad de Panamá"
+    },
+    {
+      "label": "Check-in / Check-out",
+      "value": "Check-in 3:00 p. m. · Check-out 12:00 m."
+    },
+    {
+      "label": "Habitaciones",
+      "value": "103"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

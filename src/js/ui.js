@@ -10,8 +10,11 @@ export const formatPrice = (n) => fmt.format(n);
 export const demoBadge = (item) => (item.demo ? '<span class="badge-demo" title="Dato de demostración">DEMO</span>' : '');
 
 export function priceTag(value, item, label = 'Desde') {
+  if (!Number(value)) return `<p class="price price-quote"><strong>Cotiza tu plan</strong> ${demoBadge(item)}<small class="per">Precio según fechas, temporada y número de viajeros</small></p>`;
   return `<p class="price"><small>${label}</small> <strong>${formatPrice(value)}</strong> ${demoBadge(item)}<small class="per">por persona</small></p>`;
 }
+
+export const operatorTag = (item) => (item.operator ? `<p class="operator">Operado por <strong>${esc(item.operator)}</strong></p>` : '');
 
 const img = (src, alt, eager = false) =>
   `<img src="${esc(src)}" alt="${esc(alt)}" width="600" height="400" ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async" />`;
@@ -25,7 +28,7 @@ export function destinoCard(d) {
       <p class="eyebrow">${esc(d.city)} · ${esc(d.country)}</p>
       <h3><a href="/destino?id=${d.id}">${esc(d.name)}</a></h3>
       <p class="card-text">${esc(d.description)}</p>
-      <p class="meta"><span>🕒 ${esc(d.duration)}</span></p>
+      ${d.duration ? `<p class="meta"><span>🕒 ${esc(d.duration)}</span></p>` : ''}
       ${priceTag(d.priceFrom, d)}
       <a class="btn btn-primary btn-block" href="/destino?id=${d.id}">Ver destino</a>
     </div>
@@ -42,7 +45,8 @@ export function paqueteCard(p) {
       <p class="eyebrow">${esc(d.name)}, ${esc(d.country)}</p>
       <h3><a href="/paquete?id=${p.id}">${esc(p.title)}</a></h3>
       <p class="card-text">${esc(p.description)}</p>
-      <p class="meta"><span>🕒 ${esc(p.duration)}</span></p>
+      ${p.duration ? `<p class="meta"><span>🕒 ${esc(p.duration)}</span></p>` : ''}
+      ${operatorTag(p)}
       ${priceTag(p.price, p, 'Precio')}
       <div class="card-actions">
         <a class="btn btn-primary" href="/paquete?id=${p.id}">Ver paquete</a>

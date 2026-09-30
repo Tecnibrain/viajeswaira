@@ -1,0 +1,49 @@
+{
+  "order": 34,
+  "title": "Playa Blanca Hotel & Resort (todo incluido)",
+  "destinationId": "panama",
+  "duration": "",
+  "price": 0,
+  "category": "Todo incluido",
+  "operator": "On Vacation",
+  "description": "Resort todo incluido en Playa Blanca, en el Arco Seco del Pacífico panameño, con una de las piscinas de agua salada más grandes de Centroamérica, toboganes gigantes, beach club y ocho restaurantes.",
+  "image": "/img/panama-2.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en Playa Blanca Hotel & Resort",
+    "Plan todo incluido según condiciones del hotel"
+  ],
+  "excludes": [
+    "Deportes acuáticos motorizados (costo adicional)",
+    "Lavandería"
+  ],
+  "services": [
+    "Todo incluido",
+    "Piscina de agua salada gigante",
+    "Toboganes",
+    "Beach club",
+    "8 restaurantes",
+    "6 bares",
+    "Kids Club",
+    "Gimnasio",
+    "Voleibol"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "Playa Blanca, Río Hato, Coclé"
+    },
+    {
+      "label": "Habitaciones",
+      "value": "221"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}

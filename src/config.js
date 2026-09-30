@@ -29,9 +29,9 @@ export const SITE = {
   domain: 'viajeswaira.com',
   url: 'https://viajeswaira.com',
   description:
-    'Viajes Waira, agencia de viajes: paquetes turísticos, destinos nacionales e internacionales, planes a la medida y asesoría personalizada para tus vacaciones.',
+    'Viajes Waira, agencia de viajes: planes y hoteles en San Andrés, Santa Marta, La Guajira, Amazonas, Punta Cana, Cancún, Panamá y más. Aliados de On Vacation, con asesoría personalizada.',
   keywords:
-    'agencia de viajes, paquetes turísticos, viajes, vacaciones, Cartagena, San Andrés, Santa Marta, Medellín, Cancún, Punta Cana, Madrid, París, Viajes Waira',
+    'agencia de viajes, paquetes turísticos, planes todo incluido, On Vacation, San Andrés, Santa Marta, La Guajira, Amazonas, Coveñas, Girardot, Guatapé, Medellín, Cancún, Punta Cana, Santo Domingo, Panamá, Europa, Viajes Waira',
   locale: 'es_CO',
   lang: 'es',
   currency: 'COP',

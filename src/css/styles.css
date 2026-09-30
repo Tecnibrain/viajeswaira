@@ -354,3 +354,12 @@ textarea { min-height: 120px; resize: vertical; }
 .legal table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
 .legal th, .legal td { border: 1px solid var(--c-border); padding: 8px 10px; text-align: left; vertical-align: top; }
 .legal th { background: var(--c-light); }
+
+/* Planes sin precio publicado y operador */
+.price-quote strong { font-size: 1.2rem; color: var(--c-primary); }
+.operator { font-size: 0.85rem; color: var(--c-muted); margin: -0.2em 0 0.6em; }
+.operator strong { color: var(--c-text); }
+.facts-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr)); gap: 12px; margin: 0; }
+.facts-list div { background: var(--c-light); border-radius: var(--radius-sm); padding: 12px 14px; }
+.facts-list dt { font-weight: 700; font-size: 0.85rem; color: var(--c-primary); margin-bottom: 2px; }
+.facts-list dd { margin: 0; font-size: 0.93rem; color: var(--c-text); }

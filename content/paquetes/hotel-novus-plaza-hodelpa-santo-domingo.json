@@ -1,0 +1,47 @@
+{
+  "order": 32,
+  "title": "Hotel Novus Plaza Hodelpa",
+  "destinationId": "santo-domingo",
+  "duration": "",
+  "price": 0,
+  "category": "Ciudad",
+  "operator": "On Vacation",
+  "description": "En la Calle El Conde, en plena Ciudad Colonial de Santo Domingo, Patrimonio de la Humanidad. Perfecto para recorrer a pie la historia, la gastronomía y la vida nocturna de la capital.",
+  "image": "/img/santo-domingo-2.svg",
+  "gallery": [],
+  "includes": [
+    "Alojamiento en el Hotel Novus Plaza Hodelpa",
+    "Alimentación según el plan elegido"
+  ],
+  "excludes": [
+    "Lavandería",
+    "Tours por la ciudad"
+  ],
+  "services": [
+    "Wi-Fi de cortesía",
+    "Restaurante El Patio",
+    "Lavandería (costo adicional)"
+  ],
+  "facts": [
+    {
+      "label": "Ubicación",
+      "value": "Calle El Conde esquina Hostos, Ciudad Colonial"
+    },
+    {
+      "label": "Check-in / Check-out",
+      "value": "Check-in 3:00 p. m. · Check-out 12:00 m."
+    },
+    {
+      "label": "Habitaciones",
+      "value": "96"
+    },
+    {
+      "label": "Vuelos",
+      "value": "Planes con o sin tiquete aéreo desde Colombia; consúltalos al cotizar"
+    }
+  ],
+  "itinerary": [],
+  "featured": false,
+  "published": true,
+  "demo": false
+}
