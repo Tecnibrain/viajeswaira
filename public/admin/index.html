@@ -4,11 +4,27 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex, nofollow" />
-    <title>Panel de administración · Viajes Waira</title>
+    <meta name="theme-color" content="#1b5e43" />
+    <title>Panel · Viajes Waira</title>
     <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/admin/admin.css" />
   </head>
   <body>
-    <!-- Sveltia CMS (gratuito, código abierto). Configuración en /admin/config.yml -->
-    <script src="https://unpkg.com/@sveltia/cms@^0.224.0/dist/sveltia-cms.js"></script>
+    <header class="topbar" hidden>
+      <img src="/img/brand/logo-header.webp" alt="Viajes Waira" height="44" />
+      <nav class="tabs" aria-label="Secciones">
+        <button type="button" data-tab="paquetes" aria-pressed="true">🧳 Paquetes</button>
+        <button type="button" data-tab="destinos" aria-pressed="false">📍 Destinos</button>
+      </nav>
+      <div class="top-actions">
+        <a class="link" href="/" target="_blank" rel="noopener">Ver la página ↗</a>
+        <button type="button" class="link" data-action="logout">Salir</button>
+      </div>
+    </header>
+    <main id="app" aria-live="polite">
+      <p class="loading">Cargando…</p>
+    </main>
+    <div class="toast" role="status" hidden></div>
+    <script type="module" src="/admin/admin.js"></script>
   </body>
 </html>

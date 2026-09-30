@@ -7,7 +7,7 @@ ni hosting de pago.
 
 > 📘 **Guía para publicarlo paso a paso (Cloudflare + Namecheap):** [GUIA_PUBLICACION.md](GUIA_PUBLICACION.md)
 >
-> 🧳 **Subir paquetes y destinos sin código (panel https://viajeswaira.com/admin):** [COMO_SUBIR_PAQUETES.md](COMO_SUBIR_PAQUETES.md)
+> 🧳 **Subir paquetes y destinos sin código (panel propio con contraseña en https://viajeswaira.com/admin):** [COMO_SUBIR_PAQUETES.md](COMO_SUBIR_PAQUETES.md)
 
 ## Páginas
 
@@ -29,7 +29,7 @@ ni hosting de pago.
 | Nombre, dominio, **WhatsApp**, correo, teléfono, dirección, horarios, Instagram, Facebook, TikTok, **colores** | `src/config.js` |
 | Destinos (texto, precio, imágenes) | Panel **/admin** → Destinos (archivos `content/destinos/*.json`) |
 | Paquetes (precio, incluye, itinerario…) | Panel **/admin** → Paquetes (archivos `content/paquetes/*.json`) |
-| Campos del panel de administración | `public/admin/config.yml` |
+| Panel de administración | `public/admin/` (pantallas) y `functions/api/admin/` (guardar en GitHub) |
 | Textos de Home / Nosotros / FAQ | `index.html`, `nosotros.html` |
 | Menú y pie de página | `partials/header.html`, `partials/footer.html` |
 | Estilos | `src/css/styles.css` |
