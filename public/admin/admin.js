@@ -130,6 +130,7 @@ async function start() {
     const res = await fetch('/api/admin/me', { credentials: 'same-origin' });
     if (res.status === 503) return renderMessage((await res.json()).error);
     if (!res.ok) return renderLogin();
+    state.user = (await res.json()).user;
     await loadAll();
   } catch {
     renderMessage('No fue posible conectar con el panel. Revisa tu conexión a internet.');
@@ -147,9 +148,11 @@ function renderLogin(message = '') {
     <form class="login" id="login">
       <img src="/img/brand/logo-horizontal.webp" alt="Viajes Waira" />
       <h1>Panel de administración</h1>
-      <p>Ingresa la contraseña para administrar paquetes y destinos.</p>
+      <p>Ingresa tu usuario y contraseña para administrar paquetes y destinos.</p>
+      <label class="hp" for="user" hidden>Usuario</label>
+      <input type="text" id="user" autocomplete="username" autocapitalize="none" spellcheck="false" placeholder="Usuario" required autofocus />
       <label class="hp" for="pw" hidden>Contraseña</label>
-      <input type="password" id="pw" autocomplete="current-password" placeholder="Contraseña" required autofocus />
+      <input type="password" id="pw" autocomplete="current-password" placeholder="Contraseña" required />
       <button class="btn btn-primary" type="submit">Entrar</button>
       <p class="error" role="alert">${esc(message)}</p>
     </form>`;
@@ -160,7 +163,8 @@ function renderLogin(message = '') {
     btn.disabled = true;
     btn.textContent = 'Entrando…';
     try {
-      await api('login', { password: form.pw.value });
+      const res = await api('login', { user: form.user.value, password: form.pw.value });
+      state.user = res.user;
       await loadAll();
     } catch (err) {
       form.querySelector('.error').textContent = err.message;
@@ -176,6 +180,7 @@ async function loadAll() {
   state.data.paquetes = p.items;
   state.data.destinos = d.items;
   topbar.hidden = false;
+  document.querySelector('[data-user]').textContent = state.user ? `👤 ${state.user}` : '';
   renderList();
 }
 

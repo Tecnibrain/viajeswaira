@@ -1,14 +1,15 @@
 /**
  * API del panel de administración de Viajes Waira (Cloudflare Pages Function, plan Free).
  *
- *  - El acceso se protege con una contraseña (secreto ADMIN_PASSWORD en Cloudflare).
+ *  - El acceso se protege con usuario y contraseña (secreto ADMIN_USERS en Cloudflare,
+ *    una línea por persona con el formato  usuario:contraseña ).
  *  - Los cambios se guardan como archivos JSON en GitHub (content/paquetes, content/destinos)
  *    usando el secreto CMS_GITHUB_TOKEN. Cada guardado es un commit, y GitHub Actions
  *    publica el sitio automáticamente en 1–2 minutos.
  *  - Ningún secreto se envía al navegador.
  *
  * Rutas (todas bajo /api/admin/):
- *   POST login  { password }        GET  me            POST logout
+ *   POST login  { user, password }  GET  me            POST logout
  *   GET  list?type=paquetes|destinos
  *   POST save   { type, id?, data, images:[{ path, base64 }] }
  *   POST delete { type, id }
@@ -56,31 +57,48 @@ const slugify = (text) =>
     .slice(0, 60) || 'item';
 
 // ---------------------------------------------------------------- sesión
+/** Lee ADMIN_USERS ("usuario:contraseña" por línea o separados por coma). ADMIN_PASSWORD = usuario "admin". */
+function getUsers(env) {
+  const users = new Map();
+  for (const line of String(env.ADMIN_USERS || '').split(/[\n,]+/)) {
+    const i = line.indexOf(':');
+    if (i > 0) users.set(line.slice(0, i).trim().toLowerCase(), line.slice(i + 1).trim());
+  }
+  if (env.ADMIN_PASSWORD && !users.has('admin')) users.set('admin', String(env.ADMIN_PASSWORD));
+  for (const [u, p] of users) if (!u || !p) users.delete(u);
+  return users;
+}
+
 async function hmacKey(env) {
-  const raw = await crypto.subtle.digest('SHA-256', enc.encode(`waira|${env.ADMIN_PASSWORD}|${env.CMS_GITHUB_TOKEN}`));
+  const raw = await crypto.subtle.digest('SHA-256', enc.encode(`waira|${env.ADMIN_USERS}|${env.ADMIN_PASSWORD}|${env.CMS_GITHUB_TOKEN}`));
   return crypto.subtle.importKey('raw', raw, { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']);
 }
 const sign = async (env, payload) => b64url(new Uint8Array(await crypto.subtle.sign('HMAC', await hmacKey(env), enc.encode(payload))));
 
-async function newSessionCookie(env) {
+async function newSessionCookie(env, user) {
   const exp = String(Date.now() + SESSION_DAYS * 864e5);
-  const value = `${exp}.${await sign(env, exp)}`;
+  const value = `${user}.${exp}.${await sign(env, `${user}|${exp}`)}`;
   return `${COOKIE}=${value}; Path=/api/admin; HttpOnly; Secure; SameSite=Strict; Max-Age=${SESSION_DAYS * 86400}`;
 }
 
-async function isLoggedIn(env, request) {
+/** Devuelve el usuario de la sesión, o null si no hay sesión válida */
+async function sessionUser(env, request) {
   const cookie = (request.headers.get('Cookie') || '').split(/;\s*/).find((c) => c.startsWith(`${COOKIE}=`));
-  if (!cookie) return false;
-  const [exp, sig] = cookie.slice(COOKIE.length + 1).split('.');
-  if (!exp || !sig || Number(exp) < Date.now()) return false;
-  return safeEqual(sig, await sign(env, exp));
+  if (!cookie) return null;
+  const [user, exp, sig] = cookie.slice(COOKIE.length + 1).split('.');
+  if (!user || !exp || !sig || Number(exp) < Date.now() || !getUsers(env).has(user)) return null;
+  return safeEqual(sig, await sign(env, `${user}|${exp}`)) ? user : null;
 }
 
-async function passwordMatches(env, password) {
-  const [a, b] = await Promise.all(
-    [String(password || ''), String(env.ADMIN_PASSWORD)].map(async (p) => b64url(new Uint8Array(await crypto.subtle.digest('SHA-256', enc.encode(p))))),
-  );
-  return safeEqual(a, b);
+const sha = async (text) => b64url(new Uint8Array(await crypto.subtle.digest('SHA-256', enc.encode(String(text)))));
+
+/** Comprueba usuario y contraseña; devuelve el usuario normalizado o null */
+async function checkLogin(env, user, password) {
+  const name = String(user || '').trim().toLowerCase();
+  const expected = getUsers(env).get(name);
+  // Se compara siempre (aunque el usuario no exista) para no revelar qué usuarios existen
+  const ok = safeEqual(await sha(password || ''), await sha(expected ?? `\u0000${Math.random()}`));
+  return ok && expected ? name : null;
 }
 
 // ---------------------------------------------------------------- GitHub
@@ -205,7 +223,7 @@ const REQUIRED = { paquetes: ['title', 'destinationId'], destinos: ['name', 'cou
 const LABEL = { paquetes: 'paquete', destinos: 'destino' };
 
 // ---------------------------------------------------------------- manejadores
-async function handleSave(env, body) {
+async function handleSave(env, body, user) {
   const { type } = body;
   if (!FOLDERS[type]) return json({ error: 'Tipo no válido.' }, 400);
   const data = SCHEMAS[type](body.data || {});
@@ -234,18 +252,18 @@ async function handleSave(env, body) {
   files.push({ path: `${FOLDERS[type]}/${id}.json`, base64: textToBase64(JSON.stringify(data, null, 2) + '\n') });
 
   const name = data.title || data.name;
-  await commitFiles(gh, `Panel: ${existing.has(id) ? 'actualiza' : 'crea'} ${LABEL[type]} «${name}»`, files);
+  await commitFiles(gh, `Panel (${user}): ${existing.has(id) ? 'actualiza' : 'crea'} ${LABEL[type]} «${name}»`, files);
   return json({ ok: true, id });
 }
 
-async function handleDelete(env, body) {
+async function handleDelete(env, body, user) {
   const { type } = body;
   const id = slugify(body.id);
   if (!FOLDERS[type] || !body.id) return json({ error: 'Datos no válidos.' }, 400);
   const gh = github(env);
   const exists = (await listFiles(gh, FOLDERS[type])).some((f) => f.name === `${id}.json`);
   if (!exists) return json({ ok: true });
-  await commitFiles(gh, `Panel: elimina ${LABEL[type]} «${id}»`, [], [`${FOLDERS[type]}/${id}.json`]);
+  await commitFiles(gh, `Panel (${user}): elimina ${LABEL[type]} «${id}»`, [], [`${FOLDERS[type]}/${id}.json`]);
   return json({ ok: true });
 }
 
@@ -260,8 +278,8 @@ export async function onRequest({ request, env, params }) {
   const route = (params.path || []).join('/');
   const method = request.method;
 
-  if (!env.ADMIN_PASSWORD || !env.CMS_GITHUB_TOKEN) {
-    return json({ error: 'El panel aún no está activado: faltan los secretos ADMIN_PASSWORD y CMS_GITHUB_TOKEN.' }, 503);
+  if (!getUsers(env).size || !env.CMS_GITHUB_TOKEN) {
+    return json({ error: 'El panel aún no está activado: faltan los secretos ADMIN_USERS y CMS_GITHUB_TOKEN.' }, 503);
   }
   // Protección CSRF: las escrituras deben venir del propio panel
   if (method !== 'GET') {
@@ -273,27 +291,29 @@ export async function onRequest({ request, env, params }) {
 
   try {
     if (route === 'login' && method === 'POST') {
-      const { password } = await request.json().catch(() => ({}));
-      if (!(await passwordMatches(env, password))) {
+      const { user, password } = await request.json().catch(() => ({}));
+      const name = await checkLogin(env, user, password);
+      if (!name) {
         await new Promise((r) => setTimeout(r, 1200)); // frena intentos repetidos
-        return json({ error: 'Contraseña incorrecta.' }, 401);
+        return json({ error: 'Usuario o contraseña incorrectos.' }, 401);
       }
-      return json({ ok: true }, 200, { 'Set-Cookie': await newSessionCookie(env) });
+      return json({ ok: true, user: name }, 200, { 'Set-Cookie': await newSessionCookie(env, name) });
     }
     if (route === 'logout') {
       return json({ ok: true }, 200, { 'Set-Cookie': `${COOKIE}=; Path=/api/admin; HttpOnly; Secure; SameSite=Strict; Max-Age=0` });
     }
 
-    if (!(await isLoggedIn(env, request))) return json({ error: 'Sesión cerrada. Vuelve a ingresar.' }, 401);
+    const user = await sessionUser(env, request);
+    if (!user) return json({ error: 'Sesión cerrada. Vuelve a ingresar.' }, 401);
 
-    if (route === 'me' && method === 'GET') return json({ ok: true });
+    if (route === 'me' && method === 'GET') return json({ ok: true, user });
     if (route === 'list' && method === 'GET') {
       const type = new URL(request.url).searchParams.get('type');
       if (!FOLDERS[type]) return json({ error: 'Tipo no válido.' }, 400);
       return json({ items: await listItems(github(env), type) });
     }
-    if (route === 'save' && method === 'POST') return await handleSave(env, await request.json());
-    if (route === 'delete' && method === 'POST') return await handleDelete(env, await request.json());
+    if (route === 'save' && method === 'POST') return await handleSave(env, await request.json(), user);
+    if (route === 'delete' && method === 'POST') return await handleDelete(env, await request.json(), user);
     return json({ error: 'Ruta no encontrada.' }, 404);
   } catch (e) {
     return friendlyError(e);

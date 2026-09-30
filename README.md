@@ -7,7 +7,7 @@ ni hosting de pago.
 
 > 📘 **Guía para publicarlo paso a paso (Cloudflare + Namecheap):** [GUIA_PUBLICACION.md](GUIA_PUBLICACION.md)
 >
-> 🧳 **Subir paquetes y destinos sin código (panel propio con contraseña en https://viajeswaira.com/admin):** [COMO_SUBIR_PAQUETES.md](COMO_SUBIR_PAQUETES.md)
+> 🧳 **Subir paquetes y destinos sin código (panel propio con usuario y contraseña en https://viajeswaira.com/admin):** [COMO_SUBIR_PAQUETES.md](COMO_SUBIR_PAQUETES.md)
 
 ## Páginas
 

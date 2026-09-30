@@ -22,6 +22,7 @@ button, input, select, textarea { font: inherit; }
 .tabs button { border: 0; background: transparent; padding: 10px 16px; border-radius: 999px; font-weight: 700; cursor: pointer; color: var(--muted); }
 .tabs button[aria-pressed='true'] { background: #e8f0ea; color: var(--green); }
 .top-actions { display: flex; gap: 14px; align-items: center; }
+.user { color: var(--muted); font-weight: 600; font-size: 0.9rem; }
 .link { background: none; border: 0; color: var(--green); font-weight: 600; cursor: pointer; text-decoration: none; padding: 6px; }
 
 main { width: min(1000px, 100% - 24px); margin: 20px auto 80px; }

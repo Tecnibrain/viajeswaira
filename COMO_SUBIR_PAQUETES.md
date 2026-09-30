@@ -4,7 +4,7 @@ Viajes Waira tiene su propio **panel de administración**:
 
 ## 👉 https://viajeswaira.com/admin
 
-Entras con **una contraseña**, ves la lista de paquetes y usas botones:
+Entras con **tu usuario y contraseña**, ves la lista de paquetes y usas botones:
 **＋ Agregar · ✏️ Editar · ⧉ Duplicar · 🙈 Ocultar · 🗑 Eliminar**.
 Guardas y en **1 o 2 minutos** el cambio aparece en la página. Funciona en computador y celular. Es gratis.
 
@@ -13,7 +13,7 @@ Guardas y en **1 o 2 minutos** el cambio aparece en la página. Funciona en comp
 ## Uso diario
 
 ### Agregar un paquete
-1. Abre **viajeswaira.com/admin** y escribe la contraseña.
+1. Abre **viajeswaira.com/admin** y escribe tu **usuario** y **contraseña**.
 2. Pulsa **＋ Agregar paquete**.
 3. Llena el formulario (cada campo tiene un ejemplo debajo):
    - **Nombre**, **Destino** (se elige de una lista), **Duración** y **Precio** (solo números; se pone con puntos solo).
@@ -47,13 +47,17 @@ el **inicio** (si es destacado) y en Google (sitemap). Sus botones **Reservar** 
 
 El panel necesita dos "secretos" guardados en GitHub. **Nadie más los ve** y no quedan en el código.
 
+> La llave del paso 1 es solo para que el panel pueda guardar en GitHub (GitHub no permite usar usuario y contraseña para eso).
+> Se crea **una vez** y nadie la vuelve a usar. Para entrar al panel se usa **usuario y contraseña**.
+
 ### 1. Crea la llave para que el panel guarde los cambios
 1. Entra a GitHub con la cuenta **Tecnibrain** y abre: **https://github.com/settings/personal-access-tokens/new**
 2. Llena:
    - **Token name:** `Panel Viajes Waira`
    - **Expiration:** la fecha más lejana que permita (anótala para renovarla).
    - **Repository access:** **Only select repositories** → **Tecnibrain/viajeswaira**
-   - **Permissions → Repository permissions → Contents:** **Read and write**
+   - **Permissions** → **+ Add permissions** → **Contents** → **Read and write**
+     (⚠️ **no** elijas *Administration*). Al confirmar debe decir: *Contents: Read and write* y *Metadata: Read-only*.
 3. **Generate token** y copia la llave (empieza por `github_pat_…`).
 
 ### 2. Guarda los dos secretos
@@ -62,7 +66,14 @@ Abre **https://github.com/Tecnibrain/viajeswaira/settings/secrets/actions** → 
 | Name | Secret |
 |---|---|
 | `CMS_GITHUB_TOKEN` | la llave del paso 1 |
-| `ADMIN_PASSWORD` | la contraseña que quieras para entrar al panel (mínimo 12 caracteres, ej. `Waira-Viajes-2026!Cafe`) |
+| `ADMIN_USERS` | los usuarios del panel, uno por línea, con el formato `usuario:contraseña` |
+
+Ejemplo del secreto `ADMIN_USERS` (una persona por línea; contraseñas de mínimo 12 caracteres):
+
+```
+david:Waira-Viajes-2026!Cafe
+maria:Playa-Tayrona-2026*Sol
+```
 
 ### 3. Avísale al desarrollador (o publica de nuevo)
 Se activa en la siguiente publicación. Para hacerlo tú: GitHub → **Actions** → **Publicar en Cloudflare Pages** → **Run workflow**.
@@ -71,10 +82,12 @@ Se activa en la siguiente publicación. Para hacerlo tú: GitHub → **Actions**
 
 ## Preguntas frecuentes
 
-**Olvidé la contraseña / quiero cambiarla.** Cambia el secreto `ADMIN_PASSWORD` en GitHub (paso 2, botón *Update*)
-y vuelve a publicar (paso 3). Al cambiarla, se cierran las sesiones abiertas en otros equipos.
+**Agregar una persona, quitarla u olvidé una contraseña.** Edita el secreto `ADMIN_USERS` en GitHub
+(paso 2, botón *Update*): agrega, cambia o borra su línea, y vuelve a publicar (paso 3).
+Al cambiarlo, se cierran las sesiones abiertas.
 
-**¿Varias personas pueden usar el panel?** Sí, todas con la misma contraseña. Compártela solo con personas de confianza.
+**¿Varias personas pueden usar el panel?** Sí, cada una con su propio usuario. En el historial de GitHub
+queda registrado quién hizo cada cambio (por ejemplo, *Panel (maria): actualiza paquete…*).
 
 **Sale "La llave de GitHub del panel venció".** Repite el paso 1 (nueva llave), actualiza `CMS_GITHUB_TOKEN` y vuelve a publicar.
 
