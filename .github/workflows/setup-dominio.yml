@@ -1,0 +1,35 @@
+# Configura Cloudflare para viajeswaira.com: zona (plan Free), DNS, dominios de Pages,
+# HTTPS y redirección www. Muestra los nameservers para Namecheap.
+# Ejecutar desde GitHub: Actions -> "Configurar dominio en Cloudflare" -> Run workflow.
+name: Configurar dominio en Cloudflare
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configurar Cloudflare
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          DOMAIN: viajeswaira.com
+          PROJECT_NAME: viajeswaira
+          PRODUCTION_BRANCH: main
+        run: bash scripts/cloudflare-setup.sh
+
+      - name: Verificar el sitio
+        run: |
+          {
+            echo "### Verificación"
+            echo '```'
+            echo "NS:    $(dig +short NS viajeswaira.com | tr '\n' ' ')"
+            echo "HTTPS: $(curl -s -o /dev/null -w '%{http_code}' --max-time 15 https://viajeswaira.com || echo 'aún no responde')"
+            echo "WWW:   $(curl -s -o /dev/null -w '%{http_code} -> %{redirect_url}' --max-time 15 https://www.viajeswaira.com || echo 'aún no responde')"
+            echo '```'
+          } | tee -a "$GITHUB_STEP_SUMMARY"

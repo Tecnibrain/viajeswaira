@@ -43,6 +43,58 @@ conectarse con un simple registro CNAME sin cambiar nameservers. Como quieres qu
 
 ---
 
+## 🚀 Ruta automática (recomendada): solo 3 cosas manuales
+
+Casi todo está automatizado con **GitHub Actions** (gratis). Tú solo haces lo que exige iniciar sesión con **tu** cuenta:
+
+### A. Crea tu cuenta de Cloudflare (2 min)
+https://dash.cloudflare.com/sign-up → correo + contraseña → verifica el correo. Plan **Free**, sin tarjeta.
+
+### B. Crea un token de API y pásalo a GitHub como secreto (5 min)
+1. Cloudflare → ícono de perfil (arriba a la derecha) → **My Profile → API Tokens → Create Token** →
+   **Create Custom Token → Get started**.
+2. **Token name:** `github-viajeswaira`
+3. **Permissions** (botón *+ Add more* para cada fila):
+
+   | Tipo | Permiso | Nivel |
+   |---|---|---|
+   | Account | Cloudflare Pages | Edit |
+   | Zone | Zone | Edit |
+   | Zone | DNS | Edit |
+   | Zone | Zone Settings | Edit |
+   | Zone | Single Redirect | Edit |
+
+4. **Account Resources:** Include → *tu cuenta*. **Zone Resources:** Include → **All zones from an account** → *tu cuenta*.
+5. **Continue to summary → Create Token** → **copia el token** (solo se muestra una vez).
+6. Copia también tu **Account ID**: Cloudflare → Account Home → menú **⋯** junto al nombre de la cuenta →
+   *Copy account ID* (o aparece en la barra derecha de cualquier dominio / en la URL `dash.cloudflare.com/<ACCOUNT_ID>`).
+7. GitHub → https://github.com/Tecnibrain/viajeswaira/settings/secrets/actions → **New repository secret**, dos veces:
+   - Name `CLOUDFLARE_API_TOKEN` → Secret: *el token*
+   - Name `CLOUDFLARE_ACCOUNT_ID` → Secret: *el Account ID*
+
+   🔒 No pegues el token en el chat ni en ningún archivo: solo en los secretos de GitHub.
+
+### Lo que hace la automatización (después de B)
+- Workflow **"Configurar dominio en Cloudflare"** (`.github/workflows/setup-dominio.yml`): crea el proyecto
+  Pages, agrega `viajeswaira.com` a Cloudflare (plan Free), crea los DNS `CNAME @` y `CNAME www` → `viajeswaira.pages.dev`
+  (Proxied, TTL Auto), borra los registros de parking de Namecheap, conecta los dominios a Pages, activa HTTPS
+  (Full strict, Always Use HTTPS, TLS 1.2) y la redirección `www → viajeswaira.com`. Al final **muestra los 2 nameservers**.
+  Se ejecuta desde GitHub → **Actions → Configurar dominio en Cloudflare → Run workflow**.
+- Workflow **"Publicar en Cloudflare Pages"** (`.github/workflows/deploy.yml`): en cada cambio hace el build y publica.
+
+### C. Pon los 2 nameservers en Namecheap (2 min) — lo único que no se puede automatizar
+Namecheap → **Domain List → Manage** (viajeswaira.com):
+1. Pestaña **Advanced DNS** → si **DNSSEC** está activado, desactívalo.
+2. Pestaña **Domain** → **NAMESERVERS** → cambia *Namecheap BasicDNS* por **Custom DNS** → escribe los 2 nameservers
+   que mostró el workflow (tipo `xxxx.ns.cloudflare.com`) → **✓ verde**.
+
+Cuando Cloudflare active el dominio (minutos a 24 h) y se emita el certificado, `https://viajeswaira.com` queda en línea.
+Vuelve a ejecutar el workflow "Configurar dominio" para comprobar el estado.
+
+---
+
+## Ruta manual (alternativa, todo desde los paneles)
+
 ## PASO 1 — Revisa el código en GitHub (ya hecho por mí)
 
 El proyecto ya está creado, compilado y probado, y está subido al repositorio

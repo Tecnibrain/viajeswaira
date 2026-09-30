@@ -1,0 +1,75 @@
+# Publica el sitio en Cloudflare Pages (plan Free) en cada push.
+# - Rama principal del repositorio  -> producción (https://viajeswaira.com)
+# - Otras ramas                     -> vista previa (https://<rama>.viajeswaira.pages.dev)
+# Requiere los secretos del repositorio CLOUDFLARE_API_TOKEN y CLOUDFLARE_ACCOUNT_ID.
+name: Publicar en Cloudflare Pages
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  deployments: write
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  PROJECT_NAME: viajeswaira
+  PRODUCTION_BRANCH: main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: npm
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Build de producción
+        run: npm run build
+
+      - name: Comprobar secretos
+        id: secrets
+        env:
+          TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -z "$TOKEN" ] || [ -z "$ACCOUNT" ]; then
+            echo "::warning::Faltan los secretos CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID. El build funcionó, pero no se publicó. Ver GUIA_PUBLICACION.md"
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Crear proyecto Pages (si no existe)
+        if: steps.secrets.outputs.ready == 'true'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx --yes wrangler@4 pages project create "$PROJECT_NAME" --production-branch "$PRODUCTION_BRANCH" || echo "El proyecto ya existe."
+
+      - name: Publicar
+        if: steps.secrets.outputs.ready == 'true'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          BRANCH="$GITHUB_REF_NAME"
+          if [ "$BRANCH" = "$DEFAULT_BRANCH" ] || [ "$BRANCH" = "$PRODUCTION_BRANCH" ]; then BRANCH="$PRODUCTION_BRANCH"; fi
+          npx --yes wrangler@4 pages deploy dist --project-name "$PROJECT_NAME" --branch "$BRANCH" --commit-hash "$GITHUB_SHA" --commit-message "Deploy $GITHUB_SHA" | tee deploy.log
+          {
+            echo "## Publicado ✅"
+            echo "Rama publicada como: \`$BRANCH\` ($([ "$BRANCH" = "$PRODUCTION_BRANCH" ] && echo producción || echo vista previa))"
+            grep -Eo 'https://[^ ]+\.pages\.dev' deploy.log | tail -1 | sed 's/^/- URL: /'
+            [ "$BRANCH" = "$PRODUCTION_BRANCH" ] && echo "- Dominio: https://viajeswaira.com"
+          } >> "$GITHUB_STEP_SUMMARY"
