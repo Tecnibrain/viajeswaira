@@ -85,5 +85,5 @@ npm run preview    # prueba el build en http://localhost:4173
 - Si algo sale mal: Cloudflare → Workers & Pages → proyecto → **Deployments** → en un despliegue
   anterior, **⋯ → Rollback**.
 - Plan Free de Cloudflare Pages: 500 builds/mes, sitios ilimitados, ancho de banda ilimitado.
-- Regenerar ilustraciones: `npm run images`. Regenerar iconos/OG: ver `scripts/generate-icons.mjs`.
+- Regenerar ilustraciones: `npm run images`. Logos e iconos: `python3 scripts/process-logos.py` (desde `brand/`). Imagen para redes: `node scripts/generate-og.mjs`.
 - Renueva el dominio en Namecheap cada año (es lo único que se paga).

@@ -24,6 +24,7 @@ export const SITE = {
   name: 'Viajes Waira',
   legalName: PLACEHOLDER,
   slogan: 'Descubre el mundo con Viajes Waira',
+  tagline: 'Aventura · Natural · Descubre',
   domain: 'viajeswaira.com',
   url: 'https://viajeswaira.com',
   description:
@@ -55,12 +56,13 @@ export const SITE = {
 
   // Colores de marca (se aplican en todo el sitio al hacer el build)
   colors: {
-    primary: '#0e7c86', // turquesa
-    primaryDark: '#0a5c64',
-    accent: '#f28c28', // atardecer
-    accentDark: '#d4700f',
-    dark: '#10252b',
-    light: '#f6f9f9',
+    primary: '#1b5e43', // verde Waira (logo)
+    primaryDark: '#134631',
+    accent: '#1a9fb0', // turquesa (logo)
+    accentDark: '#147f8d',
+    sand: '#c8b28c', // arena (logo)
+    dark: '#123a2c',
+    light: '#f7f3ee', // crema (fondo del logo)
   },
 
   // Mensaje por defecto al abrir WhatsApp

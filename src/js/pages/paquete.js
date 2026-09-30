@@ -20,7 +20,7 @@ if (!p) {
     <img src="${d.gallery[2] || d.image}" alt="${esc(p.title)}" width="1200" height="800" fetchpriority="high" />
     <div class="container">
       <p class="breadcrumb"><a href="/">Inicio</a> / <a href="/paquetes">Paquetes</a> / ${esc(p.title)}</p>
-      <p class="eyebrow" style="color:#ffc98a">${esc(p.category)} · ${esc(d.name)}, ${esc(d.country)}</p>
+      <p class="eyebrow eyebrow-sand">${esc(p.category)} · ${esc(d.name)}, ${esc(d.country)}</p>
       <h1>${esc(p.title)}</h1>
     </div>
   </section>

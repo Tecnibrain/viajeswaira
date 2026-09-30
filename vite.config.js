@@ -24,7 +24,7 @@ function renderHead(attrs) {
     ${attrs.noindex ? '<meta name="robots" content="noindex, follow" />' : '<meta name="robots" content="index, follow, max-image-preview:large" />'}
     <link rel="canonical" href="${url}" />
     <meta name="theme-color" content="${SITE.colors.primary}" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
     <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
@@ -54,7 +54,7 @@ function schemaOrg() {
     '@type': 'TravelAgency',
     name: SITE.name,
     url: SITE.url,
-    logo: `${SITE.url}/logo.svg`,
+    logo: `${SITE.url}/img/brand/emblema.png`,
     image: `${SITE.url}/og-image.jpg`,
     description: SITE.description,
     areaServed: 'CO',
