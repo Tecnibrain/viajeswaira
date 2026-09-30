@@ -1,0 +1,9 @@
+# Cloudflare Pages: redirecciones (gratis)
+# www -> dominio principal se configura con una "Redirect Rule" / Bulk Redirect en Cloudflare (ver GUIA_PUBLICACION.md)
+/index            /             301
+/home             /             301
+/inicio           /             301
+/reserva          /reservas     301
+/reservar         /reservas     301
+/paquete/:id      /paquete?id=:id   301
+/destino/:id      /destino?id=:id   301

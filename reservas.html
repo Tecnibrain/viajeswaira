@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--#head title="Reservas" path="/reservas" description="Solicita la reserva de tu viaje con Viajes Waira: elige destino, paquete, fecha y número de viajeros. Te contactamos para confirmar."-->
+  </head>
+  <body>
+    <!--#header-->
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <p class="breadcrumb"><a href="/">Inicio</a> / Reservas</p>
+          <h1>Solicitud de reserva</h1>
+          <p>Completa el formulario y un asesor confirmará disponibilidad, precio final y forma de pago. Enviar la solicitud no genera ningún cobro.</p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container" style="max-width: 900px">
+          <form class="form-card" id="booking-form" novalidate>
+            <div class="form-grid">
+              <div><label for="r-nombre">Nombre <span class="req">*</span></label><input id="r-nombre" name="nombre" required autocomplete="given-name" /><p class="field-error"></p></div>
+              <div><label for="r-apellido">Apellido <span class="req">*</span></label><input id="r-apellido" name="apellido" required autocomplete="family-name" /><p class="field-error"></p></div>
+              <div><label for="r-correo">Correo <span class="req">*</span></label><input id="r-correo" name="correo" type="email" required autocomplete="email" /><p class="field-error"></p></div>
+              <div><label for="r-telefono">Teléfono <span class="req">*</span></label><input id="r-telefono" name="telefono" type="tel" required autocomplete="tel" inputmode="tel" /><p class="field-error"></p></div>
+              <div><label for="r-viajeros">Número de viajeros <span class="req">*</span></label><input id="r-viajeros" name="viajeros" type="number" min="1" max="50" value="2" required inputmode="numeric" /><p class="field-error"></p></div>
+              <div><label for="r-fecha">Fecha estimada <span class="req">*</span></label><input id="r-fecha" name="fecha" type="date" required /><p class="field-error"></p></div>
+              <div><label for="r-destino">Destino <span class="req">*</span></label><select id="r-destino" name="destino" required></select><p class="field-error"></p></div>
+              <div><label for="r-paquete">Paquete</label><select id="r-paquete" name="paquete"></select><p class="field-error"></p></div>
+              <div class="full"><label for="r-comentarios">Comentarios</label><textarea id="r-comentarios" name="comentarios" placeholder="Cuéntanos preferencias de hotel, edades de los viajeros, presupuesto, ciudad de salida…"></textarea></div>
+              <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            </div>
+            <p id="r-estimate" class="notice" hidden></p>
+            <div class="form-actions">
+              <button class="btn btn-wa" type="submit" data-channel="whatsapp">Enviar solicitud por WhatsApp</button>
+              <button class="btn btn-outline" type="submit" data-channel="email">Enviar por correo</button>
+              <button class="btn btn-primary" type="button" id="pay-btn" disabled title="Pagos en línea: próximamente">Pagar en línea (próximamente)</button>
+            </div>
+            <p class="form-note">Al enviar aceptas que Viajes Waira use estos datos únicamente para gestionar tu solicitud. Este sitio no guarda tus datos: se envían directamente por WhatsApp o correo.</p>
+            <div id="r-result"></div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!--#footer-->
+    <script type="module" src="/src/js/pages/reservas.js"></script>
+  </body>
+</html>

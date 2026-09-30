@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" role="img"><title>Viajes Waira (ilustración)</title>
+<defs>
+<linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f9a45c"/><stop offset="1" stop-color="#fde0b6"/></linearGradient>
+<linearGradient id="w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ee8a5e"/><stop offset="1" stop-color="#9c4f6b"/></linearGradient>
+</defs>
+<rect width="1200" height="800" fill="url(#s)"/>
+<circle cx="860" cy="300" r="110" fill="#ffe08a" opacity=".95"/>
+<g fill="#ffffff" opacity="0.8">
+<ellipse cx="220" cy="150" rx="90" ry="26"/><ellipse cx="270" cy="132" rx="60" ry="30"/>
+<ellipse cx="880" cy="110" rx="110" ry="24"/><ellipse cx="940" cy="94" rx="60" ry="26"/>
+</g>
+<path d="M0 480 L160 300 L300 420 L470 240 L640 430 L820 270 L1000 410 L1200 290 V520 H0Z" fill="#c77b7b"/>
+<path d="M0 510 L220 410 L400 490 L620 370 L860 500 L1060 390 L1200 480 V560 H0Z" fill="#6e3d5a"/>
+<rect y="540" width="1200" height="260" fill="url(#w)"/>
+<g stroke="#fff" stroke-opacity=".35" stroke-width="3" fill="none" stroke-linecap="round">
+<path d="M80 580h120M420 610h160M820 575h140M260 660h180M700 690h200"/>
+</g><path d="M0 690 Q300 650 600 680 T1200 660 V800 H0Z" fill="#f0c48f"/>
+<g transform="translate(150 800) scale(1.1)" fill="#6e3d5a">
+<path d="M0 0 C10 -120 30 -220 60 -300 L72 -296 C46 -214 28 -120 18 0Z"/>
+<path d="M66 -300 C10 -330 -60 -320 -110 -280 C-50 -300 10 -300 60 -290Z"/>
+<path d="M66 -300 C120 -340 190 -330 230 -290 C170 -310 110 -305 70 -292Z"/>
+<path d="M66 -300 C40 -360 -10 -390 -60 -380 C-10 -370 30 -340 62 -296Z"/>
+<path d="M66 -300 C110 -370 170 -380 210 -360 C160 -355 110 -330 72 -294Z"/>
+<path d="M66 -300 C60 -250 20 -200 -20 -180 C20 -220 45 -260 60 -296Z"/>
+</g>
+<g transform="translate(1080 800) scale(0.9)" fill="#6e3d5a">
+<path d="M0 0 C10 -120 30 -220 60 -300 L72 -296 C46 -214 28 -120 18 0Z"/>
+<path d="M66 -300 C10 -330 -60 -320 -110 -280 C-50 -300 10 -300 60 -290Z"/>
+<path d="M66 -300 C120 -340 190 -330 230 -290 C170 -310 110 -305 70 -292Z"/>
+<path d="M66 -300 C40 -360 -10 -390 -60 -380 C-10 -370 30 -340 62 -296Z"/>
+<path d="M66 -300 C110 -370 170 -380 210 -360 C160 -355 110 -330 72 -294Z"/>
+<path d="M66 -300 C60 -250 20 -200 -20 -180 C20 -220 45 -260 60 -296Z"/>
+</g><g fill="#ffffff" transform="translate(760 160) rotate(-8)"><path d="M0 0 L120 -8 L140 -2 L120 6Z"/><path d="M60 -3 L30 -40 L45 -40 L85 -4Z"/><path d="M62 2 L36 36 L50 36 L86 3Z"/></g></svg>

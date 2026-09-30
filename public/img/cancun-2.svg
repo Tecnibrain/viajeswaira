@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" role="img"><title>Cancún (ilustración)</title>
+<defs>
+<linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f9a45c"/><stop offset="1" stop-color="#fde0b6"/></linearGradient>
+<linearGradient id="w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ee8a5e"/><stop offset="1" stop-color="#9c4f6b"/></linearGradient>
+</defs>
+<rect width="1200" height="800" fill="url(#s)"/>
+<circle cx="300" cy="230" r="70" fill="#ffe08a" opacity=".95"/>
+<g fill="#ffffff" opacity="0.8">
+<ellipse cx="220" cy="150" rx="90" ry="26"/><ellipse cx="270" cy="132" rx="60" ry="30"/>
+<ellipse cx="880" cy="110" rx="110" ry="24"/><ellipse cx="940" cy="94" rx="60" ry="26"/>
+</g>
+<rect y="520" width="1200" height="280" fill="url(#w)"/>
+<g stroke="#fff" stroke-opacity=".35" stroke-width="3" fill="none" stroke-linecap="round">
+<path d="M80 560h120M420 590h160M820 555h140M260 640h180M700 670h200"/>
+</g>
+<g fill="#4a2748" transform="translate(860 560)">
+<path d="M-200 0 H200 L180 -40 H-180Z"/><path d="M-170 -40 H170 L150 -80 H-150Z"/>
+<path d="M-140 -80 H140 L120 -120 H-120Z"/><path d="M-110 -120 H110 L90 -160 H-90Z"/>
+<rect x="-40" y="-210" width="80" height="50"/><path d="M-18 0 H18 L10 -160 H-10Z" fill="#ffd88a" opacity=".4"/>
+</g><path d="M0 690 Q300 650 600 680 T1200 660 V800 H0Z" fill="#f0c48f"/>
+<g transform="translate(120 800) scale(0.85)" fill="#6e3d5a">
+<path d="M0 0 C10 -120 30 -220 60 -300 L72 -296 C46 -214 28 -120 18 0Z"/>
+<path d="M66 -300 C10 -330 -60 -320 -110 -280 C-50 -300 10 -300 60 -290Z"/>
+<path d="M66 -300 C120 -340 190 -330 230 -290 C170 -310 110 -305 70 -292Z"/>
+<path d="M66 -300 C40 -360 -10 -390 -60 -380 C-10 -370 30 -340 62 -296Z"/>
+<path d="M66 -300 C110 -370 170 -380 210 -360 C160 -355 110 -330 72 -294Z"/>
+<path d="M66 -300 C60 -250 20 -200 -20 -180 C20 -220 45 -260 60 -296Z"/>
+</g></svg>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--#head title="Contacto" path="/contacto" description="Contacta a Viajes Waira por WhatsApp, correo o teléfono. Te ayudamos a cotizar y planear tu viaje."-->
+  </head>
+  <body>
+    <!--#header-->
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <p class="breadcrumb"><a href="/">Inicio</a> / Contacto</p>
+          <h1>Contacto</h1>
+          <p>Escríbenos y un asesor te responderá lo antes posible.</p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container contact-layout">
+          <div>
+            <h2>Hablemos</h2>
+            <ul class="info-list">
+              <li><span class="icon" aria-hidden="true">💬</span><span><strong>WhatsApp</strong><span data-cfg="whatsapp"></span></span></li>
+              <li><span class="icon" aria-hidden="true">✉️</span><span><strong>Correo</strong><span data-cfg="email"></span></span></li>
+              <li><span class="icon" aria-hidden="true">📞</span><span><strong>Teléfono</strong><span data-cfg="phone"></span></span></li>
+              <li><span class="icon" aria-hidden="true">📍</span><span><strong>Dirección</strong><span data-cfg="address"></span></span></li>
+              <li><span class="icon" aria-hidden="true">🕒</span><span><strong>Horarios</strong><ul data-cfg-hours class="muted" style="padding-left: 18px; margin: 0"></ul></span></li>
+            </ul>
+            <p style="margin-top: 24px"><a class="btn btn-wa" href="#" data-wa>Escribir por WhatsApp</a></p>
+            <div class="social" data-social style="--x: 0"></div>
+          </div>
+          <form class="form-card" id="contact-form" novalidate>
+            <h2>Envíanos un mensaje</h2>
+            <div class="form-grid">
+              <div><label for="c-name">Nombre <span class="req">*</span></label><input id="c-name" name="nombre" required autocomplete="name" /><p class="field-error"></p></div>
+              <div><label for="c-email">Correo <span class="req">*</span></label><input id="c-email" name="correo" type="email" required autocomplete="email" /><p class="field-error"></p></div>
+              <div class="full"><label for="c-subject">Asunto</label><input id="c-subject" name="asunto" /></div>
+              <div class="full"><label for="c-msg">Mensaje <span class="req">*</span></label><textarea id="c-msg" name="mensaje" required></textarea><p class="field-error"></p></div>
+              <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-wa" type="submit" data-channel="whatsapp">Enviar por WhatsApp</button>
+              <button class="btn btn-outline" type="submit" data-channel="email">Enviar por correo</button>
+            </div>
+            <div id="c-result"></div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!--#footer-->
+    <script type="module" src="/src/js/pages/contacto.js"></script>
+  </body>
+</html>

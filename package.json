@@ -1,0 +1,28 @@
+{
+  "name": "viajeswaira",
+  "version": "1.0.0",
+  "description": "Sitio web de Viajes Waira - agencia de viajes",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173",
+    "images": "node scripts/generate-images.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tecnibrain/viajeswaira.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Tecnibrain/viajeswaira/issues"
+  },
+  "homepage": "https://github.com/Tecnibrain/viajeswaira#readme",
+  "devDependencies": {
+    "vite": "^6.4.3"
+  },
+  "dependencies": {
+    "@fontsource-variable/fraunces": "^5.3.0",
+    "@fontsource-variable/plus-jakarta-sans": "^5.3.0"
+  },
+  "type": "module",
+  "private": true
+}

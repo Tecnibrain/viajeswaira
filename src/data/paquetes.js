@@ -1,0 +1,185 @@
+/**
+ * CATÁLOGO DE PAQUETES — DATOS DEMO
+ * ------------------------------------------------------------
+ * Precios, itinerarios, inclusiones y exclusiones son de
+ * DEMOSTRACIÓN. No son tarifas ni condiciones reales.
+ * price: precio por persona en SITE.currency (ver src/config.js).
+ */
+export const paquetes = [
+  {
+    id: 'cartagena-colonial-y-caribe',
+    title: 'Cartagena Colonial y Caribe',
+    destinationId: 'cartagena',
+    duration: '4 días / 3 noches',
+    price: 1450000,
+    category: 'Playa y cultura',
+    featured: true,
+    description:
+      'Recorre la ciudad amurallada, disfruta de un día de playa en Islas del Rosario y vive la noche cartagenera.',
+    includes: ['Tiquetes aéreos ida y regreso (DEMO)', 'Traslados aeropuerto – hotel – aeropuerto', '3 noches de alojamiento con desayuno', 'City tour con guía', 'Pasadía Islas del Rosario', 'Asistencia médica en viaje'],
+    excludes: ['Almuerzos y cenas no especificados', 'Impuesto de muelle', 'Propinas', 'Gastos personales'],
+    itinerary: [
+      { day: 1, title: 'Llegada a Cartagena', text: 'Recepción en el aeropuerto, traslado al hotel y tarde libre para caminar por el Centro Histórico.' },
+      { day: 2, title: 'City tour', text: 'Castillo de San Felipe, Convento de La Popa, Getsemaní y compras en Las Bóvedas.' },
+      { day: 3, title: 'Islas del Rosario', text: 'Día completo de playa, snorkel opcional y almuerzo típico en la isla.' },
+      { day: 4, title: 'Regreso', text: 'Desayuno, tiempo libre según horario de vuelo y traslado al aeropuerto.' },
+    ],
+    demo: true,
+  },
+  {
+    id: 'san-andres-mar-de-siete-colores',
+    title: 'San Andrés: Mar de Siete Colores',
+    destinationId: 'san-andres',
+    duration: '5 días / 4 noches',
+    price: 1790000,
+    category: 'Playa',
+    featured: true,
+    description:
+      'Plan todo incluido para desconectarte en el Caribe colombiano con tours a los cayos más famosos.',
+    includes: ['Tiquetes aéreos (DEMO)', 'Hotel todo incluido 4 noches', 'Tour Johnny Cay y Acuario', 'Vuelta a la isla', 'Traslados', 'Asistencia médica'],
+    excludes: ['Tarjeta de turismo de ingreso a la isla', 'Actividades acuáticas opcionales', 'Propinas'],
+    itinerary: [
+      { day: 1, title: 'Llegada a la isla', text: 'Traslado al hotel, check-in y tarde de playa.' },
+      { day: 2, title: 'Johnny Cay y Acuario', text: 'Paseo en lancha a los cayos, snorkel con mantarrayas en Haynes Cay.' },
+      { day: 3, title: 'Vuelta a la isla', text: 'Hoyo Soplador, La Piscinita, West View y playa de San Luis.' },
+      { day: 4, title: 'Día libre', text: 'Disfruta del hotel o toma actividades opcionales como buceo.' },
+      { day: 5, title: 'Regreso', text: 'Desayuno y traslado al aeropuerto.' },
+    ],
+    demo: true,
+  },
+  {
+    id: 'santa-marta-tayrona-aventura',
+    title: 'Santa Marta y Tayrona Aventura',
+    destinationId: 'santa-marta',
+    duration: '4 días / 3 noches',
+    price: 1290000,
+    category: 'Naturaleza',
+    featured: true,
+    description:
+      'Caminatas en el Parque Tayrona, cascadas en Minca y atardeceres en la bahía más antigua de América.',
+    includes: ['Tiquetes aéreos (DEMO)', 'Alojamiento 3 noches con desayuno', 'Entrada y guía Parque Tayrona', 'Tour Minca', 'Traslados'],
+    excludes: ['Almuerzos y cenas', 'Alquiler de equipo', 'Propinas'],
+    itinerary: [
+      { day: 1, title: 'Llegada a Santa Marta', text: 'Traslado al hotel y paseo por el malecón y el centro histórico.' },
+      { day: 2, title: 'Parque Tayrona', text: 'Caminata guiada hasta Cabo San Juan y tiempo de playa.' },
+      { day: 3, title: 'Minca', text: 'Cascadas, finca cafetera y avistamiento de aves en la Sierra Nevada.' },
+      { day: 4, title: 'Regreso', text: 'Desayuno y traslado al aeropuerto.' },
+    ],
+    demo: true,
+  },
+  {
+    id: 'medellin-eterna-primavera',
+    title: 'Medellín Eterna Primavera',
+    destinationId: 'medellin',
+    duration: '4 días / 3 noches',
+    price: 1150000,
+    category: 'Ciudad',
+    featured: false,
+    description:
+      'Conoce la transformación de Medellín, su cultura paisa y el colorido pueblo de Guatapé.',
+    includes: ['Tiquetes aéreos (DEMO)', 'Hotel 3 noches con desayuno', 'Tour Comuna 13 y Metrocable', 'Excursión Guatapé y El Peñol', 'Traslados'],
+    excludes: ['Almuerzos y cenas', 'Entradas no especificadas', 'Propinas'],
+    itinerary: [
+      { day: 1, title: 'Bienvenida', text: 'Llegada, traslado y noche en El Poblado.' },
+      { day: 2, title: 'City tour', text: 'Comuna 13, Metrocable, Plaza Botero y Pueblito Paisa.' },
+      { day: 3, title: 'Guatapé', text: 'Subida a la Piedra del Peñol y paseo en lancha por el embalse.' },
+      { day: 4, title: 'Regreso', text: 'Desayuno y traslado al aeropuerto.' },
+    ],
+    demo: true,
+  },
+  {
+    id: 'cancun-caribe-mexicano',
+    title: 'Cancún Caribe Mexicano',
+    destinationId: 'cancun',
+    duration: '6 días / 5 noches',
+    price: 4590000,
+    category: 'Internacional',
+    featured: true,
+    description:
+      'Resort todo incluido en la zona hotelera, excursión a Chichén Itzá y cenote, y día en Isla Mujeres.',
+    includes: ['Tiquetes aéreos internacionales (DEMO)', 'Resort todo incluido 5 noches', 'Excursión Chichén Itzá + cenote', 'Traslados', 'Asistencia médica internacional'],
+    excludes: ['Impuestos de salida del país de origen', 'Excursión Isla Mujeres (opcional)', 'Propinas', 'Trámites migratorios'],
+    itinerary: [
+      { day: 1, title: 'Llegada a Cancún', text: 'Traslado al resort y tarde libre en la playa.' },
+      { day: 2, title: 'Día de resort', text: 'Disfruta de piscinas, playa y actividades del hotel.' },
+      { day: 3, title: 'Chichén Itzá', text: 'Visita a una de las maravillas del mundo moderno y baño en cenote.' },
+      { day: 4, title: 'Isla Mujeres (opcional)', text: 'Catamarán, snorkel y Playa Norte.' },
+      { day: 5, title: 'Día libre', text: 'Compras en la zona hotelera o parques temáticos (opcional).' },
+      { day: 6, title: 'Regreso', text: 'Traslado al aeropuerto.' },
+    ],
+    demo: true,
+  },
+  {
+    id: 'punta-cana-todo-incluido',
+    title: 'Punta Cana Todo Incluido',
+    destinationId: 'punta-cana',
+    duration: '6 días / 5 noches',
+    price: 4890000,
+    category: 'Internacional',
+    featured: true,
+    description:
+      'Descanso total frente a Playa Bávaro con excursión a Isla Saona. Ideal para parejas y familias.',
+    includes: ['Tiquetes aéreos internacionales (DEMO)', 'Resort todo incluido 5 noches', 'Excursión Isla Saona', 'Traslados', 'Asistencia médica internacional'],
+    excludes: ['Tasas de entrada al país (si aplican)', 'Actividades opcionales', 'Propinas'],
+    itinerary: [
+      { day: 1, title: 'Llegada', text: 'Traslado al resort y bienvenida.' },
+      { day: 2, title: 'Playa Bávaro', text: 'Día de playa y actividades del resort.' },
+      { day: 3, title: 'Isla Saona', text: 'Catamarán, piscina natural y almuerzo en la isla.' },
+      { day: 4, title: 'Día libre', text: 'Spa, golf o excursiones opcionales.' },
+      { day: 5, title: 'Día libre', text: 'Disfruta del todo incluido.' },
+      { day: 6, title: 'Regreso', text: 'Traslado al aeropuerto.' },
+    ],
+    demo: true,
+  },
+  {
+    id: 'madrid-clasico',
+    title: 'Madrid Clásico',
+    destinationId: 'madrid',
+    duration: '8 días / 7 noches',
+    price: 7390000,
+    category: 'Europa',
+    featured: false,
+    description:
+      'Museos, palacios y gastronomía española, con excursión de un día a la histórica Toledo.',
+    includes: ['Tiquetes aéreos internacionales (DEMO)', 'Hotel 7 noches con desayuno', 'Visita panorámica de Madrid', 'Excursión a Toledo', 'Traslados', 'Asistencia médica Schengen'],
+    excludes: ['Entradas a museos no especificadas', 'Almuerzos y cenas', 'Trámites de viaje', 'Propinas'],
+    itinerary: [
+      { day: 1, title: 'Salida', text: 'Vuelo nocturno hacia Madrid.' },
+      { day: 2, title: 'Llegada a Madrid', text: 'Traslado al hotel y paseo por la Puerta del Sol.' },
+      { day: 3, title: 'Panorámica', text: 'Palacio Real, Plaza Mayor, Gran Vía y Parque del Retiro.' },
+      { day: 4, title: 'Museo del Prado', text: 'Mañana cultural y tarde de tapas en La Latina.' },
+      { day: 5, title: 'Toledo', text: 'Excursión de día completo a la ciudad de las tres culturas.' },
+      { day: 6, title: 'Día libre', text: 'Compras o excursión opcional a Segovia.' },
+      { day: 7, title: 'Día libre', text: 'Estadio, mercados y barrios de Madrid.' },
+      { day: 8, title: 'Regreso', text: 'Traslado al aeropuerto.' },
+    ],
+    demo: true,
+  },
+  {
+    id: 'paris-ciudad-luz',
+    title: 'París Ciudad Luz',
+    destinationId: 'paris',
+    duration: '8 días / 7 noches',
+    price: 7990000,
+    category: 'Europa',
+    featured: true,
+    description:
+      'Vive París a tu ritmo: Torre Eiffel, Louvre, crucero por el Sena y excursión a Versalles.',
+    includes: ['Tiquetes aéreos internacionales (DEMO)', 'Hotel 7 noches con desayuno', 'Crucero por el Sena', 'Excursión a Versalles', 'Traslados', 'Asistencia médica Schengen'],
+    excludes: ['Entradas no especificadas', 'Almuerzos y cenas', 'Tasa turística local', 'Propinas'],
+    itinerary: [
+      { day: 1, title: 'Salida', text: 'Vuelo nocturno hacia París.' },
+      { day: 2, title: 'Bienvenidos a París', text: 'Traslado al hotel y paseo por los Campos Elíseos.' },
+      { day: 3, title: 'Torre Eiffel y Sena', text: 'Visita a la Torre Eiffel y crucero al atardecer.' },
+      { day: 4, title: 'Louvre', text: 'Museo del Louvre y Jardín de las Tullerías.' },
+      { day: 5, title: 'Versalles', text: 'Excursión al Palacio y jardines de Versalles.' },
+      { day: 6, title: 'Montmartre', text: 'Sacré-Cœur, Plaza de Tertre y barrio de los artistas.' },
+      { day: 7, title: 'Día libre', text: 'Compras o Disneyland París (opcional).' },
+      { day: 8, title: 'Regreso', text: 'Traslado al aeropuerto.' },
+    ],
+    demo: true,
+  },
+];
+
+export const getPaquete = (id) => paquetes.find((p) => p.id === id);
+export const paquetesPorDestino = (destId) => paquetes.filter((p) => p.destinationId === destId);

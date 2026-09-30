@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" role="img"><title>París (ilustración)</title>
+<defs>
+<linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5ec8e5"/><stop offset="1" stop-color="#bfe9f3"/></linearGradient>
+<linearGradient id="w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1aa6b7"/><stop offset="1" stop-color="#0e7c86"/></linearGradient>
+</defs>
+<rect width="1200" height="800" fill="url(#s)"/>
+<circle cx="280" cy="220" r="70" fill="#fff4c2" opacity=".95"/>
+<g fill="#ffffff" opacity="0.8">
+<ellipse cx="220" cy="150" rx="90" ry="26"/><ellipse cx="270" cy="132" rx="60" ry="30"/>
+<ellipse cx="880" cy="110" rx="110" ry="24"/><ellipse cx="940" cy="94" rx="60" ry="26"/>
+</g><g fill="#1d4d5a"><rect x="0" y="402" width="102" height="258"/><rect x="108" y="495" width="49" height="165"/><rect x="163" y="508" width="96" height="152"/><rect x="265" y="431" width="103" height="229"/><rect x="374" y="544" width="80" height="116"/><rect x="460" y="487" width="47" height="173"/><rect x="513" y="540" width="64" height="120"/><rect x="583" y="573" width="61" height="87"/><rect x="650" y="546" width="48" height="114"/><rect x="704" y="579" width="55" height="81"/><rect x="765" y="432" width="62" height="228"/><rect x="833" y="575" width="69" height="85"/><rect x="908" y="438" width="46" height="222"/><rect x="960" y="541" width="83" height="119"/><rect x="1049" y="424" width="110" height="236"/><rect x="1165" y="497" width="67" height="163"/></g><g fill="#fdf6d8" opacity=".7"><rect x="10" y="474" width="8" height="10"/><rect x="10" y="558" width="8" height="10"/><rect x="118" y="567" width="8" height="10"/><rect x="173" y="524" width="8" height="10"/><rect x="173" y="608" width="8" height="10"/><rect x="275" y="503" width="8" height="10"/><rect x="275" y="587" width="8" height="10"/><rect x="384" y="616" width="8" height="10"/><rect x="470" y="503" width="8" height="10"/><rect x="470" y="587" width="8" height="10"/><rect x="523" y="612" width="8" height="10"/><rect x="593" y="617" width="8" height="10"/><rect x="660" y="562" width="8" height="10"/><rect x="714" y="595" width="8" height="10"/><rect x="775" y="504" width="8" height="10"/><rect x="775" y="588" width="8" height="10"/><rect x="843" y="619" width="8" height="10"/><rect x="918" y="454" width="8" height="10"/><rect x="918" y="538" width="8" height="10"/><rect x="918" y="622" width="8" height="10"/><rect x="970" y="585" width="8" height="10"/><rect x="1059" y="496" width="8" height="10"/><rect x="1059" y="580" width="8" height="10"/><rect x="1175" y="569" width="8" height="10"/></g>
+<g fill="#1d4d5a" transform="translate(600 640)">
+<path d="M-8 -470 L8 -470 L14 -400 L22 -300 L-22 -300 L-14 -400Z"/>
+<path d="M-40 -300 H40 L52 -210 H-52Z"/>
+<path d="M-60 -210 H60 L130 0 H70 C50 -80 -50 -80 -70 0 H-130Z"/>
+<rect x="-3" y="-500" width="6" height="36"/>
+</g><rect y="640" width="1200" height="160" fill="#2f6f5e"/><path d="M0 700 h1200" stroke="#1aa6b7" stroke-width="30" opacity=".6"/></svg>

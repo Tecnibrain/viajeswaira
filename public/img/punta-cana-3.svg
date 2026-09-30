@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" role="img"><title>Punta Cana (ilustración)</title>
+<defs>
+<linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b3a67"/><stop offset="1" stop-color="#b56576"/></linearGradient>
+<linearGradient id="w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3d5a80"/><stop offset="1" stop-color="#293241"/></linearGradient>
+</defs>
+<rect width="1200" height="800" fill="url(#s)"/>
+<circle cx="620" cy="260" r="90" fill="#fbe7c6" opacity=".95"/>
+<g fill="#ffffff" opacity="0.8">
+<ellipse cx="220" cy="150" rx="90" ry="26"/><ellipse cx="270" cy="132" rx="60" ry="30"/>
+<ellipse cx="880" cy="110" rx="110" ry="24"/><ellipse cx="940" cy="94" rx="60" ry="26"/>
+</g>
+<rect y="500" width="1200" height="300" fill="url(#w)"/>
+<g stroke="#fff" stroke-opacity=".35" stroke-width="3" fill="none" stroke-linecap="round">
+<path d="M80 540h120M420 570h160M820 535h140M260 620h180M700 650h200"/>
+</g><path d="M0 640 Q300 600 600 630 T1200 610 V800 H0Z" fill="#c9a27e"/>
+<g transform="translate(200 780) scale(1)" fill="#2c2f4f">
+<path d="M0 0 C10 -120 30 -220 60 -300 L72 -296 C46 -214 28 -120 18 0Z"/>
+<path d="M66 -300 C10 -330 -60 -320 -110 -280 C-50 -300 10 -300 60 -290Z"/>
+<path d="M66 -300 C120 -340 190 -330 230 -290 C170 -310 110 -305 70 -292Z"/>
+<path d="M66 -300 C40 -360 -10 -390 -60 -380 C-10 -370 30 -340 62 -296Z"/>
+<path d="M66 -300 C110 -370 170 -380 210 -360 C160 -355 110 -330 72 -294Z"/>
+<path d="M66 -300 C60 -250 20 -200 -20 -180 C20 -220 45 -260 60 -296Z"/>
+</g>
+<g transform="translate(980 790) scale(1.1)" fill="#2c2f4f">
+<path d="M0 0 C10 -120 30 -220 60 -300 L72 -296 C46 -214 28 -120 18 0Z"/>
+<path d="M66 -300 C10 -330 -60 -320 -110 -280 C-50 -300 10 -300 60 -290Z"/>
+<path d="M66 -300 C120 -340 190 -330 230 -290 C170 -310 110 -305 70 -292Z"/>
+<path d="M66 -300 C40 -360 -10 -390 -60 -380 C-10 -370 30 -340 62 -296Z"/>
+<path d="M66 -300 C110 -370 170 -380 210 -360 C160 -355 110 -330 72 -294Z"/>
+<path d="M66 -300 C60 -250 20 -200 -20 -180 C20 -220 45 -260 60 -296Z"/>
+</g>
+<path d="M300 560 Q420 640 540 560" stroke="#1b1d33" stroke-width="10" fill="none"/></svg>

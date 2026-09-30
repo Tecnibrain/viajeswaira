@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--#head title="Destinos" path="/destinos" description="Catálogo de destinos de Viajes Waira: Cartagena, San Andrés, Santa Marta, Medellín, Cancún, Punta Cana, Madrid y París. Encuentra tu próximo viaje."-->
+  </head>
+  <body>
+    <!--#header-->
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <p class="breadcrumb"><a href="/">Inicio</a> / Destinos</p>
+          <h1>Destinos</h1>
+          <p>Explora destinos nacionales e internacionales. Precios y duraciones de referencia <span class="badge-demo">DEMO</span></p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="search"><label class="hp" for="q">Buscar destino</label><input id="q" type="search" placeholder="Buscar por destino, ciudad o país…" autocomplete="off" /></div>
+          <div class="filters" role="group" aria-label="Filtrar destinos">
+            <button class="filter-btn" data-filter="todos" aria-pressed="true">Todos</button>
+            <button class="filter-btn" data-filter="nacional" aria-pressed="false">Nacionales</button>
+            <button class="filter-btn" data-filter="internacional" aria-pressed="false">Internacionales</button>
+          </div>
+          <div class="grid grid-3" id="list"></div>
+        </div>
+      </section>
+    </main>
+    <!--#footer-->
+    <script type="module" src="/src/js/pages/destinos.js"></script>
+  </body>
+</html>
