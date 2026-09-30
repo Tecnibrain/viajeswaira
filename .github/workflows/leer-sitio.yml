@@ -1,0 +1,30 @@
+# Lee el texto de un sitio web público (referencia para cargar paquetes). Solo lectura.
+name: Leer sitio de referencia
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: URL del sitio
+        required: true
+      paginas:
+        description: Máximo de páginas a leer
+        required: false
+        default: '40'
+
+permissions:
+  contents: read
+
+jobs:
+  leer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+      - name: Leer
+        env:
+          URL: ${{ inputs.url }}
+          PAGINAS: ${{ inputs.paginas }}
+        run: node scripts/leer-sitio.mjs "$URL" "$PAGINAS"
