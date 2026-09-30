@@ -7,9 +7,9 @@ export function validate(form) {
   let firstInvalid = null;
   form.querySelectorAll('input, select, textarea').forEach((el) => {
     if (el.classList.contains('hp') || !el.willValidate) return;
-    const err = el.parentElement.querySelector('.field-error');
+    const err = el.closest('div')?.querySelector('.field-error');
     let msg = '';
-    if (el.validity.valueMissing) msg = 'Este campo es obligatorio.';
+    if (el.validity.valueMissing) msg = el.type === 'checkbox' ? 'Debes aceptar la política para continuar.' : 'Este campo es obligatorio.';
     else if (el.validity.typeMismatch) msg = 'Revisa el formato.';
     else if (el.validity.rangeUnderflow || el.validity.rangeOverflow) msg = `Ingresa un valor entre ${el.min} y ${el.max}.`;
     else if (el.dataset.minDate && el.value && el.value < el.dataset.minDate) msg = 'La fecha debe ser futura.';

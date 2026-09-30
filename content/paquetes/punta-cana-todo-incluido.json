@@ -8,7 +8,7 @@
   "featured": true,
   "description": "Descanso total frente a Playa Bávaro con excursión a Isla Saona. Ideal para parejas y familias.",
   "includes": [
-    "Tiquetes aéreos internacionales (DEMO)",
+    "Tiquetes aéreos internacionales",
     "Resort todo incluido 5 noches",
     "Excursión Isla Saona",
     "Traslados",
@@ -19,7 +19,7 @@
     "Actividades opcionales",
     "Propinas"
   ],
-  "demo": true,
+  "demo": false,
   "image": "",
   "gallery": [],
   "itinerary": [

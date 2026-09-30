@@ -8,7 +8,7 @@
   "featured": true,
   "description": "Caminatas en el Parque Tayrona, cascadas en Minca y atardeceres en la bahía más antigua de América.",
   "includes": [
-    "Tiquetes aéreos (DEMO)",
+    "Tiquetes aéreos",
     "Alojamiento 3 noches con desayuno",
     "Entrada y guía Parque Tayrona",
     "Tour Minca",
@@ -19,7 +19,7 @@
     "Alquiler de equipo",
     "Propinas"
   ],
-  "demo": true,
+  "demo": false,
   "image": "",
   "gallery": [],
   "itinerary": [

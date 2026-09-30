@@ -12,6 +12,7 @@
         <li><a href="/paquetes">Paquetes</a></li>
         <li><a href="/reservas">Reservas</a></li>
         <li><a href="/nosotros">Nosotros</a></li>
+        <li><a href="/contacto">Contacto</a></li>
       </ul>
     </div>
     <div>
@@ -23,15 +24,15 @@
         <li>Dirección: <span data-cfg="address"></span></li>
       </ul>
     </div>
-    <div>
+    <div data-cfg-wrap>
       <h3>Horarios</h3>
       <ul data-cfg-hours></ul>
-      <p class="muted small">RNT: <span data-cfg="rnt"></span></p>
     </div>
   </div>
   <div class="container footer-bottom">
-    <p>© %YEAR% %SITE_NAME%. Todos los derechos reservados.</p>
-    <p class="muted small">Precios, paquetes, itinerarios y testimonios mostrados son de demostración (DEMO). Tarifas sujetas a disponibilidad y confirmación.</p>
+    <p>© %YEAR% %SITE_NAME%. Todos los derechos reservados. <span class="legal-links"><a href="/privacidad">Privacidad y tratamiento de datos</a> · <a href="/privacidad#cookies">Cookies</a> · <button type="button" class="link-btn" data-cookie-settings>Preferencias de cookies</button></span></p>
+    <p class="muted small" data-legal></p>
+    <p class="muted small">Precios por persona en pesos colombianos (COP), sujetos a disponibilidad, temporada y cambios sin previo aviso. La reserva se confirma con un asesor.</p>
   </div>
 </footer>
 <a class="wa-float" href="#" data-wa aria-label="Escríbenos por WhatsApp">

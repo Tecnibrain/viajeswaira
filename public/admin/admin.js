@@ -89,7 +89,48 @@ const FORMS = {
   },
 };
 
-const state = { tab: 'paquetes', data: { paquetes: [], destinos: [] }, search: '', editing: null, pending: new Map() };
+FORMS.sitio = {
+  singular: 'datos de contacto',
+  title: 'email',
+  sections: [
+    {
+      title: 'Contacto',
+      fields: [
+        { name: 'whatsapp', label: 'WhatsApp', type: 'text', hint: 'Con indicativo de país, sin +. Ej: 573117544635. Si lo borras, se ocultan los botones de WhatsApp.' },
+        { name: 'email', label: 'Correo electrónico', type: 'text', hint: 'Ej: wairaviajes@gmail.com' },
+        { name: 'phone', label: 'Teléfono fijo u otro celular', type: 'text', hint: 'Opcional. Ej: +57 601 123 4567' },
+      ],
+    },
+    {
+      title: 'Ubicación',
+      fields: [
+        { name: 'address', label: 'Dirección', type: 'text', hint: 'Opcional. Déjala vacía si atiendes solo en línea.' },
+        { name: 'city', label: 'Ciudad', type: 'text', half: true },
+        { name: 'country', label: 'País', type: 'text', half: true },
+      ],
+    },
+    { title: 'Horarios de atención', fields: [{ name: 'hours', label: 'Horarios', type: 'hours' }] },
+    {
+      title: 'Redes sociales',
+      fields: [
+        { name: 'instagram', label: 'Instagram', type: 'text', hint: 'Enlace completo. Ej: https://instagram.com/viajeswaira' },
+        { name: 'facebook', label: 'Facebook', type: 'text', hint: 'Ej: https://facebook.com/viajeswaira' },
+        { name: 'tiktok', label: 'TikTok', type: 'text', hint: 'Ej: https://tiktok.com/@viajeswaira' },
+      ],
+    },
+    {
+      title: 'Datos legales (aparecen al pie de la página y en la política de privacidad)',
+      fields: [
+        { name: 'legalName', label: 'Razón social', type: 'text', hint: 'Opcional. Nombre legal de la empresa o persona.' },
+        { name: 'nit', label: 'NIT', type: 'text', half: true },
+        { name: 'rnt', label: 'Registro Nacional de Turismo (RNT)', type: 'text', half: true },
+      ],
+    },
+  ],
+  blank: () => ({ whatsapp: '', email: '', phone: '', address: '', city: '', country: 'Colombia', hours: [{ days: 'Lunes a viernes', time: '' }], instagram: '', facebook: '', tiktok: '', legalName: '', nit: '', rnt: '' }),
+};
+
+const state = { tab: 'paquetes', data: { paquetes: [], destinos: [], sitio: [] }, search: '', editing: null, pending: new Map() };
 
 // ------------------------------------------------------------------ utilidades
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
@@ -176,9 +217,10 @@ function renderLogin(message = '') {
 
 async function loadAll() {
   app.innerHTML = '<p class="loading">Cargando información…</p>';
-  const [p, d] = await Promise.all([api('list?type=paquetes'), api('list?type=destinos')]);
+  const [p, d, c] = await Promise.all([api('list?type=paquetes'), api('list?type=destinos'), api('list?type=sitio')]);
   state.data.paquetes = p.items;
   state.data.destinos = d.items;
+  state.data.sitio = c.items;
   topbar.hidden = false;
   document.querySelector('[data-user]').textContent = state.user ? `👤 ${state.user}` : '';
   renderList();
@@ -192,6 +234,7 @@ const destinoById = (id) => state.data.destinos.find((d) => d.id === id);
 function renderList() {
   state.editing = null;
   document.querySelectorAll('[data-tab]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.tab === state.tab)));
+  if (state.tab === 'sitio') return openForm('contacto');
   const cfg = FORMS[state.tab];
   const term = norm(state.search).trim();
   const items = sortItems(state.data[state.tab], cfg.title).filter((it) => !term || norm(Object.values(it.data).join(' ')).includes(term));
@@ -255,11 +298,14 @@ function renderList() {
 function openForm(id, { duplicate = false } = {}) {
   const cfg = FORMS[state.tab];
   const item = id ? state.data[state.tab].find((it) => it.id === id) : null;
+  if (state.tab === 'sitio' && !item) id = 'contacto';
   const data = Object.assign(cfg.blank(), item ? clone(item.data) : {});
   if (duplicate) data[cfg.title] = `${data[cfg.title]} (copia)`;
   for (const key of ['includes', 'excludes', 'highlights']) if (key in data && !data[key].length) data[key] = [''];
   if ('itinerary' in data && !data.itinerary.length) data.itinerary = [{ title: '', text: '' }];
-  state.editing = { id: duplicate ? null : id, data, isNew: !item || duplicate };
+  if (state.tab === 'sitio' && !data.hours.length) data.hours = [{ days: '', time: '' }];
+  state.editing = { id: duplicate ? null : id, data, isNew: state.tab !== 'sitio' && (!item || duplicate) };
+  state.dirty = false;
   renderForm();
   window.scrollTo(0, 0);
 }
@@ -309,6 +355,15 @@ function fieldHtml(f, data) {
           </div>`,
         )
         .join('')}</div><button type="button" class="btn btn-outline btn-small add" data-action="add" data-field="${f.name}">＋ Agregar día</button></div>`;
+    case 'hours':
+      return `<div class="field"><div class="rows">${(v || [])
+        .map(
+          (h, i) => `<div class="row">
+            <input type="text" data-field="${f.name}" data-index="${i}" data-sub="days" value="${esc(h.days)}" placeholder="Días. Ej: Lunes a viernes" aria-label="Días" />
+            <input type="text" data-field="${f.name}" data-index="${i}" data-sub="time" value="${esc(h.time)}" placeholder="Horario. Ej: 8:00 a. m. – 6:00 p. m." aria-label="Horario" />
+            <button type="button" class="icon-btn danger" data-action="remove" data-field="${f.name}" data-index="${i}" aria-label="Quitar">✕</button></div>`,
+        )
+        .join('')}</div><button type="button" class="btn btn-outline btn-small add" data-action="add" data-field="${f.name}">＋ Agregar horario</button><p class="hint">Ej: «Sábados» — «9:00 a. m. – 1:00 p. m.». Déjalo vacío para no mostrar horarios.</p></div>`;
     case 'image':
       return `<div class="field"><span class="label">${esc(f.label)}</span><div class="single-photo">${
         v
@@ -347,18 +402,19 @@ function renderForm() {
     .join('');
   app.innerHTML = `
     <form class="form" id="edit" novalidate>
-      <h1>${isNew ? `Nuevo ${cfg.singular}` : `Editar ${cfg.singular}`}</h1>
-      <p>Los campos con <span class="req">*</span> son obligatorios. Al terminar pulsa <b>Guardar</b>.</p>
+      <h1>${state.tab === 'sitio' ? 'Datos de contacto' : isNew ? `Nuevo ${cfg.singular}` : `Editar ${cfg.singular}`}</h1>
+      <p>${state.tab === 'sitio' ? 'Estos datos aparecen en el pie de página, en Contacto y en los botones de WhatsApp. Los campos vacíos no se muestran en la web.' : 'Los campos con <span class="req">*</span> son obligatorios.'} Al terminar pulsa <b>Guardar</b>.</p>
       ${sections}
       <div class="form-actions">
         <button class="btn btn-primary" type="submit">💾 Guardar</button>
-        <button class="btn btn-outline" type="button" data-action="cancel">Cancelar</button>
+        <button class="btn btn-outline" type="button" data-action="cancel">${state.tab === 'sitio' ? 'Descartar cambios' : 'Cancelar'}</button>
       </div>
     </form>`;
 }
 
 function readInput(el) {
   const { data } = state.editing;
+  state.dirty = true;
   const { field, index, sub, kind } = el.dataset;
   let value = el.type === 'checkbox' ? el.checked : el.value;
   if (kind === 'money' || kind === 'int') {
@@ -413,6 +469,15 @@ async function save(form) {
   // Limpia filas vacías
   for (const key of ['includes', 'excludes', 'highlights']) if (Array.isArray(data[key])) data[key] = data[key].map((s) => s.trim()).filter(Boolean);
   if (Array.isArray(data.itinerary)) data.itinerary = data.itinerary.filter((d) => d.title.trim() || d.text.trim());
+  if (Array.isArray(data.hours)) data.hours = data.hours.filter((h) => h.days.trim() || h.time.trim());
+  if (state.tab === 'sitio') {
+    for (const k of ['instagram', 'facebook', 'tiktok']) {
+      if (data[k] && !/^https:\/\//.test(data[k].trim())) data[k] = `https://${data[k].trim().replace(/^http:\/\//, '')}`;
+    }
+    if (data.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email.trim())) return toast('Revisa el correo electrónico: no parece válido.', true);
+    const wa = String(data.whatsapp || '').replace(/\D/g, '');
+    if (wa && (wa.length < 10 || wa.length > 15)) return toast('Revisa el WhatsApp: escribe el indicativo del país y el número (ej: 573117544635).', true);
+  }
 
   const missing = cfg.sections.flatMap((s) => s.fields).filter((f) => f.required && !String(data[f.name] || '').trim());
   if (missing.length) {
@@ -445,7 +510,7 @@ async function save(form) {
 document.addEventListener('click', async (e) => {
   const tab = e.target.closest('[data-tab]');
   if (tab) {
-    if (state.editing && !confirm('¿Salir sin guardar los cambios?')) return;
+    if (state.editing && state.dirty && !confirm('¿Salir sin guardar los cambios?')) return;
     state.tab = tab.dataset.tab;
     state.search = '';
     return renderList();
@@ -467,6 +532,7 @@ document.addEventListener('click', async (e) => {
     case 'duplicate':
       return openForm(id, { duplicate: true });
     case 'cancel':
+      if (state.dirty && !confirm('¿Descartar los cambios?')) return;
       return renderList();
     case 'toggle':
     case 'delete': {
@@ -500,7 +566,8 @@ document.addEventListener('click', async (e) => {
       return;
     }
     case 'add':
-      list.push(field === 'itinerary' ? { title: '', text: '' } : '');
+      state.dirty = true;
+      list.push(field === 'itinerary' ? { title: '', text: '' } : field === 'hours' ? { days: '', time: '' } : '');
       renderForm();
       setTimeout(() => {
         const inputs = app.querySelectorAll(`[data-field="${field}"][data-index="${list.length - 1}"]`);
@@ -508,15 +575,18 @@ document.addEventListener('click', async (e) => {
       });
       return;
     case 'remove':
+      state.dirty = true;
       list.splice(index, 1);
       return renderForm();
     case 'up':
     case 'down': {
       const j = action === 'up' ? index - 1 : index + 1;
       [list[index], list[j]] = [list[j], list[index]];
+      state.dirty = true;
       return renderForm();
     }
     case 'remove-photo':
+      state.dirty = true;
       state.editing.data[field] = '';
       return renderForm();
   }
@@ -536,6 +606,7 @@ document.addEventListener('change', async (e) => {
   try {
     for (const file of [...input.files].slice(0, 20)) {
       const path = await processImage(file);
+      state.dirty = true;
       if (Array.isArray(state.editing.data[field])) state.editing.data[field].push(path);
       else state.editing.data[field] = path;
     }
@@ -551,7 +622,7 @@ document.addEventListener('submit', (e) => {
   }
 });
 window.addEventListener('beforeunload', (e) => {
-  if (state.editing) e.preventDefault();
+  if (state.editing && state.dirty) e.preventDefault();
 });
 
 start();

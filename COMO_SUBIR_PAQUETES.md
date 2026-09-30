@@ -37,6 +37,11 @@ Guardas y en **1 o 2 minutos** el cambio aparece en la página. Funciona en comp
 Pestaña **📍 Destinos**, mismos botones. Si vas a vender un paquete a un lugar nuevo, crea primero el destino.
 Un destino que tiene paquetes no se puede eliminar (el panel te avisa).
 
+### ☎️ Datos de contacto
+Pestaña **☎️ Contacto**: WhatsApp, correo, teléfono, dirección, horarios, redes sociales (Instagram, Facebook, TikTok),
+razón social, NIT y Registro Nacional de Turismo (RNT). Cambia lo que necesites y pulsa **Guardar**.
+Los campos que dejes **vacíos no aparecen** en la página. Si borras el WhatsApp, se ocultan los botones de WhatsApp.
+
 ### ¿Qué pasa al guardar?
 El paquete aparece solo en: la lista de **Paquetes**, la página de su **destino**, el formulario de **Reservas**,
 el **inicio** (si es destacado) y en Google (sitemap). Sus botones **Reservar** y **WhatsApp** se crean solos.

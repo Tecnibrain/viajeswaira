@@ -8,7 +8,7 @@
   "featured": false,
   "description": "Museos, palacios y gastronomía española, con excursión de un día a la histórica Toledo.",
   "includes": [
-    "Tiquetes aéreos internacionales (DEMO)",
+    "Tiquetes aéreos internacionales",
     "Hotel 7 noches con desayuno",
     "Visita panorámica de Madrid",
     "Excursión a Toledo",
@@ -21,7 +21,7 @@
     "Trámites de viaje",
     "Propinas"
   ],
-  "demo": true,
+  "demo": false,
   "image": "",
   "gallery": [],
   "itinerary": [

@@ -27,7 +27,7 @@ function updateEstimate() {
   const n = Number(form.viajeros.value) || 0;
   if (p && n > 0) {
     estimate.hidden = false;
-    estimate.textContent = `Valor de referencia DEMO: ${formatPrice(p.price)} x ${n} viajero(s) = ${formatPrice(p.price * n)}. El precio real se confirma con tu asesor.`;
+    estimate.textContent = `Valor de referencia: ${formatPrice(p.price)} x ${n} viajero(s) = ${formatPrice(p.price * n)}. El precio real se confirma con tu asesor.`;
   } else estimate.hidden = true;
 }
 

@@ -325,3 +325,32 @@ textarea { min-height: 120px; resize: vertical; }
 
 .notice { background: #fff8ec; border: 1px solid #f6d3a3; color: #7a4508; border-radius: var(--radius-sm); padding: 12px 16px; font-size: 0.9rem; }
 .empty { text-align: center; color: var(--c-muted); padding: 40px 0; grid-column: 1 / -1; }
+
+/* Aviso de cookies */
+.cookie-banner {
+  position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 90; max-width: 760px; margin-inline: auto;
+  background: #fff; border: 1px solid var(--c-border); border-radius: var(--radius); box-shadow: var(--shadow-lg);
+  padding: 18px 20px; display: grid; gap: 14px; grid-template-columns: 1fr auto; align-items: center;
+}
+.cookie-banner p { margin: 4px 0 0; font-size: 0.9rem; color: var(--c-muted); }
+.cookie-actions { display: flex; flex-direction: column; gap: 8px; }
+.cookie-settings { display: grid; gap: 8px; margin-top: 12px; font-size: 0.9rem; }
+.cookie-settings[hidden] { display: none; }
+.cookie-settings label { display: flex; gap: 10px; align-items: flex-start; font-weight: 400; margin: 0; }
+.cookie-settings input { width: 18px; height: 18px; margin-top: 3px; accent-color: var(--c-primary); flex: none; }
+@media (max-width: 700px) {
+  .cookie-banner { grid-template-columns: 1fr; bottom: 10px; left: 10px; right: 10px; padding: 16px; }
+  .cookie-actions { flex-direction: row; flex-wrap: wrap; }
+  .cookie-actions .btn { flex: 1; }
+}
+.link-btn { background: none; border: 0; padding: 0; font: inherit; color: inherit; text-decoration: underline; cursor: pointer; }
+.legal-links { white-space: normal; }
+.legal-links a, .legal-links .link-btn { color: #eef3ef; }
+.consent { display: flex; gap: 10px; align-items: flex-start; font-weight: 400; font-size: 0.9rem; }
+.consent input { width: 20px; height: 20px; margin-top: 2px; accent-color: var(--c-primary); flex: none; }
+.legal h2 { font-size: 1.35rem; margin-top: 2em; }
+.legal h3 { font-size: 1.05rem; margin-top: 1.4em; font-family: var(--font-body); font-weight: 700; }
+.legal li { margin-bottom: 0.4em; }
+.legal table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+.legal th, .legal td { border: 1px solid var(--c-border); padding: 8px 10px; text-align: left; vertical-align: top; }
+.legal th { background: var(--c-light); }

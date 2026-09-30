@@ -44,7 +44,7 @@ if (!d) {
         </ul>
         <a class="btn btn-accent" href="/reservas?destino=${d.id}">Planear viaje a ${esc(d.name)}</a>
         <a class="btn btn-wa" href="#" data-wa data-wa-msg="${esc(msg)}">Consultar por WhatsApp</a>
-        <p class="small muted" style="margin-top:12px">Precio de referencia DEMO. Sujeto a fechas y disponibilidad.</p>
+        <p class="small muted" style="margin-top:12px">Precio de referencia por persona. Sujeto a fechas y disponibilidad.</p>
       </aside>
     </div>
   </section>

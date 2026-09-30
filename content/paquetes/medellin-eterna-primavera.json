@@ -8,7 +8,7 @@
   "featured": false,
   "description": "Conoce la transformación de Medellín, su cultura paisa y el colorido pueblo de Guatapé.",
   "includes": [
-    "Tiquetes aéreos (DEMO)",
+    "Tiquetes aéreos",
     "Hotel 3 noches con desayuno",
     "Tour Comuna 13 y Metrocable",
     "Excursión Guatapé y El Peñol",
@@ -19,7 +19,7 @@
     "Entradas no especificadas",
     "Propinas"
   ],
-  "demo": true,
+  "demo": false,
   "image": "",
   "gallery": [],
   "itinerary": [

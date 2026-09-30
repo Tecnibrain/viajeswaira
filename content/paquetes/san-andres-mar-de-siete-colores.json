@@ -8,7 +8,7 @@
   "featured": true,
   "description": "Plan todo incluido para desconectarte en el Caribe colombiano con tours a los cayos más famosos.",
   "includes": [
-    "Tiquetes aéreos (DEMO)",
+    "Tiquetes aéreos",
     "Hotel todo incluido 4 noches",
     "Tour Johnny Cay y Acuario",
     "Vuelta a la isla",
@@ -20,7 +20,7 @@
     "Actividades acuáticas opcionales",
     "Propinas"
   ],
-  "demo": true,
+  "demo": false,
   "image": "",
   "gallery": [],
   "itinerary": [

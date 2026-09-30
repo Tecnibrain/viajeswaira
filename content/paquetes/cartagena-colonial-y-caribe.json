@@ -8,7 +8,7 @@
   "image": "",
   "gallery": [],
   "includes": [
-    "Tiquetes aéreos ida y regreso (DEMO)",
+    "Tiquetes aéreos ida y regreso",
     "Traslados aeropuerto – hotel – aeropuerto",
     "3 noches de alojamiento con desayuno",
     "City tour con guía",
@@ -41,6 +41,6 @@
   ],
   "featured": true,
   "published": true,
-  "demo": true,
+  "demo": false,
   "order": 1
 }

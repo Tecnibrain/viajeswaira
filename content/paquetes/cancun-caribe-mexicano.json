@@ -8,7 +8,7 @@
   "featured": true,
   "description": "Resort todo incluido en la zona hotelera, excursión a Chichén Itzá y cenote, y día en Isla Mujeres.",
   "includes": [
-    "Tiquetes aéreos internacionales (DEMO)",
+    "Tiquetes aéreos internacionales",
     "Resort todo incluido 5 noches",
     "Excursión Chichén Itzá + cenote",
     "Traslados",
@@ -20,7 +20,7 @@
     "Propinas",
     "Trámites migratorios"
   ],
-  "demo": true,
+  "demo": false,
   "image": "",
   "gallery": [],
   "itinerary": [

@@ -10,14 +10,14 @@
  *
  * Rutas (todas bajo /api/admin/):
  *   POST login  { user, password }  GET  me            POST logout
- *   GET  list?type=paquetes|destinos
+ *   GET  list?type=paquetes|destinos|sitio   (sitio = datos de contacto, archivo único «contacto»)
  *   POST save   { type, id?, data, images:[{ path, base64 }] }
  *   POST delete { type, id }
  */
 
 const DEFAULT_REPO = 'Tecnibrain/viajeswaira';
 const DEFAULT_BRANCH = 'ccr-e5c74af5-vsp1td';
-const FOLDERS = { paquetes: 'content/paquetes', destinos: 'content/destinos' };
+const FOLDERS = { paquetes: 'content/paquetes', destinos: 'content/destinos', sitio: 'content/sitio' };
 const COOKIE = 'waira_admin';
 const SESSION_DAYS = 30;
 const MAX_IMAGE_BYTES = 4 * 1024 * 1024;
@@ -219,8 +219,30 @@ const SCHEMAS = {
     order: int(d.order ?? 50),
   }),
 };
-const REQUIRED = { paquetes: ['title', 'destinationId'], destinos: ['name', 'country'] };
-const LABEL = { paquetes: 'paquete', destinos: 'destino' };
+const url = (v) => {
+  const s = str(v, 300);
+  return /^https:\/\/[^\s"'<>]+$/i.test(s) ? s : '';
+};
+SCHEMAS.sitio = (d) => ({
+  whatsapp: str(d.whatsapp, 30).replace(/\D/g, '').slice(0, 15),
+  email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(str(d.email, 120)) ? str(d.email, 120) : '',
+  phone: str(d.phone, 40),
+  address: str(d.address, 160),
+  city: str(d.city, 80),
+  country: str(d.country, 80),
+  hours: (Array.isArray(d.hours) ? d.hours : [])
+    .map((h) => ({ days: str(h?.days, 60), time: str(h?.time, 60) }))
+    .filter((h) => h.days || h.time)
+    .slice(0, 10),
+  instagram: url(d.instagram),
+  facebook: url(d.facebook),
+  tiktok: url(d.tiktok),
+  legalName: str(d.legalName, 120),
+  nit: str(d.nit, 40),
+  rnt: str(d.rnt, 40),
+});
+const REQUIRED = { paquetes: ['title', 'destinationId'], destinos: ['name', 'country'], sitio: [] };
+const LABEL = { paquetes: 'paquete', destinos: 'destino', sitio: 'datos de contacto' };
 
 // ---------------------------------------------------------------- manejadores
 async function handleSave(env, body, user) {
@@ -232,8 +254,8 @@ async function handleSave(env, body, user) {
 
   const gh = github(env);
   const existing = new Set((await listFiles(gh, FOLDERS[type])).map((f) => f.name.replace(/\.json$/, '')));
-  let id = body.id ? slugify(body.id) : '';
-  if (!id || !existing.has(id)) {
+  let id = type === 'sitio' ? 'contacto' : body.id ? slugify(body.id) : '';
+  if (type !== 'sitio' && (!id || !existing.has(id))) {
     // Elemento nuevo: id a partir del nombre, sin repetir
     const base = slugify(data.title || data.name);
     id = base;
@@ -251,15 +273,15 @@ async function handleSave(env, body, user) {
   }
   files.push({ path: `${FOLDERS[type]}/${id}.json`, base64: textToBase64(JSON.stringify(data, null, 2) + '\n') });
 
-  const name = data.title || data.name;
-  await commitFiles(gh, `Panel (${user}): ${existing.has(id) ? 'actualiza' : 'crea'} ${LABEL[type]} «${name}»`, files);
+  const what = type === 'sitio' ? LABEL.sitio : `${LABEL[type]} «${data.title || data.name}»`;
+  await commitFiles(gh, `Panel (${user}): ${existing.has(id) ? 'actualiza' : 'crea'} ${what}`, files);
   return json({ ok: true, id });
 }
 
 async function handleDelete(env, body, user) {
   const { type } = body;
   const id = slugify(body.id);
-  if (!FOLDERS[type] || !body.id) return json({ error: 'Datos no válidos.' }, 400);
+  if (!FOLDERS[type] || type === 'sitio' || !body.id) return json({ error: 'Datos no válidos.' }, 400);
   const gh = github(env);
   const exists = (await listFiles(gh, FOLDERS[type])).some((f) => f.name === `${id}.json`);
   if (!exists) return json({ ok: true });

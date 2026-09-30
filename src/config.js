@@ -2,27 +2,28 @@
  * ============================================================
  *  CONFIGURACIÓN CENTRAL — VIAJES WAIRA
  * ============================================================
- *  Este es el ÚNICO archivo que necesitas editar para cambiar
- *  los datos del negocio. Todo el sitio lee de aquí.
- *
- *  - Los valores "[POR CONFIGURAR]" se muestran tal cual en la
- *    web hasta que los reemplaces.
- *  - WHATSAPP_NUMBER: solo dígitos, con indicativo de país y sin
- *    "+", espacios ni guiones. Ejemplo Colombia: '573001234567'.
+ *  - Los DATOS DE CONTACTO (WhatsApp, correo, teléfono, dirección,
+ *    horarios, redes sociales, razón social, NIT, RNT) se editan desde
+ *    el panel https://viajeswaira.com/admin → pestaña «Contacto»
+ *    (archivo content/sitio/contacto.json).
+ *  - Aquí quedan los datos fijos del sitio (nombre, dominio, colores…).
+ *  - Los campos vacíos simplemente no se muestran en la web.
  *  - NUNCA pongas aquí contraseñas, API keys privadas ni tokens:
  *    este archivo se publica en internet.
  * ============================================================
  */
+import contacto from '../content/sitio/contacto.json';
 
-export const PLACEHOLDER = '[POR CONFIGURAR]';
-export const WHATSAPP_PLACEHOLDER = '[WHATSAPP POR CONFIGURAR]';
+export const PLACEHOLDER = '';
+export const WHATSAPP_PLACEHOLDER = '';
 
-// Número de WhatsApp: ÚNICO lugar donde se define.
-export const WHATSAPP_NUMBER = '573117544635';
+// Número de WhatsApp (solo dígitos con indicativo, ej. 573001234567). Se edita en el panel.
+export const WHATSAPP_NUMBER = String(contacto.whatsapp || '').replace(/\D/g, '');
 
 export const SITE = {
   name: 'Viajes Waira',
-  legalName: PLACEHOLDER,
+  legalName: contacto.legalName || '',
+  nit: contacto.nit || '',
   slogan: 'Descubre el mundo con Viajes Waira',
   tagline: 'Aventura · Natural · Descubre',
   domain: 'viajeswaira.com',
@@ -35,23 +36,19 @@ export const SITE = {
   lang: 'es',
   currency: 'COP',
 
-  email: 'wairaviajes@gmail.com',
-  phone: PLACEHOLDER,
-  address: PLACEHOLDER,
-  city: PLACEHOLDER,
-  country: PLACEHOLDER,
-  hours: [
-    { days: 'Lunes a viernes', time: PLACEHOLDER },
-    { days: 'Sábados', time: PLACEHOLDER },
-    { days: 'Domingos y festivos', time: PLACEHOLDER },
-  ],
-  // Registro Nacional de Turismo u otro registro legal (si aplica)
-  rnt: PLACEHOLDER,
+  email: contacto.email || '',
+  phone: contacto.phone || '',
+  address: contacto.address || '',
+  city: contacto.city || '',
+  country: contacto.country || '',
+  hours: (contacto.hours || []).filter((h) => h.days && h.time),
+  // Registro Nacional de Turismo (si aplica)
+  rnt: contacto.rnt || '',
 
   social: {
-    instagram: PLACEHOLDER, // ej: 'https://instagram.com/viajeswaira'
-    facebook: PLACEHOLDER, // ej: 'https://facebook.com/viajeswaira'
-    tiktok: PLACEHOLDER, // ej: 'https://tiktok.com/@viajeswaira'
+    instagram: contacto.instagram || '',
+    facebook: contacto.facebook || '',
+    tiktok: contacto.tiktok || '',
   },
 
   // Colores de marca (se aplican en todo el sitio al hacer el build)
@@ -81,5 +78,4 @@ export const PAYMENTS = {
   checkoutEndpoint: '/api/checkout',
 };
 
-export const isConfigured = (value) =>
-  Boolean(value) && value !== PLACEHOLDER && value !== WHATSAPP_PLACEHOLDER;
+export const isConfigured = (value) => Boolean(value && String(value).trim()) && !/POR CONFIGURAR/.test(value);

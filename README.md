@@ -26,7 +26,9 @@ ni hosting de pago.
 
 | Qué quieres cambiar | Archivo |
 |---|---|
-| Nombre, dominio, **WhatsApp**, correo, teléfono, dirección, horarios, Instagram, Facebook, TikTok, **colores** | `src/config.js` |
+| **WhatsApp**, correo, teléfono, dirección, horarios, redes, razón social, NIT, RNT | Panel **/admin** → ☎️ Contacto (archivo `content/sitio/contacto.json`) |
+| Nombre, dominio, **colores** | `src/config.js` |
+| Política de privacidad y cookies | `privacidad.html`, aviso de cookies en `src/js/cookies.js` |
 | Destinos (texto, precio, imágenes) | Panel **/admin** → Destinos (archivos `content/destinos/*.json`) |
 | Paquetes (precio, incluye, itinerario…) | Panel **/admin** → Paquetes (archivos `content/paquetes/*.json`) |
 | Panel de administración | `public/admin/` (pantallas) y `functions/api/admin/` (guardar en GitHub) |
@@ -36,18 +38,13 @@ ni hosting de pago.
 | Imágenes | `public/img/` |
 | Pasarela de pagos (futuro) | `src/payments/` + `src/payments/README.md` |
 
-### Configurar WhatsApp
-En `src/config.js`:
-```js
-export const WHATSAPP_NUMBER = '573001234567'; // indicativo + número, solo dígitos
-```
-Mientras siga en `'[WHATSAPP POR CONFIGURAR]'`, los botones de WhatsApp muestran un aviso
-y los formularios muestran un resumen para copiar.
+### Datos de contacto
+Se editan desde el panel **/admin → ☎️ Contacto**. Los campos vacíos no se muestran en la web.
+Si el WhatsApp está vacío, los botones de WhatsApp muestran un aviso y los formularios un resumen para copiar.
 
-### Datos DEMO
-Todos los precios, paquetes, itinerarios y testimonios son **de demostración** y se muestran con
-la etiqueta **DEMO**. Para publicar datos reales, edítalos en el panel **/admin** y apaga "Es información de ejemplo (DEMO)".
-Cuando ya no haya datos DEMO, elimina la barra superior (`.demo-bar`) en `partials/header.html`.
+### Etiqueta DEMO
+Cada paquete o destino tiene la opción "Es información de ejemplo (DEMO)" en el panel. Si está encendida,
+el precio se muestra con la etiqueta DEMO y un aviso. Actualmente todo está publicado como información oficial.
 
 ### Reemplazar las ilustraciones por fotos reales
 Las imágenes actuales son ilustraciones SVG propias y livianas (sin derechos de terceros).

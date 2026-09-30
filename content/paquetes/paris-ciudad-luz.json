@@ -8,7 +8,7 @@
   "featured": true,
   "description": "Vive París a tu ritmo: Torre Eiffel, Louvre, crucero por el Sena y excursión a Versalles.",
   "includes": [
-    "Tiquetes aéreos internacionales (DEMO)",
+    "Tiquetes aéreos internacionales",
     "Hotel 7 noches con desayuno",
     "Crucero por el Sena",
     "Excursión a Versalles",
@@ -21,7 +21,7 @@
     "Tasa turística local",
     "Propinas"
   ],
-  "demo": true,
+  "demo": false,
   "image": "",
   "gallery": [],
   "itinerary": [

@@ -15,7 +15,7 @@ const readContent = (dir) =>
   );
 
 // Páginas del sitio (cada una es un .html estático)
-const PAGES = ['index', 'destinos', 'destino', 'paquetes', 'paquete', 'nosotros', 'contacto', 'reservas', '404'];
+const PAGES = ['index', 'destinos', 'destino', 'paquetes', 'paquete', 'nosotros', 'contacto', 'reservas', 'privacidad', '404'];
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
 
@@ -69,6 +69,7 @@ function schemaOrg() {
   if (sameAs.length) org.sameAs = sameAs;
   if (SITE.email.includes('@')) org.email = SITE.email;
   if (/\d/.test(SITE.phone)) org.telephone = SITE.phone;
+  if (SITE.address) org.address = { '@type': 'PostalAddress', streetAddress: SITE.address, addressLocality: SITE.city || undefined, addressCountry: 'CO' };
   return org;
 }
 
@@ -87,6 +88,7 @@ function sitemap() {
     ['/reservas', '0.8'],
     ['/nosotros', '0.6'],
     ['/contacto', '0.7'],
+    ['/privacidad', '0.3'],
     ...destinos.map((d) => [`/destino?id=${d.id}`, '0.7']),
     ...paquetes.map((p) => [`/paquete?id=${p.id}`, '0.7']),
   ];
