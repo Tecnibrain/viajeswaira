@@ -6,10 +6,16 @@
   "city": "",
   "country": "Colombia",
   "hours": [
-    { "days": "Lunes a viernes", "time": "" },
-    { "days": "Sábados", "time": "" }
+    {
+      "days": "Lunes a viernes",
+      "time": ""
+    },
+    {
+      "days": "Sábados",
+      "time": ""
+    }
   ],
-  "instagram": "",
+  "instagram": "https://www.instagram.com/viajeswaira",
   "facebook": "",
   "tiktok": "",
   "legalName": "",
