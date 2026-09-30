@@ -1,0 +1,36 @@
+# Descarga y optimiza las fotos de hoteles/destinos de On Vacation (vendedor autorizado)
+# y las guarda en el repositorio. Ejecutar manualmente desde Actions.
+name: Descargar fotos On Vacation
+
+on:
+  workflow_dispatch:
+    inputs:
+      maximo:
+        description: Máximo de fotos por hotel/destino
+        required: false
+        default: '6'
+
+permissions:
+  contents: write
+
+jobs:
+  fotos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+      - name: Instalar sharp (optimizador de imágenes)
+        run: npm install --no-save --no-package-lock sharp@0.34
+      - name: Descargar y optimizar
+        run: node scripts/descargar-fotos.mjs "${{ inputs.maximo }}"
+      - name: Guardar en el repositorio
+        run: |
+          git config user.name "Viajes Waira (fotos)"
+          git config user.email "actions@users.noreply.github.com"
+          git add public/img/onvacation
+          if git diff --cached --quiet; then echo "Sin cambios"; exit 0; fi
+          git commit -m "Fotos On Vacation descargadas y optimizadas"
+          git push
+          du -sh public/img/onvacation
