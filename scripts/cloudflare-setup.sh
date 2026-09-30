@@ -128,6 +128,8 @@ setting ssl '"strict"'
 setting always_use_https '"on"'
 setting automatic_https_rewrites '"on"'
 setting min_tls_version '"1.2"'
+# Respetar las cabeceras Cache-Control del sitio (_headers) en lugar de forzar 4 h de caché en el navegador
+setting browser_cache_ttl '0'
 
 # 7. Redirección www -> raíz -----------------------------------------
 rules=$(jq -nc --arg d "$DOMAIN" '{rules:[{

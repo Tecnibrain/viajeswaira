@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import { readFileSync, existsSync, writeFileSync, readdirSync, mkdirSync } from 'node:fs';
 import { resolve } from 'node:path';
+import { createHash } from 'node:crypto';
 import { SITE } from './src/config.js';
 import { toDestinos, toPaquetes } from './src/data/normalize.js';
 
@@ -141,6 +142,17 @@ function wairaPlugin() {
     closeBundle() {
       if (existsSync(resolve(root, 'dist'))) {
         writeFileSync(resolve(root, 'dist', 'sitemap.xml'), sitemap());
+        // Panel /admin: agrega ?v=<huella> a admin.js y admin.css para que el navegador
+        // nunca use una versión vieja guardada en caché después de una actualización
+        const adminHtml = resolve(root, 'dist', 'admin', 'index.html');
+        if (existsSync(adminHtml)) {
+          let html = readFileSync(adminHtml, 'utf8');
+          for (const f of ['admin.js', 'admin.css']) {
+            const v = createHash('sha256').update(readFileSync(resolve(root, 'dist', 'admin', f))).digest('hex').slice(0, 10);
+            html = html.replace(`/admin/${f}"`, `/admin/${f}?v=${v}"`);
+          }
+          writeFileSync(adminHtml, html);
+        }
         // Catálogo en JSON (útil para pagos en línea u otras integraciones)
         mkdirSync(resolve(root, 'dist', 'data'), { recursive: true });
         writeFileSync(resolve(root, 'dist', 'data', 'paquetes.json'), JSON.stringify(toPaquetes(readContent('paquetes'))));
