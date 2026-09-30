@@ -24,6 +24,8 @@ jobs:
         run: bash scripts/cloudflare-setup.sh
 
       - name: Verificar el sitio
+        env:
+          CMS_GITHUB_TOKEN: ${{ secrets.CMS_GITHUB_TOKEN }}
         run: |
           {
             echo "### Verificación"
@@ -31,5 +33,13 @@ jobs:
             echo "NS:    $(dig +short NS viajeswaira.com | tr '\n' ' ')"
             echo "HTTPS: $(curl -s -o /dev/null -w '%{http_code}' --max-time 15 https://viajeswaira.com || echo 'aún no responde')"
             echo "WWW:   $(curl -s -o /dev/null -w '%{http_code} -> %{redirect_url}' --max-time 15 https://www.viajeswaira.com || echo 'aún no responde')"
+            PANEL=$(curl -s --max-time 15 https://viajeswaira.com/api/admin/me || true)
+            case "$PANEL" in
+              *"no está activado"*) echo "PANEL: ⚠️ sin activar (faltan secretos ADMIN_USERS / CMS_GITHUB_TOKEN)";;
+              *"Sesión cerrada"*)   echo "PANEL: ✅ activo (pide usuario y contraseña)";;
+              *)                    echo "PANEL: respuesta inesperada: ${PANEL:0:120}";;
+            esac
+            GH=$(curl -s -o /dev/null -w '%{http_code}' --max-time 15 -H "Authorization: Bearer $CMS_GITHUB_TOKEN" "https://api.github.com/repos/Tecnibrain/viajeswaira/contents/content/paquetes?ref=ccr-e5c74af5-vsp1td")
+            echo "LLAVE GITHUB DEL PANEL: $([ "$GH" = 200 ] && echo '✅ puede leer el repositorio' || echo "⚠️ respuesta $GH (revisa CMS_GITHUB_TOKEN)")"
             echo '```'
           } | tee -a "$GITHUB_STEP_SUMMARY"
