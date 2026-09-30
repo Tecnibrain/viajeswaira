@@ -11,6 +11,10 @@ on:
         description: Máximo de páginas a leer
         required: false
         default: '40'
+      omitir:
+        description: Expresión regular de rutas a omitir en la salida (opcional)
+        required: false
+        default: ''
 
 permissions:
   contents: read
@@ -27,4 +31,5 @@ jobs:
         env:
           URL: ${{ inputs.url }}
           PAGINAS: ${{ inputs.paginas }}
-        run: node scripts/leer-sitio.mjs "$URL" "$PAGINAS"
+          OMITIR: ${{ inputs.omitir }}
+        run: node scripts/leer-sitio.mjs "$URL" "$PAGINAS" "$OMITIR"
