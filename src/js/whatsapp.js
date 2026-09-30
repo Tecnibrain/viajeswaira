@@ -6,4 +6,9 @@ export const whatsappReady = () => isConfigured(WHATSAPP_NUMBER) && /^\d{8,15}$/
 export const whatsappUrl = (message = SITE.whatsappDefaultMessage) =>
   `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 
-export const whatsappDisplay = () => (whatsappReady() ? `+${WHATSAPP_NUMBER}` : WHATSAPP_NUMBER);
+/** Formato legible: +57 311 754 4635 (Colombia) o +<número> para otros países */
+export const whatsappDisplay = () => {
+  if (!whatsappReady()) return WHATSAPP_NUMBER;
+  const m = WHATSAPP_NUMBER.match(/^57(\d{3})(\d{3})(\d{4})$/);
+  return m ? `+57 ${m[1]} ${m[2]} ${m[3]}` : `+${WHATSAPP_NUMBER}`;
+};

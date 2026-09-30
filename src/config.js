@@ -18,7 +18,7 @@ export const PLACEHOLDER = '[POR CONFIGURAR]';
 export const WHATSAPP_PLACEHOLDER = '[WHATSAPP POR CONFIGURAR]';
 
 // Número de WhatsApp: ÚNICO lugar donde se define.
-export const WHATSAPP_NUMBER = WHATSAPP_PLACEHOLDER;
+export const WHATSAPP_NUMBER = '573117544635';
 
 export const SITE = {
   name: 'Viajes Waira',
