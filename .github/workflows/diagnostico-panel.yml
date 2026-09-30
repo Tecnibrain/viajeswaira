@@ -1,0 +1,23 @@
+# Diagnóstico del panel /admin contra el sitio real (solo lectura: no guarda nada).
+# Ejecutar: Actions -> "Diagnóstico del panel" -> Run workflow
+name: Diagnóstico del panel
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  diagnostico:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+      - name: Probar el panel en https://viajeswaira.com
+        env:
+          ADMIN_USERS: ${{ secrets.ADMIN_USERS }}
+          ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
+        run: node scripts/diagnostico-panel.mjs | tee -a "$GITHUB_STEP_SUMMARY"
