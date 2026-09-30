@@ -18,3 +18,14 @@
 
 /*.svg
   Cache-Control: public, max-age=604800
+
+# Panel de administración (/admin): usa scripts externos del CMS, no se indexa
+/admin
+  ! Content-Security-Policy
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-cache
+
+/admin/*
+  ! Content-Security-Policy
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-cache

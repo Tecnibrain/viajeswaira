@@ -1,0 +1,23 @@
+{
+  "order": 1,
+  "name": "Cartagena",
+  "city": "Cartagena de Indias",
+  "country": "Colombia",
+  "region": "nacional",
+  "image": "/img/cartagena.svg",
+  "gallery": [
+    "/img/cartagena.svg",
+    "/img/cartagena-2.svg",
+    "/img/cartagena-3.svg"
+  ],
+  "description": "Ciudad amurallada, calles coloniales llenas de color, atardeceres frente al mar Caribe y excursiones a las Islas del Rosario.",
+  "highlights": [
+    "Ciudad amurallada",
+    "Islas del Rosario",
+    "Barrio Getsemaní",
+    "Castillo de San Felipe"
+  ],
+  "priceFrom": 1200000,
+  "duration": "4 días / 3 noches",
+  "demo": true
+}

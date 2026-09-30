@@ -6,6 +6,8 @@ publicarse **gratis** en **Cloudflare Pages (plan Free)**. No necesita servidor,
 ni hosting de pago.
 
 > 📘 **Guía para publicarlo paso a paso (Cloudflare + Namecheap):** [GUIA_PUBLICACION.md](GUIA_PUBLICACION.md)
+>
+> 🧳 **Subir paquetes y destinos sin código (panel https://viajeswaira.com/admin):** [COMO_SUBIR_PAQUETES.md](COMO_SUBIR_PAQUETES.md)
 
 ## Páginas
 
@@ -25,8 +27,9 @@ ni hosting de pago.
 | Qué quieres cambiar | Archivo |
 |---|---|
 | Nombre, dominio, **WhatsApp**, correo, teléfono, dirección, horarios, Instagram, Facebook, TikTok, **colores** | `src/config.js` |
-| Destinos (texto, precio, imágenes) | `src/data/destinos.js` |
-| Paquetes (precio, incluye, itinerario…) | `src/data/paquetes.js` |
+| Destinos (texto, precio, imágenes) | Panel **/admin** → Destinos (archivos `content/destinos/*.json`) |
+| Paquetes (precio, incluye, itinerario…) | Panel **/admin** → Paquetes (archivos `content/paquetes/*.json`) |
+| Campos del panel de administración | `public/admin/config.yml` |
 | Textos de Home / Nosotros / FAQ | `index.html`, `nosotros.html` |
 | Menú y pie de página | `partials/header.html`, `partials/footer.html` |
 | Estilos | `src/css/styles.css` |
@@ -43,7 +46,7 @@ y los formularios muestran un resumen para copiar.
 
 ### Datos DEMO
 Todos los precios, paquetes, itinerarios y testimonios son **de demostración** y se muestran con
-la etiqueta **DEMO**. Para publicar datos reales, edita el objeto y pon `demo: false`.
+la etiqueta **DEMO**. Para publicar datos reales, edítalos en el panel **/admin** y apaga "Es información de ejemplo (DEMO)".
 Cuando ya no haya datos DEMO, elimina la barra superior (`.demo-bar`) en `partials/header.html`.
 
 ### Reemplazar las ilustraciones por fotos reales
@@ -51,7 +54,7 @@ Las imágenes actuales son ilustraciones SVG propias y livianas (sin derechos de
 Para usar fotos:
 1. Exporta cada foto en **.webp**, 1200×800 px, < 200 KB (p. ej. con https://squoosh.app, gratis).
 2. Guárdala en `public/img/` (ej. `public/img/cartagena.webp`).
-3. Cambia `image` y `gallery` del destino en `src/data/destinos.js`.
+3. O, más fácil, súbelas desde el panel **/admin** (se optimizan solas).
 4. Usa solo fotos propias o con licencia que permita uso comercial.
 
 ## Desarrollo local

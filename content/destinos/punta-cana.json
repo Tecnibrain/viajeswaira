@@ -1,0 +1,23 @@
+{
+  "order": 6,
+  "name": "Punta Cana",
+  "city": "Punta Cana",
+  "country": "República Dominicana",
+  "region": "internacional",
+  "image": "/img/punta-cana.svg",
+  "gallery": [
+    "/img/punta-cana.svg",
+    "/img/punta-cana-2.svg",
+    "/img/punta-cana-3.svg"
+  ],
+  "description": "Palmeras, arena blanca y aguas cálidas. Ideal para lunas de miel y descanso en plan todo incluido.",
+  "highlights": [
+    "Playa Bávaro",
+    "Isla Saona",
+    "Hoyo Azul",
+    "Resorts todo incluido"
+  ],
+  "priceFrom": 4200000,
+  "duration": "6 días / 5 noches",
+  "demo": true
+}

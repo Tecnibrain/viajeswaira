@@ -3,11 +3,11 @@
  * Copiar a functions/api/checkout.js cuando se active una pasarela.
  * Las claves se leen de env (Secrets de Cloudflare), NUNCA del código.
  */
-import { getPaquete } from '../../src/data/paquetes.js';
-
 export async function onRequestPost({ request, env }) {
   const { provider, packageId, travelers, customer } = await request.json();
-  const pkg = getPaquete(packageId);
+  // Catálogo publicado en el build (dist/data/paquetes.json)
+  const catalog = await (await env.ASSETS.fetch(new URL('/data/paquetes.json', request.url))).json();
+  const pkg = catalog.find((p) => p.id === packageId);
   const qty = Math.min(Math.max(parseInt(travelers, 10) || 1, 1), 50);
   if (!pkg || pkg.demo) return Response.json({ error: 'Paquete no disponible para pago' }, { status: 400 });
 

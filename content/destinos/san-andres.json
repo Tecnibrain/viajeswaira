@@ -1,0 +1,23 @@
+{
+  "order": 2,
+  "name": "San Andrés",
+  "city": "San Andrés",
+  "country": "Colombia",
+  "region": "nacional",
+  "image": "/img/san-andres.svg",
+  "gallery": [
+    "/img/san-andres.svg",
+    "/img/san-andres-2.svg",
+    "/img/san-andres-3.svg"
+  ],
+  "description": "El mar de los siete colores: playas de arena blanca, snorkel, Johnny Cay y el ambiente relajado del Caribe insular.",
+  "highlights": [
+    "Johnny Cay",
+    "Acuario y Haynes Cay",
+    "Hoyo Soplador",
+    "Vuelta a la isla"
+  ],
+  "priceFrom": 1500000,
+  "duration": "5 días / 4 noches",
+  "demo": true
+}

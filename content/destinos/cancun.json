@@ -1,0 +1,23 @@
+{
+  "order": 5,
+  "name": "Cancún",
+  "city": "Cancún",
+  "country": "México",
+  "region": "internacional",
+  "image": "/img/cancun.svg",
+  "gallery": [
+    "/img/cancun.svg",
+    "/img/cancun-2.svg",
+    "/img/cancun-3.svg"
+  ],
+  "description": "Playas turquesa del Caribe mexicano, cenotes, zonas arqueológicas mayas y resorts todo incluido.",
+  "highlights": [
+    "Zona hotelera",
+    "Isla Mujeres",
+    "Cenotes",
+    "Chichén Itzá"
+  ],
+  "priceFrom": 3900000,
+  "duration": "6 días / 5 noches",
+  "demo": true
+}

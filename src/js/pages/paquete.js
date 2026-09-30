@@ -11,13 +11,14 @@ const root = document.getElementById('detail');
 if (!p) {
   root.innerHTML = `<section class="section"><div class="container center"><h1>Paquete no encontrado</h1><p><a class="btn btn-primary" href="/paquetes">Ver paquetes</a></p></div></section>`;
 } else {
-  const d = getDestino(p.destinationId);
+  const d = getDestino(p.destinationId) || { id: '', name: '', country: '', image: '/img/hero.svg', gallery: ['/img/hero.svg'] };
+  const gallery = p.gallery.length ? p.gallery : d.gallery;
   setMeta({ title: p.title, description: p.description, path: `/paquete?id=${p.id}` });
   const msg = `Hola ${SITE.name}, quiero reservar el paquete "${p.title}" (${p.duration}).`;
   const related = paquetes.filter((x) => x.id !== p.id && x.category === p.category).slice(0, 3);
   root.innerHTML = `
   <section class="detail-hero">
-    <img src="${d.gallery[2] || d.image}" alt="${esc(p.title)}" width="1200" height="800" fetchpriority="high" />
+    <img src="${p.image || d.gallery[2] || d.image}" alt="${esc(p.title)}" width="1200" height="800" fetchpriority="high" />
     <div class="container">
       <p class="breadcrumb"><a href="/">Inicio</a> / <a href="/paquetes">Paquetes</a> / ${esc(p.title)}</p>
       <p class="eyebrow eyebrow-sand">${esc(p.category)} · ${esc(d.name)}, ${esc(d.country)}</p>
@@ -36,7 +37,7 @@ if (!p) {
         <div class="block"><h2>Itinerario</h2><ol class="timeline">${p.itinerary
           .map((s) => `<li data-day="${s.day}"><h3>Día ${s.day}: ${esc(s.title)}</h3><p>${esc(s.text)}</p></li>`)
           .join('')}</ol></div>
-        <div class="block"><h2>Galería</h2><div class="gallery">${d.gallery
+        <div class="block"><h2>Galería</h2><div class="gallery">${gallery
           .map((g, i) => `<button type="button" data-src="${g}" aria-label="Ampliar imagen ${i + 1}"><img src="${g}" alt="${esc(d.name)} ${i + 1}" width="600" height="400" loading="lazy" decoding="async" /></button>`)
           .join('')}</div></div>
       </div>
@@ -71,7 +72,7 @@ if (!p) {
     '@type': 'TouristTrip',
     name: p.title,
     description: p.description,
-    image: SITE.url + d.image,
+    image: SITE.url + (p.image || d.image),
     url: `${SITE.url}/paquete?id=${p.id}`,
     touristType: p.category,
     itinerary: { '@type': 'ItemList', itemListElement: p.itinerary.map((s, i) => ({ '@type': 'ListItem', position: i + 1, name: `Día ${s.day}: ${s.title}` })) },

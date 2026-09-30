@@ -1,0 +1,45 @@
+{
+  "order": 1,
+  "title": "Cartagena Colonial y Caribe",
+  "destinationId": "cartagena",
+  "duration": "4 días / 3 noches",
+  "price": 1450000,
+  "category": "Playa y cultura",
+  "featured": true,
+  "description": "Recorre la ciudad amurallada, disfruta de un día de playa en Islas del Rosario y vive la noche cartagenera.",
+  "includes": [
+    "Tiquetes aéreos ida y regreso (DEMO)",
+    "Traslados aeropuerto – hotel – aeropuerto",
+    "3 noches de alojamiento con desayuno",
+    "City tour con guía",
+    "Pasadía Islas del Rosario",
+    "Asistencia médica en viaje"
+  ],
+  "excludes": [
+    "Almuerzos y cenas no especificados",
+    "Impuesto de muelle",
+    "Propinas",
+    "Gastos personales"
+  ],
+  "demo": true,
+  "image": "",
+  "gallery": [],
+  "itinerary": [
+    {
+      "title": "Llegada a Cartagena",
+      "text": "Recepción en el aeropuerto, traslado al hotel y tarde libre para caminar por el Centro Histórico."
+    },
+    {
+      "title": "City tour",
+      "text": "Castillo de San Felipe, Convento de La Popa, Getsemaní y compras en Las Bóvedas."
+    },
+    {
+      "title": "Islas del Rosario",
+      "text": "Día completo de playa, snorkel opcional y almuerzo típico en la isla."
+    },
+    {
+      "title": "Regreso",
+      "text": "Desayuno, tiempo libre según horario de vuelo y traslado al aeropuerto."
+    }
+  ]
+}

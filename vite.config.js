@@ -1,11 +1,18 @@
 import { defineConfig } from 'vite';
-import { readFileSync, existsSync, writeFileSync } from 'node:fs';
+import { readFileSync, existsSync, writeFileSync, readdirSync, mkdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { SITE } from './src/config.js';
-import { destinos } from './src/data/destinos.js';
-import { paquetes } from './src/data/paquetes.js';
+import { toDestinos, toPaquetes } from './src/data/normalize.js';
 
 const root = import.meta.dirname;
+
+// Lee content/<carpeta>/*.json (lo mismo que import.meta.glob en el navegador)
+const readContent = (dir) =>
+  Object.fromEntries(
+    readdirSync(resolve(root, 'content', dir))
+      .filter((f) => f.endsWith('.json'))
+      .map((f) => [`/content/${dir}/${f}`, JSON.parse(readFileSync(resolve(root, 'content', dir, f), 'utf8'))]),
+  );
 
 // Páginas del sitio (cada una es un .html estático)
 const PAGES = ['index', 'destinos', 'destino', 'paquetes', 'paquete', 'nosotros', 'contacto', 'reservas', '404'];
@@ -70,6 +77,8 @@ function partial(name) {
 }
 
 function sitemap() {
+  const destinos = toDestinos(readContent('destinos'));
+  const paquetes = toPaquetes(readContent('paquetes'));
   const today = new Date().toISOString().slice(0, 10);
   const urls = [
     ['/', '1.0'],
@@ -130,6 +139,10 @@ function wairaPlugin() {
     closeBundle() {
       if (existsSync(resolve(root, 'dist'))) {
         writeFileSync(resolve(root, 'dist', 'sitemap.xml'), sitemap());
+        // Catálogo en JSON (útil para pagos en línea u otras integraciones)
+        mkdirSync(resolve(root, 'dist', 'data'), { recursive: true });
+        writeFileSync(resolve(root, 'dist', 'data', 'paquetes.json'), JSON.stringify(toPaquetes(readContent('paquetes'))));
+        writeFileSync(resolve(root, 'dist', 'data', 'destinos.json'), JSON.stringify(toDestinos(readContent('destinos'))));
       }
     },
   };

@@ -2,7 +2,7 @@
  * Genera ilustraciones SVG livianas (2–5 KB) para cada destino.
  * Son imágenes DEMO/ilustrativas propias (sin derechos de terceros).
  * Cuando tengas fotos reales, colócalas en public/img/ (formato .webp
- * recomendado, 1200x800) y cambia la ruta en src/data/destinos.js.
+ * recomendado, 1200x800) o súbelas desde el panel /admin.
  *
  * Uso: node scripts/generate-images.mjs
  */

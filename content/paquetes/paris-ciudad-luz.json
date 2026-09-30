@@ -1,0 +1,61 @@
+{
+  "order": 8,
+  "title": "París Ciudad Luz",
+  "destinationId": "paris",
+  "duration": "8 días / 7 noches",
+  "price": 7990000,
+  "category": "Europa",
+  "featured": true,
+  "description": "Vive París a tu ritmo: Torre Eiffel, Louvre, crucero por el Sena y excursión a Versalles.",
+  "includes": [
+    "Tiquetes aéreos internacionales (DEMO)",
+    "Hotel 7 noches con desayuno",
+    "Crucero por el Sena",
+    "Excursión a Versalles",
+    "Traslados",
+    "Asistencia médica Schengen"
+  ],
+  "excludes": [
+    "Entradas no especificadas",
+    "Almuerzos y cenas",
+    "Tasa turística local",
+    "Propinas"
+  ],
+  "demo": true,
+  "image": "",
+  "gallery": [],
+  "itinerary": [
+    {
+      "title": "Salida",
+      "text": "Vuelo nocturno hacia París."
+    },
+    {
+      "title": "Bienvenidos a París",
+      "text": "Traslado al hotel y paseo por los Campos Elíseos."
+    },
+    {
+      "title": "Torre Eiffel y Sena",
+      "text": "Visita a la Torre Eiffel y crucero al atardecer."
+    },
+    {
+      "title": "Louvre",
+      "text": "Museo del Louvre y Jardín de las Tullerías."
+    },
+    {
+      "title": "Versalles",
+      "text": "Excursión al Palacio y jardines de Versalles."
+    },
+    {
+      "title": "Montmartre",
+      "text": "Sacré-Cœur, Plaza de Tertre y barrio de los artistas."
+    },
+    {
+      "title": "Día libre",
+      "text": "Compras o Disneyland París (opcional)."
+    },
+    {
+      "title": "Regreso",
+      "text": "Traslado al aeropuerto."
+    }
+  ]
+}

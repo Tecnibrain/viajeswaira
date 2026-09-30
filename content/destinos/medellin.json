@@ -1,0 +1,23 @@
+{
+  "order": 4,
+  "name": "Medellín",
+  "city": "Medellín",
+  "country": "Colombia",
+  "region": "nacional",
+  "image": "/img/medellin.svg",
+  "gallery": [
+    "/img/medellin.svg",
+    "/img/medellin-2.svg",
+    "/img/medellin-3.svg"
+  ],
+  "description": "La ciudad de la eterna primavera: innovación, metrocable, Comuna 13, gastronomía y escapadas a Guatapé.",
+  "highlights": [
+    "Comuna 13",
+    "Metrocable",
+    "Guatapé y El Peñol",
+    "Pueblito Paisa"
+  ],
+  "priceFrom": 950000,
+  "duration": "4 días / 3 noches",
+  "demo": true
+}

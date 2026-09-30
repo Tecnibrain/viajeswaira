@@ -1,0 +1,23 @@
+{
+  "order": 3,
+  "name": "Santa Marta",
+  "city": "Santa Marta",
+  "country": "Colombia",
+  "region": "nacional",
+  "image": "/img/santa-marta.svg",
+  "gallery": [
+    "/img/santa-marta.svg",
+    "/img/santa-marta-2.svg",
+    "/img/santa-marta-3.svg"
+  ],
+  "description": "Donde la Sierra Nevada se encuentra con el mar: Parque Tayrona, Minca, Taganga y playas vírgenes.",
+  "highlights": [
+    "Parque Tayrona",
+    "Minca",
+    "Taganga",
+    "Rodadero"
+  ],
+  "priceFrom": 1100000,
+  "duration": "4 días / 3 noches",
+  "demo": true
+}

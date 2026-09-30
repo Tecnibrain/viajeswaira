@@ -33,10 +33,10 @@ export function destinoCard(d) {
 }
 
 export function paqueteCard(p) {
-  const d = getDestino(p.destinationId);
+  const d = getDestino(p.destinationId) || { name: '', country: '', image: '/img/hero.svg', gallery: [] };
   return `
   <article class="card">
-    <a class="card-media" href="/paquete?id=${p.id}" tabindex="-1" aria-hidden="true">${img(d.image.replace('.svg', '-2.svg'), p.title)}
+    <a class="card-media" href="/paquete?id=${p.id}" tabindex="-1" aria-hidden="true">${img(p.image || d.gallery[1] || d.image, p.title)}
       <span class="chip">${esc(p.category)}</span></a>
     <div class="card-body">
       <p class="eyebrow">${esc(d.name)}, ${esc(d.country)}</p>

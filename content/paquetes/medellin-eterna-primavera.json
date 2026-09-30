@@ -1,0 +1,43 @@
+{
+  "order": 4,
+  "title": "Medellín Eterna Primavera",
+  "destinationId": "medellin",
+  "duration": "4 días / 3 noches",
+  "price": 1150000,
+  "category": "Ciudad",
+  "featured": false,
+  "description": "Conoce la transformación de Medellín, su cultura paisa y el colorido pueblo de Guatapé.",
+  "includes": [
+    "Tiquetes aéreos (DEMO)",
+    "Hotel 3 noches con desayuno",
+    "Tour Comuna 13 y Metrocable",
+    "Excursión Guatapé y El Peñol",
+    "Traslados"
+  ],
+  "excludes": [
+    "Almuerzos y cenas",
+    "Entradas no especificadas",
+    "Propinas"
+  ],
+  "demo": true,
+  "image": "",
+  "gallery": [],
+  "itinerary": [
+    {
+      "title": "Bienvenida",
+      "text": "Llegada, traslado y noche en El Poblado."
+    },
+    {
+      "title": "City tour",
+      "text": "Comuna 13, Metrocable, Plaza Botero y Pueblito Paisa."
+    },
+    {
+      "title": "Guatapé",
+      "text": "Subida a la Piedra del Peñol y paseo en lancha por el embalse."
+    },
+    {
+      "title": "Regreso",
+      "text": "Desayuno y traslado al aeropuerto."
+    }
+  ]
+}

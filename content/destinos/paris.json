@@ -1,0 +1,23 @@
+{
+  "order": 8,
+  "name": "París",
+  "city": "París",
+  "country": "Francia",
+  "region": "internacional",
+  "image": "/img/paris.svg",
+  "gallery": [
+    "/img/paris.svg",
+    "/img/paris-2.svg",
+    "/img/paris-3.svg"
+  ],
+  "description": "La Ciudad Luz: Torre Eiffel, Louvre, paseos por el Sena, Montmartre y la mejor pastelería del mundo.",
+  "highlights": [
+    "Torre Eiffel",
+    "Museo del Louvre",
+    "Crucero por el Sena",
+    "Montmartre"
+  ],
+  "priceFrom": 7200000,
+  "duration": "8 días / 7 noches",
+  "demo": true
+}
